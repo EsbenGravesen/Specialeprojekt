@@ -33,3 +33,7 @@ sysinfo.txt
 ehthumbs.db
 [Tt]humbs.db
 [Dd]esktop.ini
+
+# Wwise
+/pathToWwiseProject/Originals/SFX/*.akd
+/pathToWwiseProject/.cache/
