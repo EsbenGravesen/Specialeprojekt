@@ -42,5 +42,17 @@ public class Controller : MonoBehaviour {
 
 			transform.localEulerAngles = new Vector3(-rotationY, transform.localEulerAngles.y, 0);
 		}
+
+		Debug.DrawRay (transform.position, transform.forward * 100f);
+
+		if(Input.GetMouseButtonDown(0)){
+			Debug.Log ("SHOOT");
+			RaycastHit hitted;
+			if(Physics.Raycast (transform.position, transform.forward, out hitted, 100f)){
+				if(hitted.transform.gameObject.GetComponent<Stationary>() != null){
+					Debug.Log(hitted.transform.gameObject.GetComponent<Stationary> ().Activate ());
+				}
+			}
+		}
 	}
 }
