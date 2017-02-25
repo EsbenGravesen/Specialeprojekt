@@ -34,7 +34,7 @@ public class PuzzleManager : MonoBehaviour {
 						transform.GetChild(i).GetChild(j).GetComponent<Stationary>().GetOrbType()){
 						OtherActive = true;
 						transform.GetChild (i).GetChild (0).GetComponent<OrbitManager> ().Visible (false);
-						transform.GetChild (i).GetComponent<SphereManager> ().SetLocked (true);
+						transform.GetChild (i).GetComponent<SphereManager> ().SetLocked (j);
 						newLink.Add (transform.GetChild (i).gameObject);
 					}
 				}
@@ -42,7 +42,7 @@ public class PuzzleManager : MonoBehaviour {
 		}
 		if(OtherActive){
 			transform.GetChild (ringIndex).GetChild (0).GetComponent<OrbitManager> ().Visible (false);
-			transform.GetChild (ringIndex).GetComponent<SphereManager> ().SetLocked (true);
+			transform.GetChild (ringIndex).GetComponent<SphereManager> ().SetLocked (orbIndex);
 			newLink.Add (transform.GetChild (ringIndex).gameObject);
 
 			lines.Add(LineDrawer (newLink));
@@ -65,8 +65,10 @@ public class PuzzleManager : MonoBehaviour {
 		searching:
 		if(found){
 			for(int i = 0; i < linked[index].Count; i++){
-				linked [index][i].GetComponent<SphereManager>().SetLocked(false);
+				linked [index][i].GetComponent<SphereManager>().SetLocked(0);
 				linked [index] [i].transform.GetChild (0).gameObject.GetComponent<OrbitManager> ().Visible (true);
+			}
+			for(int i = 0; i < lines[index].Count; i++){
 				Destroy (lines [index] [i]);
 			}
 			linked.RemoveAt (index);
@@ -149,8 +151,8 @@ public class PuzzleManager : MonoBehaviour {
 			for(int k = 0; k < i; k++)
 			{
 				lineObj[xLine] = Instantiate(LinePrefab);
-				lineObj[xLine].GetComponent<LineRenderer>().SetPosition(0,pos[i].transform.position);
-				lineObj[xLine].GetComponent<LineRenderer>().SetPosition(1, pos[k].transform.position);
+				lineObj[xLine].GetComponent<LineRenderer>().SetPosition(0,pos[i].GetComponent<SphereManager>().GetLocked().transform.position);
+				lineObj[xLine].GetComponent<LineRenderer>().SetPosition(1, pos[k].GetComponent<SphereManager>().GetLocked().transform.position);
 				ListOfGO.Add(lineObj[xLine]);
 				xLine++;
 			}
