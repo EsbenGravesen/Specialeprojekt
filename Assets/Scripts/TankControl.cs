@@ -7,6 +7,10 @@ public class TankControl : MonoBehaviour {
 
 	public float speed = 2;
 	public float rotateSpeed = 2;
+    public GameObject LeftMotor;
+    public GameObject RightMotor;
+    float pEmission;
+    float pDir;
 
 	// Use this for initialization
 	void Start () {
@@ -15,17 +19,14 @@ public class TankControl : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(Input.GetKey("w")){
-			transform.position += transform.forward * Time.deltaTime * speed;
-		}
-		if(Input.GetKey("s")){
-			transform.position -= transform.forward * Time.deltaTime * speed;
-		}
-		if(Input.GetKey("a")){
-			transform.Rotate(-Vector3.up * Time.deltaTime * rotateSpeed);
-		}
-		if(Input.GetKey("d")){
-			transform.Rotate(Vector3.up * Time.deltaTime * rotateSpeed);
-		}
-	}
+			transform.position += transform.forward * Input.GetAxis("Vertical") * Time.deltaTime * speed;
+			transform.Rotate(-Vector3.up * -Input.GetAxis("Horizontal") * Time.deltaTime * rotateSpeed);
+
+        pEmission = 10 * Input.GetAxis("Vertical");
+
+        LeftMotor.GetComponent<ParticleSystem>().emissionRate = pEmission;
+        LeftMotor.GetComponent<ParticleSystem>().startSpeed = Input.GetAxis("Horizontal");
+        RightMotor.GetComponent<ParticleSystem>().startSpeed = -Input.GetAxis("Horizontal");
+        RightMotor.GetComponent<ParticleSystem>().emissionRate = pEmission;
+    }
 }
