@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{AB325A46-ABAB-4F45-B062-D21850B52147}" SchemaVersion="75">
 	<SoundBanks>
-		<WorkUnit Name="Default Work Unit" ID="{AB325A46-ABAB-4F45-B062-D21850B52147}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{AB325A46-ABAB-4F45-B062-D21850B52147}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Main" ID="{C3F12B70-D24E-45FA-85D4-28BBB01223CF}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Acceleration_Stop" ID="{29F9743A-D095-4247-9038-6DC3AA5E1C65}" WorkUnitID="{7179CA73-8046-43E3-AAB7-E076A02B0894}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Acceleration_Play" ID="{952141DA-13CA-46F5-A966-FA6A46D19FA6}" WorkUnitID="{7179CA73-8046-43E3-AAB7-E076A02B0894}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Puzzles_Stop" ID="{D47F5BAB-9FE8-4CBA-9736-F7D427B82D97}" WorkUnitID="{7179CA73-8046-43E3-AAB7-E076A02B0894}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Puzzles_Play" ID="{96A1E5F8-6057-4EE5-8F27-56D1BBFBF89E}" WorkUnitID="{7179CA73-8046-43E3-AAB7-E076A02B0894}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundBanks>
 </WwiseDocument>
