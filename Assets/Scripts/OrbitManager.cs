@@ -15,8 +15,8 @@ public class OrbitManager : MonoBehaviour {
 	void Update () {
         if(rot)
             transform.RotateAround(transform.parent.position, transform.parent.forward, 360f / rotSpeed * Time.deltaTime);
-		
 	}
+   
     public void initRot(float speed)
     {
         rotSpeed = speed;

@@ -22,10 +22,22 @@ public class Stationary : MonoBehaviour {
 		render.material.color = color;
 		sc = transform.parent.GetComponent<SphereManager> ();
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		if(!sc.IsLocked()){
+
+    void OnEnable()
+    {
+        //AkSoundEngine.SetSwitch("Cycles",transform.parent.parent.GetComponent<PuzzleManager>())
+        AkSoundEngine.PostEvent("Puzzles_Play", gameObject);
+    }
+    void OnDisable()
+    {
+        AkSoundEngine.PostEvent("Puzzles_Stop", gameObject);
+    }
+    // Update is called once per frame
+    void Update () {
+        AkSoundEngine.SetRTPCValue("DistZoneSphere", Vector3.Distance(transform.parent.GetChild(0).position, transform.position));
+       
+
+        if (!sc.IsLocked()){
 			if(Vector3.Distance(transform.parent.GetChild(0).position, transform.position) < 1f){
 				active = true;
 				render.material.color = render.material.color * 0.9f;
@@ -33,7 +45,6 @@ public class Stationary : MonoBehaviour {
 			}
 			else{
 				active = false;
-                print("resetting");
 				render.material.color = zoneCols[transform.parent.GetComponent<SphereManager>().Zones[transform.GetSiblingIndex() - 1].ZoneColor.GetHashCode()];
 			}
 		}
