@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Wwise/Deployment/API/Generated/Linux/AkPlatformInitSettings_Linux.cs.meta
+guid: 5b3f27a9ae696864c9fd8d24b6e3cffe
+timeCreated: 1487966251
+=======
+guid: 411663df52b5c474d83ecb8b48244544
+timeCreated: 1488021697
+>>>>>>> c7cb5dcc1a8e78abc55a73ffac6597ab96dcd4ff:Assets/LAVLINJERDOTDK.cs.meta
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

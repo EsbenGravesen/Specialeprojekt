@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Wwise/Deployment/API/Generated/Linux/AkMemPoolAttributes_Linux.cs.meta
+guid: 9d5160492f2694942ac82db79cd5bb5f
+timeCreated: 1487966258
+=======
+guid: 97569a9a370585249b4d1936681d478c
+timeCreated: 1487969288
+>>>>>>> c7cb5dcc1a8e78abc55a73ffac6597ab96dcd4ff:Assets/Scripts/TankControl.cs.meta
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

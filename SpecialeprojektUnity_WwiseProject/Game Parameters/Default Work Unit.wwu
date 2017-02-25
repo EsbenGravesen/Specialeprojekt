@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{40907770-B0F2-4733-B406-6FC08CC457AD}" SchemaVersion="75">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{40907770-B0F2-4733-B406-6FC08CC457AD}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{40907770-B0F2-4733-B406-6FC08CC457AD}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="DistZoneSphere" ID="{14D0A18F-D3D5-47C2-8C92-A11A32A1E161}"/>
+				<GameParameter Name="PlayerSpeed" ID="{B7F8491B-187E-42A5-A63D-F5BD2690FFB8}"/>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>

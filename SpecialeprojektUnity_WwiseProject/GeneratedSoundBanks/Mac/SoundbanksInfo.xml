@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="11" SoundbankVersion="120">
 	<RootPaths>
-		<ProjectRoot>C:\Users\Esben\Documents\SpecialeprojektUnity\SpecialeprojektUnity_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\Esben\Documents\SpecialeprojektUnity\SpecialeprojektUnity_WwiseProject\.cache\Mac\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\Esben\Documents\SpecialeprojektUnity\SpecialeprojektUnity_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ProjectRoot>E:\Home\Audiodesign\Speciale\Specialeprojekt\SpecialeprojektUnity_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>E:\Home\Audiodesign\Speciale\Specialeprojekt\SpecialeprojektUnity_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>E:\Home\Audiodesign\Speciale\Specialeprojekt\SpecialeprojektUnity_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\Esben\Documents\SpecialeprojektUnity\SpecialeprojektUnity_WwiseProject\GeneratedSoundBanks\Mac\</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>E:\Home\Audiodesign\Speciale\Specialeprojekt\SpecialeprojektUnity_WwiseProject\GeneratedSoundBanks\Mac\</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -15,6 +15,17 @@
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3161908922" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3487251266" Name="Acceleration_Play" ObjectPath="\Events\Default Work Unit\Acceleration_Play"/>
+				<Event Id="4088790428" Name="Acceleration_Stop" ObjectPath="\Events\Default Work Unit\Acceleration_Stop" MaxAttenuation="0.000000"/>
+				<Event Id="4129441541" Name="Puzzles_Play" ObjectPath="\Events\Default Work Unit\Puzzles_Play" MaxAttenuation="100.000000"/>
+				<Event Id="1217550467" Name="Puzzles_Stop" ObjectPath="\Events\Default Work Unit\Puzzles_Stop" MaxAttenuation="0.000000"/>
+			</IncludedEvents>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>
