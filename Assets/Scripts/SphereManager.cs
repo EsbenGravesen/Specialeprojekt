@@ -33,9 +33,8 @@ public class SphereManager : MonoBehaviour {
 	void Start () {
         transform.GetChild(0).GetComponent<OrbitManager>().initRot(tempo);
         ZoneManager[] zones = GetComponentsInChildren<ZoneManager>();
-        for (int x = 0; 0 < zones.Length; ++x)
-            zones[x].initialize();
-        print(tempo);
+        for (int x = 0; x < zones.Length; ++x)
+            zones[x].initialize(); 
         transform.GetChild(0).GetComponent<OrbitManager>().initRot(tempo);
 		isLocked = 0;
 		GetComponent<MeshRenderer> ().enabled = false;

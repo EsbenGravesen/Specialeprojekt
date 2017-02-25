@@ -10,11 +10,15 @@ public class Stationary : MonoBehaviour {
 	private bool active;
 	private Renderer render;
 	private SphereManager sc;
+    Color[] zoneCols = new Color[3];
 
 
-	// Use this for initialization
-	void Start () {
-		render = GetComponent<Renderer> ();
+    // Use this for initialization
+    void Start () {
+        zoneCols[0] = new Color(0, 1, 0, .6f);
+        zoneCols[1] = new Color(1, 1, 0, .6f);
+        zoneCols[2] = new Color(1, 0, 0, .6f);
+        render = GetComponent<Renderer> ();
 		render.material.color = color;
 		sc = transform.parent.GetComponent<SphereManager> ();
 	}
@@ -24,12 +28,13 @@ public class Stationary : MonoBehaviour {
 		if(!sc.IsLocked()){
 			if(Vector3.Distance(transform.parent.GetChild(0).position, transform.position) < 1f){
 				active = true;
-				render.material.color = activationColor;
+				render.material.color = render.material.color * 0.9f;
 				
 			}
 			else{
 				active = false;
-				render.material.color = color;
+                print("resetting");
+				render.material.color = zoneCols[transform.parent.GetComponent<SphereManager>().Zones[transform.GetSiblingIndex() - 1].ZoneColor.GetHashCode()];
 			}
 		}
 	}
