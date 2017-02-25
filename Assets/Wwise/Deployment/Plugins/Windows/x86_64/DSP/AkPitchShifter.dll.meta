@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 27217a5b45673584daf8395ee9f70fcd
 timeCreated: 1487966189
+=======
+guid: bf14ef0723aa52244b6ca7d1a3a96357
+timeCreated: 1487966161
+>>>>>>> origin/master
 licenseType: Free
 PluginImporter:
   serializedVersion: 1
