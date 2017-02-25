@@ -4,20 +4,46 @@ using UnityEngine;
 [ExecuteInEditMode]
 public class ZoneManager : MonoBehaviour {
     Material mat;
+    bool inPlay = false;
+    const float _2pi = 2.0f * Mathf.PI;
+    Color[] zoneCols = new Color[3];
 	// Use this for initialization
 	void Start () {
-        Material tempMaterial = new Material(GetComponent<MeshRenderer>().sharedMaterial);
-        tempMaterial.color = Color.red;
-        GetComponent<MeshRenderer>().sharedMaterial = tempMaterial;
+        if (!inPlay)
+        {
+            zoneCols[0] = new Color(0, 1, 0, .6f);
+            zoneCols[1] = new Color(1, 1, 0, .6f);
+            zoneCols[2] = new Color(1, 0, 0, .6f);
+            Material tempMaterial = new Material(GetComponent<MeshRenderer>().sharedMaterial);
+            tempMaterial.color = zoneCols[transform.parent.GetComponent<SphereManager>().Zones[transform.GetSiblingIndex() - 1].ZoneColor.GetHashCode()];
+            GetComponent<MeshRenderer>().sharedMaterial = tempMaterial;
+        }
     }
 	
 	// Update is called once per frame
 	void Update () {
-        GetComponent<MeshRenderer>().sharedMaterial.color = transform.parent.GetComponent<SphereManager>().Zones[transform.GetSiblingIndex() - 1].zoneColor;
-        //transform.position = transform.parent.GetComponent<SphereManager>().Zones[transform.GetSiblingIndex() - 1].position;
+        if (!inPlay)
+        {
+            GetComponent<MeshRenderer>().sharedMaterial.color = zoneCols[transform.parent.GetComponent<SphereManager>().Zones[transform.GetSiblingIndex() - 1].ZoneColor.GetHashCode()];
+            if (transform.parent.GetComponent<SphereManager>().Zones[transform.GetSiblingIndex() - 1].position.y * _2pi == 0)
+                return;
+            float r1 = transform.parent.GetComponent<SphereManager>().Zones[transform.GetSiblingIndex() - 1].position.x /
+                transform.parent.GetComponent<SphereManager>().Zones[transform.GetSiblingIndex() - 1].position.y * _2pi;
+            float cos = -Mathf.Sin(r1);
+            float sin = Mathf.Cos(r1);
+            transform.position = new Vector3(cos * transform.parent.parent.GetComponent<PuzzleManager>().RotationDiameter / 2.0f, sin * transform.parent.parent.GetComponent<PuzzleManager>().RotationDiameter / 2.0f, 0f);
+        }
     }
     void OnDestroy()
     {
         transform.parent.GetComponent<SphereManager>().Zones.RemoveAt(transform.GetSiblingIndex() - 1);
+    }
+    public void initialize()
+    {
+        inPlay = true;
+    }
+    void OnApplicationQuit()
+    {
+        inPlay = false;
     }
 }
