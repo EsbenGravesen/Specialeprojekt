@@ -1,16 +1,6 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
-guid: 1b6921e2916dd444d922332c269e6260
-timeCreated: 1487966180
-=======
 guid: 09140555dd1e890469f7ce4ec4cb6d64
-timeCreated: 1487966159
->>>>>>> origin/master
-=======
-guid: 09140555dd1e890469f7ce4ec4cb6d64
-timeCreated: 1487966159
->>>>>>> master
+timeCreated: 1488010730
 licenseType: Free
 PluginImporter:
   serializedVersion: 1
@@ -26,6 +16,38 @@ PluginImporter:
       enabled: 0
       settings:
         DefaultValueInitialized: true
+    Linux:
+      enabled: 0
+      settings:
+        CPU: None
+    Linux64:
+      enabled: 0
+      settings:
+        CPU: None
+    LinuxUniversal:
+      enabled: 0
+      settings:
+        CPU: None
+    OSXIntel:
+      enabled: 0
+      settings:
+        CPU: None
+    OSXIntel64:
+      enabled: 0
+      settings:
+        CPU: None
+    OSXUniversal:
+      enabled: 0
+      settings:
+        CPU: None
+    Win:
+      enabled: 0
+      settings:
+        CPU: AnyCPU
+    Win64:
+      enabled: 0
+      settings:
+        CPU: None
   userData: 
   assetBundleName: 
   assetBundleVariant: 

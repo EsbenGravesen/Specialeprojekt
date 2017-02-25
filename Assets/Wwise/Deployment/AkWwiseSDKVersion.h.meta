@@ -1,11 +1,5 @@
 fileFormatVersion: 2
 guid: 70992e7c1447c414ab445cebe3defa69
-<<<<<<< HEAD
-timeCreated: 1487966160
-=======
-timeCreated: 1487966146
->>>>>>> origin/master
-licenseType: Free
 PluginImporter:
   serializedVersion: 1
   iconMap: {}
@@ -14,7 +8,7 @@ PluginImporter:
   isOverridable: 0
   platformData:
     Any:
-      enabled: 0
+      enabled: 1
       settings: {}
     Editor:
       enabled: 0
