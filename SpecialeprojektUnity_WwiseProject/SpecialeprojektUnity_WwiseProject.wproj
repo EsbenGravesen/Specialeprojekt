@@ -24,9 +24,6 @@
 						<Value Platform="Windows">GeneratedSoundBanks\Windows\</Value>
 					</ValueList>
 				</Property>
-<<<<<<< HEAD
-				<Property Name="SoundBankGenerateHeaderFile" Type="bool" Value="True" /><Property Name="SoundBankGenerateMaxAttenuationInfo" Type="bool" Value="True" /><Property Name="SoundBankHeaderFilePath" Type="string" Value="C:\Users\nicol\Documents\Specialeprojekt\Assets\StreamingAssets\Audio\GeneratedSoundBanks" />
-=======
 				<Property Name="GlobalVoiceInstancesLimit" Type="int16">
 					<ValueList>
 						<Value Platform="Mac">256</Value>
@@ -38,7 +35,6 @@
 				<Property Name="SoundBankGenerateHeaderFile" Type="bool" Value="True"/>
 				<Property Name="SoundBankGenerateMaxAttenuationInfo" Type="bool" Value="True"/>
 				<Property Name="SoundBankHeaderFilePath" Type="string" Value="C:\EsbensProjekt\Assets\StreamingAssets\Audio\GeneratedSoundBanks"/>
->>>>>>> c7cb5dcc1a8e78abc55a73ffac6597ab96dcd4ff
 				<Property Name="SoundBankPaths" Type="string">
 					<ValueList>
 						<Value Platform="Mac">GeneratedSoundBanks\Mac\</Value>

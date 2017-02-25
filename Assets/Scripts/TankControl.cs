@@ -9,6 +9,8 @@ public class TankControl : MonoBehaviour {
 	public float rotateSpeed = 2;
     public GameObject LeftMotor;
     public GameObject RightMotor;
+    public GameObject LeftMotorDown;
+    public GameObject RightMotorDown;
     float pEmission;
     float pDir;
 
@@ -22,11 +24,20 @@ public class TankControl : MonoBehaviour {
 			transform.position += transform.forward * Input.GetAxis("Vertical") * Time.deltaTime * speed;
 			transform.Rotate(-Vector3.up * -Input.GetAxis("Horizontal") * Time.deltaTime * rotateSpeed);
 
-        pEmission = 10 * Input.GetAxis("Vertical");
+        
+        pEmission = 100 * Mathf.Max(Mathf.Abs(Input.GetAxis("Vertical")), Mathf.Abs(Input.GetAxis("Horizontal")));
 
         LeftMotor.GetComponent<ParticleSystem>().emissionRate = pEmission;
-        LeftMotor.GetComponent<ParticleSystem>().startSpeed = Input.GetAxis("Horizontal");
-        RightMotor.GetComponent<ParticleSystem>().startSpeed = -Input.GetAxis("Horizontal");
         RightMotor.GetComponent<ParticleSystem>().emissionRate = pEmission;
+
+        LeftMotor.GetComponent<ParticleSystem>().startSpeed = 3* Input.GetAxis("Vertical") + Input.GetAxis("Horizontal");
+        RightMotor.GetComponent<ParticleSystem>().startSpeed = 3 * Input.GetAxis("Vertical") -Input.GetAxis("Horizontal");
+
+        LeftMotorDown.GetComponent<ParticleSystem>().emissionRate = pEmission;
+        RightMotorDown.GetComponent<ParticleSystem>().emissionRate = pEmission;
+
+        LeftMotorDown.GetComponent<ParticleSystem>().startSpeed = 3 * Input.GetAxis("Vertical") + Input.GetAxis("Horizontal");
+        RightMotorDown.GetComponent<ParticleSystem>().startSpeed = 3 * Input.GetAxis("Vertical") - Input.GetAxis("Horizontal");
+
     }
 }
