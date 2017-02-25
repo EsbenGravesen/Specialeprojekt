@@ -8,7 +8,16 @@ public class SphereManager : MonoBehaviour {
     public enum ColorType { Green, Yellow, Red};
     private float _tempo;
 	int isLocked;
-
+    [SerializeField]
+    [Range(1, 8)]
+    private int _switchCycle = 1;
+    public string switchCycle
+    {
+        get
+        {
+            return "Cycle" + _switchCycle;
+        }
+    }
     [System.Serializable]
     public struct point
     {
@@ -34,7 +43,7 @@ public class SphereManager : MonoBehaviour {
         transform.GetChild(0).GetComponent<OrbitManager>().initRot(tempo);
         ZoneManager[] zones = GetComponentsInChildren<ZoneManager>();
         for (int x = 0; x < zones.Length; ++x)
-            zones[x].initialize(); 
+            zones[x].initialize();
         transform.GetChild(0).GetComponent<OrbitManager>().initRot(tempo);
 		isLocked = 0;
 		GetComponent<MeshRenderer> ().enabled = false;
