@@ -2,28 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class OrbitManager : MonoBehaviour {
-    private bool rot = false;
-    private float rotSpeed;
+public class Orbit : MonoBehaviour {
+
+	public Color color;
+	public float speed = 1;
 	private bool isActive;
+	private Renderer render;
+
 	// Use this for initialization
 	void Start () {
-		
+		render = GetComponent<Renderer> ();
+		render.material.color = color;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        if(rot)
-            transform.RotateAround(transform.parent.position, transform.parent.forward, 360f / rotSpeed * Time.deltaTime);
-		
+		transform.RotateAround (transform.parent.position, Vector3.forward, 360 * Time.deltaTime * 1 / speed);
 	}
-    public void initRot(float speed)
-    {
-        rotSpeed = speed;
-		if (speed == 0)
-			rotSpeed = 1f;
-        rot = true;
-    }
 
 	public void Visible(bool visible){
 		isActive = visible;
