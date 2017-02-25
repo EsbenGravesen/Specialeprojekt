@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PluginInfo Project="SpecialeprojektUnity_WwiseProject" Platform="Linux" BasePlatform="Linux">
-	<Plugins/>
+	<Plugins>
+		<Plugin Name="Wwise Synth One" ID="9699330" DLL="SynthOne"/>
+	</Plugins>
 </PluginInfo>

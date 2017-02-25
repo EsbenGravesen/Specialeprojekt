@@ -1,6 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{7179CA73-8046-43E3-AAB7-E076A02B0894}" SchemaVersion="75">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{7179CA73-8046-43E3-AAB7-E076A02B0894}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{7179CA73-8046-43E3-AAB7-E076A02B0894}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Puzzles_Play" ID="{96A1E5F8-6057-4EE5-8F27-56D1BBFBF89E}">
+					<ChildrenList>
+						<Action Name="Play" ID="{321C118A-E371-43CE-A27B-CEE816A40398}" ShortID="826305830" Type="Play" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{43339A6E-D11C-4D00-9DF7-DD5D34946469}" Global="false">
+									<ObjectRef Name="Puzzles" ID="{B5E0EDFD-8E66-4346-AAC7-3D259441FF34}" WorkUnitID="{C10361E7-A85C-4DE2-8207-3D702146BEA8}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Puzzles_Stop" ID="{D47F5BAB-9FE8-4CBA-9736-F7D427B82D97}">
+					<ChildrenList>
+						<Action Name="Stop" ID="{3C549370-463F-43B1-A1A0-4D888C678363}" ShortID="72105701" Type="Stop" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{B96A603D-9109-4DAE-91BD-AD0115D727E2}" Global="false">
+									<ObjectRef Name="Puzzles" ID="{B5E0EDFD-8E66-4346-AAC7-3D259441FF34}" WorkUnitID="{C10361E7-A85C-4DE2-8207-3D702146BEA8}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Acceleration_Play" ID="{952141DA-13CA-46F5-A966-FA6A46D19FA6}">
+					<ChildrenList>
+						<Action Name="Play" ID="{B663A828-1293-44F7-A322-ECC7E673A300}" ShortID="870682373" Type="Play" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="0.3"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{CE2FE427-A558-432C-8474-0B91846AD90C}" Global="false">
+									<ObjectRef Name="Acceleration" ID="{9AFAF0A8-7C7E-4376-8FE7-59C8B555478A}" WorkUnitID="{3B6FEF66-99BA-4336-9EC1-70F1360F2FD5}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Acceleration_Stop" ID="{29F9743A-D095-4247-9038-6DC3AA5E1C65}">
+					<ChildrenList>
+						<Action Name="Stop" ID="{E6F3E943-1028-4E59-BEF1-955ED3B92307}" ShortID="378640794" Type="Stop" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="0.3"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{5BAC46D6-7B3C-4F18-B7DE-2B45DC8D2C44}" Global="false">
+									<ObjectRef Name="Acceleration" ID="{9AFAF0A8-7C7E-4376-8FE7-59C8B555478A}" WorkUnitID="{3B6FEF66-99BA-4336-9EC1-70F1360F2FD5}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

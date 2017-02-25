@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Wwise/Deployment/API/Generated/Linux/AkAudioOutputType_Linux.cs.meta
+guid: 8348efccaca041c4cacb1d6b78139363
+timeCreated: 1487966255
+=======
+guid: cf849e8a0a9a3264fbaa951f09c41858
+timeCreated: 1488016458
+>>>>>>> c7cb5dcc1a8e78abc55a73ffac6597ab96dcd4ff:Assets/LineSpawnerTEst.cs.meta
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,6 +1,21 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+guid: 7fa51c80fa4d6e347b0c89d777610f0c
+timeCreated: 1487966329
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+guid: 769b545c792ccd943968039b14fb073a
+timeCreated: 1487966190
+=======
 guid: a7d1a0bbbc48c3a488e03d0db721d939
 timeCreated: 1487966166
+>>>>>>> origin/master
+=======
+guid: a7d1a0bbbc48c3a488e03d0db721d939
+timeCreated: 1487966166
+>>>>>>> master
+>>>>>>> c7cb5dcc1a8e78abc55a73ffac6597ab96dcd4ff
 licenseType: Free
 PluginImporter:
   serializedVersion: 1

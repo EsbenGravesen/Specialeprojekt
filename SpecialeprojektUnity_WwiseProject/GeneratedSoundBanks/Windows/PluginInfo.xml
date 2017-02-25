@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PluginInfo Project="SpecialeprojektUnity_WwiseProject" Platform="Windows" BasePlatform="Windows">
-	<Plugins/>
+	<Plugins>
+		<Plugin Name="Wwise Synth One" ID="9699330" DLL="SynthOne"/>
+		<Plugin Name="Auro Headphone" ID="72093811" DLL="Auro"/>
+		<Plugin Name="Auro Panner" ID="72159350" DLL="Auro"/>
+	</Plugins>
 </PluginInfo>
