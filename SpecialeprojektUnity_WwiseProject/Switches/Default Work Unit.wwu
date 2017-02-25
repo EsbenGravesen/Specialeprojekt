@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{EFF59E7A-2185-4F64-AE0B-A00C96C3C850}" SchemaVersion="75">
 	<Switches>
-		<WorkUnit Name="Default Work Unit" ID="{EFF59E7A-2185-4F64-AE0B-A00C96C3C850}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{EFF59E7A-2185-4F64-AE0B-A00C96C3C850}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="Cycles" ID="{A1C28620-76E5-41F1-99E7-64550C95C23B}">
+					<ChildrenList>
+						<Switch Name="Cycle1" ID="{A9AC33F2-AE0B-4240-9B72-7E31F705C9F5}"/>
+						<Switch Name="Cycle2" ID="{57A5D784-B774-4F49-9815-32FAC121CB55}"/>
+						<Switch Name="Cycle3" ID="{EFC9F587-EB2E-41F1-B463-116FBBA79E39}"/>
+						<Switch Name="Cycle4" ID="{4BB222CD-48EE-4BF7-B18B-644EC8F2518C}"/>
+						<Switch Name="Cycle5" ID="{1E172A30-1258-4A4C-BFEC-75775C5EDE34}"/>
+						<Switch Name="Cycle6" ID="{0156B376-526B-4FCE-98A5-A49A5955DE90}"/>
+						<Switch Name="Cycle7" ID="{54BA68B6-DDEC-4EFD-848B-78166695F191}"/>
+						<Switch Name="Cycle8" ID="{35738E6F-E68F-4D04-9CFD-6DB602FD148B}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="Elements" ID="{9262CFB0-67C2-45ED-9FC0-7C3DA07BB471}">
+					<ChildrenList>
+						<Switch Name="Zone1" ID="{94C6BCF5-C755-4E76-BCDE-A0FB4AB5452F}"/>
+						<Switch Name="Zone2" ID="{1CB0FE5C-AFBE-45DC-B0E6-A0FAA238D96D}"/>
+						<Switch Name="Zone3" ID="{FA572533-B2E1-481C-A97A-87648CD832A6}"/>
+						<Switch Name="Sphere" ID="{368C53D9-BD24-4CFF-BFD9-B2158E7318D5}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</Switches>
 </WwiseDocument>

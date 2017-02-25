@@ -1,6 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{1E244408-C855-4C59-9B5C-E2C98C0A793B}" SchemaVersion="75">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{1E244408-C855-4C59-9B5C-E2C98C0A793B}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{1E244408-C855-4C59-9B5C-E2C98C0A793B}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="PuzzleCount" ID="{D57D1325-1E1C-4661-8058-E24351543341}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.2"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{8349CEB1-8CE1-4BEB-B868-6ECFE67AB795}"/>
+						<State Name="Puzzle1" ID="{C0D434ED-36E3-4CC1-8742-B5D37F2DBC77}"/>
+						<State Name="Puzzle2" ID="{C22A2819-1D1E-4DCD-A84E-4D04CB278636}"/>
+						<State Name="Puzzle3" ID="{E466AA1A-753A-49AF-8B34-CFB2CF4543F2}"/>
+						<State Name="Puzzle4" ID="{EE3EFE8D-D2A9-4E0A-90C9-69136D0CFD94}"/>
+						<State Name="Puzzle5" ID="{4E8D5128-DB28-4342-9831-7F54AB41FFAF}"/>
+						<State Name="Puzzle6" ID="{FC9D0423-2832-4F8E-932D-8F1CC34539FD}"/>
+						<State Name="Puzzle7" ID="{51583FFC-B739-4E10-A85A-EC0DEA564078}"/>
+						<State Name="Puzzle8" ID="{F117D868-A621-44BC-93CB-D586F21C2589}"/>
+						<State Name="Puzzle9" ID="{5155B7DD-A96B-476F-A046-71DB8FDFE135}"/>
+						<State Name="Puzzle10" ID="{2BE7CCC0-5DBB-4ADC-9CE1-FA30A9BD78E2}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="GameState" ID="{9342BFC2-6176-4276-A1DE-CFF81373E92A}">
+					<ChildrenList>
+						<State Name="None" ID="{D34BB176-1580-43F9-A426-AA4337A10420}"/>
+						<State Name="Menu" ID="{D5C8EE11-C621-4DC4-9615-6C4C0A3C6423}"/>
+						<State Name="Game" ID="{2BFC3483-E12E-4D40-95EC-C6DF76C5C2CC}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>

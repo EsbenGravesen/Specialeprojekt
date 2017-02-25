@@ -3,7 +3,43 @@
 	<Busses>
 		<WorkUnit Name="Default Work Unit" ID="{39EB6BD0-848A-4801-8BD4-EF3E958A057F}" PersistMode="Standalone">
 			<ChildrenList>
-				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
+				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<ChildrenList>
+						<Bus Name="3D" ID="{28A58E72-EA68-4FDF-BCC3-1506125895FC}">
+							<PropertyList>
+								<Property Name="BusChannelConfig" Type="int32">
+									<ValueList>
+										<Value>803467534</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Effect0">
+									<Custom>
+										<Effect Name="Auro Headphone (Custom)" ID="{0133660E-9A40-4ADE-A75C-FCD8BF0F3B49}" ShortID="505757189" PluginName="Auro Headphone" CompanyID="263" PluginID="1100" PluginType="3">
+											<PropertyList>
+												<Property Name="ER_Delay" Type="Real32" Value="2.5"/>
+												<Property Name="Reverb_alpha" Type="Real32" Value="0.3"/>
+												<Property Name="Reverb_tr60" Type="Real32" Value="1.25"/>
+												<Property Name="Wall_back" Type="Real32" Value="6.5"/>
+												<Property Name="Wall_bottom" Type="Real32" Value="6.75"/>
+												<Property Name="Wall_front" Type="Real32" Value="9.25"/>
+												<Property Name="Wall_left" Type="Real32" Value="7.25"/>
+												<Property Name="Wall_right" Type="Real32" Value="7.25"/>
+												<Property Name="Wall_top" Type="Real32" Value="8.5"/>
+											</PropertyList>
+										</Effect>
+									</Custom>
+								</Reference>
+								<Reference Name="Mixer">
+									<Custom>
+										<Effect Name="Auro Panner (Custom)" ID="{BFE7255F-88C0-4CE9-9B11-916934F14281}" ShortID="129196486" PluginName="Auro Panner" CompanyID="263" PluginID="1101" PluginType="6"/>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+						</Bus>
+					</ChildrenList>
+				</Bus>
 				<Bus Name="Master Secondary Bus" ID="{D2E0BC7E-7B3F-4FFE-A670-FAE02761B631}"/>
 				<MotionBus Name="Master Motion Bus" ID="{20A630BA-3398-4676-B927-1004DFE41FD8}"/>
 			</ChildrenList>

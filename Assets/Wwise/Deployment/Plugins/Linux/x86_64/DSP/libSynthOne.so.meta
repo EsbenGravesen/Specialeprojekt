@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 38bf12e88bc85974d807da6b244a9ae4
-timeCreated: 1488020706
+guid: d523e3c2bef7164409df325c17503214
+timeCreated: 1488020895
 licenseType: Free
 PluginImporter:
   serializedVersion: 1
@@ -13,23 +13,21 @@ PluginImporter:
       enabled: 0
       settings: {}
     Editor:
-      enabled: 1
+      enabled: 0
       settings:
-        CPU: X86
         DefaultValueInitialized: true
-        OS: Windows
     Linux:
       enabled: 0
       settings:
         CPU: None
     Linux64:
-      enabled: 0
+      enabled: 1
       settings:
-        CPU: None
+        CPU: x86_64
     LinuxUniversal:
-      enabled: 0
+      enabled: 1
       settings:
-        CPU: None
+        CPU: x86_64
     OSXIntel:
       enabled: 0
       settings:
@@ -43,9 +41,9 @@ PluginImporter:
       settings:
         CPU: None
     Win:
-      enabled: 1
+      enabled: 0
       settings:
-        CPU: AnyCPU
+        CPU: None
     Win64:
       enabled: 0
       settings:
