@@ -7,13 +7,12 @@ public class SphereManager : MonoBehaviour {
     public static int ZoneAmount;
     public float _tempo;
 	bool isLocked;
-
+    public enum ColorType { Green, Yellow, Red};
     [System.Serializable]
     public struct point
     {
-        public Color zoneColor;
+        public ColorType ZoneColor;
         public Vector2 position;
-        public int type;
     }
     public List<point> Zones = new List<point>();
     public float tempo {
@@ -31,9 +30,10 @@ public class SphereManager : MonoBehaviour {
     }
 
 	void Start () {
-        print(tempo);
-		print ("_tempo " + _tempo);
         transform.GetChild(0).GetComponent<OrbitManager>().initRot(tempo);
+        ZoneManager[] zones = GetComponentsInChildren<ZoneManager>();
+        for (int x = 0; 0 < zones.Length; ++x)
+            zones[x].initialize();
 		isLocked = false;
 		GetComponent<MeshRenderer> ().enabled = false;
 	}
