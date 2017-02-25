@@ -5,15 +5,10 @@ using UnityEngine;
 public class SphereManager : MonoBehaviour {
     public Vector2 CycleTempo;
     public static int ZoneAmount;
-<<<<<<< HEAD
-    public float _tempo;
-	bool isLocked;
     public enum ColorType { Green, Yellow, Red};
-=======
     private float _tempo;
 	int isLocked;
 
->>>>>>> c58c8ebb4458847d28a92e8bedfa3c5dcead1b59
     [System.Serializable]
     public struct point
     {
@@ -36,17 +31,13 @@ public class SphereManager : MonoBehaviour {
     }
 
 	void Start () {
-<<<<<<< HEAD
         transform.GetChild(0).GetComponent<OrbitManager>().initRot(tempo);
         ZoneManager[] zones = GetComponentsInChildren<ZoneManager>();
         for (int x = 0; 0 < zones.Length; ++x)
             zones[x].initialize();
-		isLocked = false;
-=======
         print(tempo);
         transform.GetChild(0).GetComponent<OrbitManager>().initRot(tempo);
 		isLocked = 0;
->>>>>>> c58c8ebb4458847d28a92e8bedfa3c5dcead1b59
 		GetComponent<MeshRenderer> ().enabled = false;
 	}
 	
