@@ -1,22 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-guid: 30fec3f2b64a8d642a4005438a52efa4
-timeCreated: 1487966358
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-guid: b87613bddfc61f8428c9b4add96feb8f
-timeCreated: 1487966191
-=======
 guid: 0f29cc2bb46fbec44b56e8b6df6a5799
-timeCreated: 1487966165
->>>>>>> origin/master
-=======
-guid: 0f29cc2bb46fbec44b56e8b6df6a5799
-timeCreated: 1487966165
->>>>>>> master
->>>>>>> c7cb5dcc1a8e78abc55a73ffac6597ab96dcd4ff
-licenseType: Free
 PluginImporter:
   serializedVersion: 1
   iconMap: {}
@@ -25,7 +8,7 @@ PluginImporter:
   isOverridable: 0
   platformData:
     Any:
-      enabled: 0
+      enabled: 1
       settings: {}
     Editor:
       enabled: 0

@@ -14,7 +14,7 @@ public class ZoneManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         GetComponent<MeshRenderer>().sharedMaterial.color = transform.parent.GetComponent<SphereManager>().Zones[transform.GetSiblingIndex() - 1].zoneColor;
-        transform.position = transform.parent.GetComponent<SphereManager>().Zones[transform.GetSiblingIndex() - 1].position;
+        //transform.position = transform.parent.GetComponent<SphereManager>().Zones[transform.GetSiblingIndex() - 1].position;
     }
     void OnDestroy()
     {

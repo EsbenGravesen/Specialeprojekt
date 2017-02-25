@@ -1,15 +1,5 @@
 fileFormatVersion: 2
 guid: 671792d9e81e5cc41a0987a440716bfb
-<<<<<<< HEAD
-timeCreated: 1487966305
-=======
-<<<<<<< HEAD
-timeCreated: 1488020895
-=======
-timeCreated: 1488010149
->>>>>>> e63e0ceffc9732b1f9cd85924fc5fc7f2c451a5c
->>>>>>> c7cb5dcc1a8e78abc55a73ffac6597ab96dcd4ff
-licenseType: Free
 PluginImporter:
   serializedVersion: 1
   iconMap: {}
@@ -21,58 +11,18 @@ PluginImporter:
       enabled: 0
       settings: {}
     Editor:
-      enabled: 0
+      enabled: 1
       settings:
-        CPU: AnyCPU
         DefaultValueInitialized: true
-<<<<<<< HEAD
-=======
-        OS: OSX
->>>>>>> c7cb5dcc1a8e78abc55a73ffac6597ab96dcd4ff
-    Linux:
-      enabled: 0
-      settings:
-        CPU: None
-    Linux64:
-      enabled: 0
-      settings:
-        CPU: None
-    LinuxUniversal:
-      enabled: 0
-      settings:
-        CPU: None
     OSXIntel:
-<<<<<<< HEAD
-      enabled: 0
-      settings:
-        CPU: AnyCPU
-    OSXIntel64:
-      enabled: 0
-      settings:
-        CPU: AnyCPU
-    OSXUniversal:
-      enabled: 0
-=======
       enabled: 1
-      settings:
-        CPU: AnyCPU
+      settings: {}
     OSXIntel64:
       enabled: 1
-      settings:
-        CPU: AnyCPU
+      settings: {}
     OSXUniversal:
       enabled: 1
->>>>>>> c7cb5dcc1a8e78abc55a73ffac6597ab96dcd4ff
-      settings:
-        CPU: AnyCPU
-    Win:
-      enabled: 0
-      settings:
-        CPU: None
-    Win64:
-      enabled: 0
-      settings:
-        CPU: None
+      settings: {}
   userData: 
   assetBundleName: 
   assetBundleVariant: 

@@ -5,6 +5,7 @@ using UnityEngine;
 public class OrbitManager : MonoBehaviour {
     private bool rot = false;
     private float rotSpeed;
+	private bool isActive;
 	// Use this for initialization
 	void Start () {
 		
@@ -19,6 +20,17 @@ public class OrbitManager : MonoBehaviour {
     public void initRot(float speed)
     {
         rotSpeed = speed;
+		if (speed == 0)
+			rotSpeed = 1f;
         rot = true;
     }
+
+	public void Visible(bool visible){
+		isActive = visible;
+		GetComponent<MeshRenderer> ().enabled = visible;
+	}
+
+	public bool IsActive(){
+		return isActive;
+	}
 }

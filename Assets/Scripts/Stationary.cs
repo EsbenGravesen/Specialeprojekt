@@ -9,14 +9,14 @@ public class Stationary : MonoBehaviour {
 	public int type;
 	private bool active;
 	private Renderer render;
-	private SphereControl sc;
+	private SphereManager sc;
 
 
 	// Use this for initialization
 	void Start () {
 		render = GetComponent<Renderer> ();
 		render.material.color = color;
-		sc = transform.parent.GetComponent<SphereControl> ();
+		sc = transform.parent.GetComponent<SphereManager> ();
 	}
 	
 	// Update is called once per frame
@@ -35,7 +35,7 @@ public class Stationary : MonoBehaviour {
 	}
 
 	public bool Activate(){
-		if(sc.IsLocked() && active){
+		if(sc.IsLocked()){
 			transform.parent.parent.GetComponent<PuzzleManager> ().UnLink (transform.parent.gameObject);
 			return true;
 		}

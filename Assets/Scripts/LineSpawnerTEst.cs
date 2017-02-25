@@ -7,7 +7,7 @@ public class LineSpawnerTEst : MonoBehaviour {
     public GameObject LinePrefab;
     public List<GameObject> ListOfGO;
 
-    public void LineDrawer(List<Vector3> pos)
+	public List<GameObject> LineDrawer(List<Vector3> pos)
     {
         ListOfGO = new List<GameObject>();
         int linesNUM = 0;
@@ -30,7 +30,6 @@ public class LineSpawnerTEst : MonoBehaviour {
                 xLine++;
             }
         }
-
-
+		return ListOfGO;
     }
 }
