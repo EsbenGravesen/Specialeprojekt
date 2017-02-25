@@ -5,8 +5,8 @@ using UnityEngine;
 public class SphereManager : MonoBehaviour {
     public Vector2 CycleTempo;
     public static int ZoneAmount;
-    public float _tempo;
-	bool isLocked;
+    private float _tempo;
+	int isLocked;
 
     [System.Serializable]
     public struct point
@@ -32,9 +32,8 @@ public class SphereManager : MonoBehaviour {
 
 	void Start () {
         print(tempo);
-		print ("_tempo " + _tempo);
         transform.GetChild(0).GetComponent<OrbitManager>().initRot(tempo);
-		isLocked = false;
+		isLocked = 0;
 		GetComponent<MeshRenderer> ().enabled = false;
 	}
 	
@@ -45,11 +44,16 @@ public class SphereManager : MonoBehaviour {
 
 
 	public bool IsLocked(){
-		return isLocked;
+		return isLocked != 0;
 	}
 
-	public void SetLocked(bool locked){
+	public void SetLocked(int locked){
 		isLocked = locked;
+	}
+
+	public GameObject GetLocked()
+	{
+		return transform.GetChild (isLocked).gameObject;
 	}
 
     public void AddPoint()
