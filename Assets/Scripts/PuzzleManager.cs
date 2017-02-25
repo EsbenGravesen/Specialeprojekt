@@ -12,7 +12,8 @@ public class PuzzleManager : MonoBehaviour {
 	public float baseTempo;
 	public float RotationDiameter;
 	public float SphereDiameter;
-	public float ZoneDiameter;
+    public float ZoneDiameter;
+	public float AreaDiameter;
 	Mesh mesh;
 	bool meshCreated = false;
 

@@ -8,16 +8,13 @@ public class ZoneManager : MonoBehaviour {
     const float _2pi = 2.0f * Mathf.PI;
     Color[] zoneCols = new Color[3];
 	// Use this for initialization
-	void Start () {
-        if (!inPlay)
-        {
-            zoneCols[0] = new Color(0, 1, 0, .6f);
-            zoneCols[1] = new Color(1, 1, 0, .6f);
-            zoneCols[2] = new Color(1, 0, 0, .6f);
-            Material tempMaterial = new Material(GetComponent<MeshRenderer>().sharedMaterial);
-            tempMaterial.color = zoneCols[transform.parent.GetComponent<SphereManager>().Zones[transform.GetSiblingIndex() - 1].ZoneColor.GetHashCode()];
-            GetComponent<MeshRenderer>().sharedMaterial = tempMaterial;
-        }
+    void Start () {
+        zoneCols[0] = new Color(0, 1, 0, .6f);
+        zoneCols[1] = new Color(1, 1, 0, .6f);
+        zoneCols[2] = new Color(1, 0, 0, .6f);
+        Material tempMaterial = new Material(GetComponent<MeshRenderer>().sharedMaterial);
+        tempMaterial.color = zoneCols[transform.parent.GetComponent<SphereManager>().Zones[transform.GetSiblingIndex() - 1].ZoneColor.GetHashCode()];
+        GetComponent<MeshRenderer>().sharedMaterial = tempMaterial;
     }
 	
 	// Update is called once per frame
@@ -32,6 +29,7 @@ public class ZoneManager : MonoBehaviour {
             float cos = -Mathf.Sin(r1);
             float sin = Mathf.Cos(r1);
             transform.position = new Vector3(cos * transform.parent.parent.GetComponent<PuzzleManager>().RotationDiameter / 2.0f, sin * transform.parent.parent.GetComponent<PuzzleManager>().RotationDiameter / 2.0f, 0f);
+            transform.localScale = Vector3.one * transform.parent.parent.GetComponent<PuzzleManager>().ZoneDiameter / 2.0f;
         }
     }
     void OnDestroy()
