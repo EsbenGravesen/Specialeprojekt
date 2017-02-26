@@ -31,6 +31,8 @@ public class OrbitManager : MonoBehaviour {
 	public void Visible(bool visible){
 		isActive = visible;
 		GetComponent<MeshRenderer> ().enabled = visible;
+		var emi = GetComponent<ParticleSystem> ().emission;
+		emi.enabled = visible;
 	}
 
 	public bool IsActive(){
