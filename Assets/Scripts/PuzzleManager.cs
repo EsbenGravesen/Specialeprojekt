@@ -19,12 +19,14 @@ public class PuzzleManager : MonoBehaviour {
     [SerializeField]
     [Range(1, 8)]
     int _CycleSwitch = 1;
-
-	// Use this for initialization
-	void Start () {
+    
+    private Transform Player;
+    // Use this for initialization
+    void Start () {
 		linked = new List<List<GameObject>> ();
 		lines = new List<List<GameObject>> ();
-	}
+        Player = GameObject.Find("SpaceShuttle").transform;
+    }
 
     public string CycleSwitch {
         get
@@ -32,6 +34,14 @@ public class PuzzleManager : MonoBehaviour {
             return "Cycle" + _CycleSwitch;
         }
     }
+    void Update()
+    {
+        if(Vector3.Distance(Player.position, transform.position) > AreaDiameter / 2.0f)
+        {
+            Player.GetComponent<TankControl>().redAlert(transform);
+        }
+    }
+
     private void OnEnable()
     {
         AkSoundEngine.SetState("PuzzleCount", gameObject.name);
