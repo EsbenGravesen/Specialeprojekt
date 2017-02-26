@@ -34,7 +34,6 @@ public class PuzzleManager : MonoBehaviour {
     }
     private void OnEnable()
     {
-        AkSoundEngine.RegisterGameObj(gameObject);
         AkSoundEngine.SetState("PuzzleCount", gameObject.name);
     }
 

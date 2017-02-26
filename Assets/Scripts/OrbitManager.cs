@@ -12,12 +12,11 @@ public class OrbitManager : MonoBehaviour {
 	}
     void OnEnable()
     {
-        AkSoundEngine.RegisterGameObj(gameObject);
         AkSoundEngine.SetSwitch("Elements", "Sphere", gameObject);
         AkSoundEngine.SetSwitch("Cycles", transform.parent.parent.GetComponent<PuzzleManager>().CycleSwitch, gameObject);
         AkSoundEngine.PostEvent("Puzzles_Play", gameObject);
     }
-    // Update is called once per frame
+    Update is called once per frame
     void Update () {
         if(rot)
             transform.RotateAround(transform.parent.position, transform.parent.forward, 360f / rotSpeed * Time.deltaTime);
