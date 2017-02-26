@@ -21,6 +21,8 @@ public class Stationary : MonoBehaviour {
         render = GetComponent<Renderer> ();
 		render.material.color = color;
 		sc = transform.parent.GetComponent<SphereManager> ();
+		GetComponent<MeshRenderer> ().enabled = false;
+		GetComponent<ParticleSystem> ().startColor = zoneCols[transform.parent.GetComponent<SphereManager>().Zones[transform.GetSiblingIndex() - 1].ZoneColor.GetHashCode()];
 	}
 
     void OnEnable()
@@ -41,12 +43,12 @@ public class Stationary : MonoBehaviour {
         if (!sc.IsLocked()){
 			if(Vector3.Distance(transform.parent.GetChild(0).position, transform.position) < 1f){
 				active = true;
-				render.material.color = render.material.color * 0.9f;
+				GetComponent<ParticleSystem> ().startColor = GetComponent<ParticleSystem> ().startColor * 0.9f;
 				
 			}
 			else{
 				active = false;
-				render.material.color = zoneCols[transform.parent.GetComponent<SphereManager>().Zones[transform.GetSiblingIndex() - 1].ZoneColor.GetHashCode()];
+				GetComponent<ParticleSystem> ().startColor = zoneCols[transform.parent.GetComponent<SphereManager>().Zones[transform.GetSiblingIndex() - 1].ZoneColor.GetHashCode()];
 			}
 		}
 	}

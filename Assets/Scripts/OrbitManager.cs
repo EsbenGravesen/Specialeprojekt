@@ -8,7 +8,8 @@ public class OrbitManager : MonoBehaviour {
 	private bool isActive;
 	// Use this for initialization
 	void Start () {
-		
+		GetComponent<MeshRenderer> ().enabled = false;
+		GetComponent<ParticleSystem> ().startColor = new Color (1, 1, 1);
 	}
     void OnEnable()
     {
@@ -16,7 +17,7 @@ public class OrbitManager : MonoBehaviour {
         AkSoundEngine.SetSwitch("Cycles", transform.parent.parent.GetComponent<PuzzleManager>().CycleSwitch, gameObject);
         AkSoundEngine.PostEvent("Puzzles_Play", gameObject);
     }
-    Update is called once per frame
+    //Update is called once per frame
     void Update () {
         if(rot)
             transform.RotateAround(transform.parent.position, transform.parent.forward, 360f / rotSpeed * Time.deltaTime);

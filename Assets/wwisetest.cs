@@ -8,7 +8,7 @@ public class wwisetest : MonoBehaviour  {
     // Use this for initialization
     void Start()
     {
-        AkSoundEngine.SetSwitch("")
+        //AkSoundEngine.SetSwitch("")
     }
 	// Update is called once per frame
 	void Update () {
