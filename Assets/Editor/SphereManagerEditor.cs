@@ -10,9 +10,9 @@ public class SphereManagerEditor : Editor
         DrawDefaultInspector();
 
         SphereManager myScript = (SphereManager)target;
-        if (GUILayout.Button("Add Point"))
+        if (GUILayout.Button("Add Zone"))
         {
-            myScript.AddPoint();
+            myScript.AddZone();
         }
     }
 }
