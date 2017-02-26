@@ -4,6 +4,22 @@
 		<WorkUnit Name="Puzzles" ID="{C10361E7-A85C-4DE2-8207-3D702146BEA8}" PersistMode="Standalone">
 			<ChildrenList>
 				<SwitchContainer Name="Puzzles" ID="{B5E0EDFD-8E66-4346-AAC7-3D259441FF34}" ShortID="224165004">
+					<PropertyList>
+						<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+						<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>64</Value>
+							</ValueList>
+						</Property>
+						<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
+						<Property Name="PriorityDistanceFactor" Type="bool" Value="True"/>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="AttachableMixerInput">
 							<Custom>
@@ -333,7 +349,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -741,7 +757,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -1149,7 +1165,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -1557,7 +1573,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -1965,7 +1981,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -2373,7 +2389,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -2781,7 +2797,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -3189,7 +3205,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -3696,7 +3712,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -4104,7 +4120,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -4512,7 +4528,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -4920,7 +4936,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -5328,7 +5344,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -5736,7 +5752,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -6144,7 +6160,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -6552,7 +6568,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -7052,7 +7068,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -7460,7 +7476,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -7868,7 +7884,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -8276,7 +8292,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -8684,7 +8700,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -9092,7 +9108,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -9500,7 +9516,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -9908,7 +9924,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -10408,7 +10424,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -10816,7 +10832,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -11224,7 +11240,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -11632,7 +11648,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -12040,7 +12056,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -12448,7 +12464,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -12856,7 +12872,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -13264,7 +13280,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -13764,7 +13780,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -14172,7 +14188,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -14580,7 +14596,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -14988,7 +15004,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -15396,7 +15412,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -15804,7 +15820,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -16212,7 +16228,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -16620,7 +16636,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -17120,7 +17136,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -17528,7 +17544,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -17936,7 +17952,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -18344,7 +18360,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -18752,7 +18768,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -19160,7 +19176,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -19568,7 +19584,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -19976,7 +19992,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -20476,7 +20492,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -20884,7 +20900,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -21292,7 +21308,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -21700,7 +21716,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -22108,7 +22124,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -22516,7 +22532,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -22924,7 +22940,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -23332,7 +23348,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -23832,7 +23848,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -24240,7 +24256,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -24648,7 +24664,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -25056,7 +25072,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -25464,7 +25480,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -25872,7 +25888,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -26280,7 +26296,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -26688,7 +26704,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -27188,7 +27204,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -27596,7 +27612,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -28004,7 +28020,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -28412,7 +28428,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -28820,7 +28836,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -29228,7 +29244,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -29636,7 +29652,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -30044,7 +30060,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -30544,7 +30560,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -30952,7 +30968,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -31360,7 +31376,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -31768,7 +31784,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -32176,7 +32192,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -32584,7 +32600,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -32992,7 +33008,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -33400,7 +33416,7 @@
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-24</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>

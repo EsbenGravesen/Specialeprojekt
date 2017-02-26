@@ -20,24 +20,19 @@
 										</Point>
 										<Point>
 											<XPos>5</XPos>
-											<YPos>-18</YPos>
+											<YPos>-36</YPos>
 											<Flags>0</Flags>
-											<SegmentShape>Exp2</SegmentShape>
+											<SegmentShape>SCurve</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>15</XPos>
-											<YPos>-12</YPos>
-											<Flags>0</Flags>
-										</Point>
-										<Point>
-											<XPos>20</XPos>
-											<YPos>-12</YPos>
+											<XPos>30</XPos>
+											<YPos>-15</YPos>
 											<Flags>0</Flags>
 											<SegmentShape>SCurve</SegmentShape>
 										</Point>
 										<Point>
 											<XPos>100</XPos>
-											<YPos>-24</YPos>
+											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>
 									</PointList>
