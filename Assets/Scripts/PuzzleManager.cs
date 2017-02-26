@@ -16,6 +16,9 @@ public class PuzzleManager : MonoBehaviour {
 	public float AreaDiameter;
 	Mesh mesh;
 	bool meshCreated = false;
+    [SerializeField]
+    [Range(1, 8)]
+    int _CycleSwitch = 1;
 
 	// Use this for initialization
 	void Start () {
@@ -23,7 +26,18 @@ public class PuzzleManager : MonoBehaviour {
 		lines = new List<List<GameObject>> ();
 	}
 
-	public void Activated(int ringIndex, int orbIndex)
+    public string CycleSwitch {
+        get
+        {
+            return "Cycle" + _CycleSwitch;
+        }
+    }
+    private void OnEnable()
+    {
+        AkSoundEngine.SetState("PuzzleCount", gameObject.name);
+    }
+
+    public void Activated(int ringIndex, int orbIndex)
 	{
 		bool OtherActive = false;
 		List<GameObject> newLink = new List<GameObject> ();

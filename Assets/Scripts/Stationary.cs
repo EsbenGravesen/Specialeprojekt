@@ -25,7 +25,8 @@ public class Stationary : MonoBehaviour {
 
     void OnEnable()
     {
-        //AkSoundEngine.SetSwitch("Cycles",transform.parent.parent.GetComponent<PuzzleManager>())
+        AkSoundEngine.SetSwitch("Cycles", transform.parent.parent.GetComponent<PuzzleManager>().CycleSwitch, gameObject);
+        AkSoundEngine.SetSwitch("Elements", "Zone"+transform.parent.GetComponent<SphereManager>().Zones[transform.GetSiblingIndex() - 1].ZoneColor.GetHashCode()+1,gameObject);
         AkSoundEngine.PostEvent("Puzzles_Play", gameObject);
     }
     void OnDisable()

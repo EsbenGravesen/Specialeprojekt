@@ -10,9 +10,13 @@ public class OrbitManager : MonoBehaviour {
 	void Start () {
 		
 	}
-	
-	// Update is called once per frame
-	void Update () {
+    void OnEnable()
+    {
+        AkSoundEngine.SetSwitch("Elements", "Sphere", gameObject);
+        AkSoundEngine.PostEvent("Puzzles_Play", gameObject);
+    }
+    // Update is called once per frame
+    void Update () {
         if(rot)
             transform.RotateAround(transform.parent.position, transform.parent.forward, 360f / rotSpeed * Time.deltaTime);
 	}
