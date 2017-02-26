@@ -40,7 +40,7 @@ State	ID	Name	State Group			Notes
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	821026704	DistZoneSphere			\Default Work Unit\DistZoneSphere	
-	1493153371	PlayerSpeed			\Default Work Unit\PlayerSpeed	
+	4068002537	PlayerAcc			\Default Work Unit\PlayerAcc	
 
 Modulator Envelope	ID	Name			Wwise Object Path	Notes
 	8627365	Modulator Envelope (Custom)				
