@@ -25,6 +25,11 @@ public class TankControl : MonoBehaviour {
     }
     // Update is called once per frame
     void FixedUpdate () {
+		//if(Input.GetKey(KeyCode.Space))
+		//	rig.velocity += transform.forward * Time.deltaTime * speed;
+		//if(Input.GetKey(KeyCode.LeftControl))
+		//	rig.velocity -= transform.forward * Time.deltaTime * speed;
+
 
             rig.velocity -= transform.forward * Input.GetAxis("Gas") * Time.deltaTime * speed;
         //transform.position += transform.forward * Input.GetAxis("Gas") * Time.deltaTime * speed;
