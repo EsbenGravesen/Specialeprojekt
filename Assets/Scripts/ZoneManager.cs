@@ -28,7 +28,7 @@ public class ZoneManager : MonoBehaviour {
                 transform.parent.GetComponent<SphereManager>().Zones[transform.GetSiblingIndex() - 1].position.y * _2pi;
             float cos = -Mathf.Sin(r1);
             float sin = Mathf.Cos(r1);
-            transform.position = new Vector3(cos * transform.parent.parent.GetComponent<PuzzleManager>().RotationDiameter / 2.0f, sin * transform.parent.parent.GetComponent<PuzzleManager>().RotationDiameter / 2.0f, 0f);
+			transform.position = transform.parent.position + new Vector3(cos * transform.parent.parent.GetComponent<PuzzleManager>().RotationDiameter / 2.0f, sin * transform.parent.parent.GetComponent<PuzzleManager>().RotationDiameter / 2.0f, 0f);
             transform.localScale = Vector3.one * transform.parent.parent.GetComponent<PuzzleManager>().ZoneDiameter / 2.0f;
         }
     }

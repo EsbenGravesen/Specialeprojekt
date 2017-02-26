@@ -8,7 +8,7 @@ public class OrbitManager : MonoBehaviour {
 	private bool isActive;
 	// Use this for initialization
 	void Start () {
-		
+		GetComponent<MeshRenderer> ().enabled = false;
 	}
     void OnEnable()
     {

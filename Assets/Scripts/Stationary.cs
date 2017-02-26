@@ -15,9 +15,9 @@ public class Stationary : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        zoneCols[0] = new Color(0, 1, 0, .6f);
-        zoneCols[1] = new Color(1, 1, 0, .6f);
-        zoneCols[2] = new Color(1, 0, 0, .6f);
+        zoneCols[0] = new Color(0, 0.3f, 0, .6f);
+        zoneCols[1] = new Color(0.3f, 0.3f, 0, .6f);
+        zoneCols[2] = new Color(0.3f, 0, 0, .6f);
         render = GetComponent<Renderer> ();
 		render.material.color = color;
 		sc = transform.parent.GetComponent<SphereManager> ();
@@ -41,13 +41,21 @@ public class Stationary : MonoBehaviour {
 
         if (!sc.IsLocked()){
 			if(Vector3.Distance(transform.parent.GetChild(0).position, transform.position) < 1f){
+				if (!active){
+					GetComponent<ParticleSystem> ().startColor = GetComponent<ParticleSystem> ().startColor * 3f;
+					var shape = GetComponent<ParticleSystem> ().shape;
+					shape.radius = 0.3f;
+				}
 				active = true;
-				GetComponent<ParticleSystem> ().startColor = GetComponent<ParticleSystem> ().startColor * 0.9f;
 				
 			}
 			else{
+				if(active){
+					GetComponent<ParticleSystem> ().startColor = zoneCols[transform.parent.GetComponent<SphereManager>().Zones[transform.GetSiblingIndex() - 1].ZoneColor.GetHashCode()];
+					var shape = GetComponent<ParticleSystem> ().shape;
+					shape.radius = 0.1f;
+				}
 				active = false;
-				GetComponent<ParticleSystem> ().startColor = zoneCols[transform.parent.GetComponent<SphereManager>().Zones[transform.GetSiblingIndex() - 1].ZoneColor.GetHashCode()];
 			}
 		}
 	}
