@@ -90,7 +90,7 @@ namespace AK
     namespace GAME_PARAMETERS
     {
         static const AkUniqueID DISTZONESPHERE = 821026704U;
-        static const AkUniqueID PLAYERSPEED = 1493153371U;
+        static const AkUniqueID PLAYERACC = 4068002537U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS

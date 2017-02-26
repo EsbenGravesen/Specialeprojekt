@@ -26,7 +26,7 @@
 										<RTPC Name="" ID="{4FEBC2EB-6F1D-41F0-AA00-AD5791A7D844}" ShortID="383989087">
 											<ReferenceList>
 												<Reference Name="ControlInput">
-													<ObjectRef Name="PlayerSpeed" ID="{B7F8491B-187E-42A5-A63D-F5BD2690FFB8}" WorkUnitID="{40907770-B0F2-4733-B406-6FC08CC457AD}"/>
+													<ObjectRef Name="PlayerAcc" ID="{B7F8491B-187E-42A5-A63D-F5BD2690FFB8}" WorkUnitID="{40907770-B0F2-4733-B406-6FC08CC457AD}"/>
 												</Reference>
 											</ReferenceList>
 											<Curve Name="" ID="{6D3B3001-C5FA-4E0F-B12A-459B57D85400}">
@@ -41,7 +41,7 @@
 														<SegmentShape>Log2</SegmentShape>
 													</Point>
 													<Point>
-														<XPos>100</XPos>
+														<XPos>1</XPos>
 														<YPos>700</YPos>
 														<Flags>37</Flags>
 													</Point>
@@ -52,13 +52,13 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-26</Value>
+										<Value>-20</Value>
 									</ValueList>
 									<RTPCList>
 										<RTPC Name="" ID="{6BC6736A-2DCD-4923-8CB9-837F35A436A7}" ShortID="405912418">
 											<ReferenceList>
 												<Reference Name="ControlInput">
-													<ObjectRef Name="PlayerSpeed" ID="{B7F8491B-187E-42A5-A63D-F5BD2690FFB8}" WorkUnitID="{40907770-B0F2-4733-B406-6FC08CC457AD}"/>
+													<ObjectRef Name="PlayerAcc" ID="{B7F8491B-187E-42A5-A63D-F5BD2690FFB8}" WorkUnitID="{40907770-B0F2-4733-B406-6FC08CC457AD}"/>
 												</Reference>
 											</ReferenceList>
 											<Curve Name="" ID="{48E237FD-2DDB-4E36-9CA4-CA063E37852D}">
@@ -68,11 +68,11 @@
 												<PointList>
 													<Point>
 														<XPos>0</XPos>
-														<YPos>-6</YPos>
+														<YPos>-200</YPos>
 														<Flags>5</Flags>
 													</Point>
 													<Point>
-														<XPos>100</XPos>
+														<XPos>1</XPos>
 														<YPos>0</YPos>
 														<Flags>37</Flags>
 													</Point>

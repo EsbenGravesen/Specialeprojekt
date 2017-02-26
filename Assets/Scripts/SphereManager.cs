@@ -68,9 +68,9 @@ public class SphereManager : MonoBehaviour {
 		return transform.GetChild (isLocked).gameObject;
 	}
 
-    public void AddPoint()
+    public void AddZone()
     {
-        GameObject go = Instantiate(Resources.Load<GameObject>("Point"));
+        GameObject go = Instantiate(Resources.Load<GameObject>("Zone"));
 		go.transform.SetParent(transform);
 		go.transform.position = transform.position + transform.up * (transform.parent.GetComponent<PuzzleManager>().RotationDiameter / 2f);
         go.transform.localRotation = Quaternion.identity;
