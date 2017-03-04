@@ -25,16 +25,16 @@ public class TankControl : MonoBehaviour {
     }
     // Update is called once per frame
     void FixedUpdate () {
-		//if(Input.GetKey(KeyCode.Space))
-		//	rig.velocity += transform.forward * Time.deltaTime * speed;
-		//if(Input.GetKey(KeyCode.LeftControl))
-		//	rig.velocity -= transform.forward * Time.deltaTime * speed;
+        //if(Input.GetKey(KeyCode.Space))
+        //	rig.velocity += transform.forward * Time.deltaTime * speed;
+        //if(Input.GetKey(KeyCode.LeftControl))
+        //	rig.velocity -= transform.forward * Time.deltaTime * speed;
 
 
-            rig.velocity -= transform.forward * Input.GetAxis("Gas") * Time.deltaTime * speed;
+        rig.velocity -= transform.forward * Input.GetAxis("Gas") * Time.deltaTime * speed;
         //transform.position += transform.forward * Input.GetAxis("Gas") * Time.deltaTime * speed;
-			transform.Rotate(-Vector3.up * -Input.GetAxis("Horizontal") * Time.deltaTime * rotateSpeed);
-            transform.Rotate(-Vector3.left * -Input.GetAxis("Vertical") * Time.deltaTime * rotateSpeed);
+		transform.Rotate(-Vector3.up * -Input.GetAxis("Horizontal") * Time.deltaTime * rotateSpeed);
+        transform.Rotate(-Vector3.left * -Input.GetAxis("Vertical") * Time.deltaTime * rotateSpeed);
 
 
         pEmission = 100 * Mathf.Max(Mathf.Abs(Input.GetAxis("Gas")), Mathf.Abs(Input.GetAxis("Horizontal")));
