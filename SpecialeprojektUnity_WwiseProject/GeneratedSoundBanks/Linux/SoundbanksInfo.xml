@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Linux" BasePlatform="Linux" SchemaVersion="11" SoundbankVersion="120">
 	<RootPaths>
-		<ProjectRoot>E:\Home\Audiodesign\Speciale\Specialeprojekt\SpecialeprojektUnity_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>E:\Home\Audiodesign\Speciale\Specialeprojekt\SpecialeprojektUnity_WwiseProject\.cache\Linux\</SourceFilesRoot>
-		<SoundBanksRoot>E:\Home\Audiodesign\Speciale\Specialeprojekt\SpecialeprojektUnity_WwiseProject\GeneratedSoundBanks\Linux\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\Esben\Documents\Specialeprojekt\SpecialeprojektUnity_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Esben\Documents\Specialeprojekt\SpecialeprojektUnity_WwiseProject\.cache\Linux\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Esben\Documents\Specialeprojekt\SpecialeprojektUnity_WwiseProject\GeneratedSoundBanks\Linux\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>E:\Home\Audiodesign\Speciale\Specialeprojekt\SpecialeprojektUnity_WwiseProject\GeneratedSoundBanks\Linux\</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\Esben\Documents\Specialeprojekt\SpecialeprojektUnity_WwiseProject\GeneratedSoundBanks\Linux\</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
