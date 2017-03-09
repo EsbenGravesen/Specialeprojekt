@@ -15,12 +15,18 @@
 						<Switch Name="Cycle8" ID="{35738E6F-E68F-4D04-9CFD-6DB602FD148B}"/>
 					</ChildrenList>
 				</SwitchGroup>
-				<SwitchGroup Name="Elements" ID="{9262CFB0-67C2-45ED-9FC0-7C3DA07BB471}">
+				<SwitchGroup Name="CycleObjects" ID="{9262CFB0-67C2-45ED-9FC0-7C3DA07BB471}">
 					<ChildrenList>
 						<Switch Name="Zone1" ID="{94C6BCF5-C755-4E76-BCDE-A0FB4AB5452F}"/>
 						<Switch Name="Zone2" ID="{1CB0FE5C-AFBE-45DC-B0E6-A0FAA238D96D}"/>
 						<Switch Name="Zone3" ID="{FA572533-B2E1-481C-A97A-87648CD832A6}"/>
 						<Switch Name="Sphere" ID="{368C53D9-BD24-4CFF-BFD9-B2158E7318D5}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="ZoneState" ID="{A3BB9310-3A3F-49C3-B38A-62CFF45A616F}">
+					<ChildrenList>
+						<Switch Name="Unlinked" ID="{3EECB5CB-0F58-4B11-B538-B4F4968677D7}"/>
+						<Switch Name="Linked" ID="{18C53445-09A6-4197-98AC-C83D4493A29D}"/>
 					</ChildrenList>
 				</SwitchGroup>
 			</ChildrenList>

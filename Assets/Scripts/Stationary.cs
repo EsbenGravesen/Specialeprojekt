@@ -23,12 +23,15 @@ public class Stationary : MonoBehaviour {
 		sc = transform.parent.GetComponent<SphereManager> ();
 		GetComponent<MeshRenderer> ().enabled = false;
 		GetComponent<ParticleSystem> ().startColor = zoneCols[transform.parent.GetComponent<SphereManager>().Zones[transform.GetSiblingIndex() - 1].ZoneColor.GetHashCode()];
-	}
+        //AkSoundEngine.SetSwitch("Cycles", transform.parent.GetComponent<SphereManager>().switchCycle, gameObject);
+        //Debug.Log("Switch: Cycles: " + transform.parent.GetComponent<SphereManager>().switchCycle, gameObject);
+        //AkSoundEngine.SetSwitch("CycleObjects", "Zone" + (transform.parent.GetComponent<SphereManager>().Zones[transform.GetSiblingIndex() - 1].ZoneColor.GetHashCode() + 1), gameObject);
+        //Debug.Log("Switch: CycleObjects: Zone" + (transform.parent.GetComponent<SphereManager>().Zones[transform.GetSiblingIndex() - 1].ZoneColor.GetHashCode() + 1));
+    }
 
     void OnEnable()
     {
-        AkSoundEngine.SetSwitch("Cycles", transform.parent.parent.GetComponent<PuzzleManager>().CycleSwitch, gameObject);
-        AkSoundEngine.SetSwitch("Elements", "Zone" + (transform.parent.GetComponent<SphereManager>().Zones[transform.GetSiblingIndex() - 1].ZoneColor.GetHashCode() + 1), gameObject);
+        
     }
     void OnDisable()
     {
@@ -36,7 +39,8 @@ public class Stationary : MonoBehaviour {
     }
     // Update is called once per frame
     void Update () {
-        AkSoundEngine.SetRTPCValue("DistZoneSphere", Vector3.Distance(transform.parent.GetChild(0).position, transform.position));
+        AkSoundEngine.SetRTPCValue("DistZoneSphere", Vector3.Distance(transform.parent.GetChild(0).position, transform.position), gameObject);
+        Debug.Log("RTPC: DistZoneSphere: " + Vector3.Distance(transform.parent.GetChild(0).position, transform.position) + " " + gameObject);
        
 
         if (!sc.IsLocked()){

@@ -26,6 +26,8 @@ public class PuzzleManager : MonoBehaviour {
 		linked = new List<List<GameObject>> ();
 		lines = new List<List<GameObject>> ();
         Player = GameObject.Find("SpaceShuttle").transform;
+        AkSoundEngine.SetState("PuzzleCount", gameObject.name);
+        Debug.Log("State: PuzzleCount: " + gameObject.name);
     }
 
     public string CycleSwitch {
@@ -44,7 +46,7 @@ public class PuzzleManager : MonoBehaviour {
 
     private void OnEnable()
     {
-        AkSoundEngine.SetState("PuzzleCount", gameObject.name);
+        
     }
 
     public void Activated(int ringIndex, int orbIndex)

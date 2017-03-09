@@ -9,10 +9,14 @@ public class OrbitManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		GetComponent<MeshRenderer> ().enabled = false;
-	}
+        //AkSoundEngine.SetSwitch("Cycles", transform.parent.GetComponent<SphereManager>().switchCycle, gameObject);
+        //Debug.Log("Switch: Cycles: " + transform.parent.GetComponent<SphereManager>().switchCycle, gameObject);
+        //AkSoundEngine.SetSwitch("CycleObjects", "Sphere", gameObject);
+        //Debug.Log("Switch: CycleObjects: Sphere", gameObject);
+    }
     void OnEnable()
     {
-        AkSoundEngine.SetSwitch("Cycles", transform.parent.parent.GetComponent<PuzzleManager>().CycleSwitch, gameObject);
+        
     }
     // Update is called once per frame
     void Update () {

@@ -32,7 +32,6 @@
 					</ValueList>
 				</Property>
 				<Property Name="LicenseKey" Type="string" Value="PHByb2plY3QgaWQ9IjM1NDUiIG1hc2s9IlBJUFYzNjQzIiBlbmM9IjAiPjxsaWNlbnNlIGlkPSIxIiBuYW1lPSJXd2lzZSIgdHlwZT0iMyIgcGxhdGZvcm1zPSIyLDMsNCwxMCwxMywxNCIgZXhwaXJlcz0iMjAxNy0xMC0zMSIgIC8+PGxpY2Vuc2UgaWQ9IjIxIiBuYW1lPSJNYWludGVuYW5jZSIgdHlwZT0iMyIgcGxhdGZvcm1zPSIyLDMsNCwxMCwxMywxNCIgZXhwaXJlcz0iMjAxNy0xMC0zMSIgIC8+PGxpY2Vuc2UgaWQ9IjIyIiBuYW1lPSJMZXZlbCBBIExpY2Vuc2UiIHR5cGU9IjMiIHBsYXRmb3Jtcz0iMiwzLDQsMTAsMTMsMTQiIGV4cGlyZXM9IjIwMTctMTAtMzEiICAvPjxsaWNlbnNlIGlkPSIyNSIgbmFtZT0iQWxsIFd3aXNlIFBsdWctSW5zIiB0eXBlPSIzIiAgZXhwaXJlcz0iMjAxNy0xMC0zMSIgIC8+PC9wcm9qZWN0Pg==|N/oiKouSZ/yG5WiMdRSPN/zOgRTnMviwIPGU3dlxkkZBQdA0eDYWBqcBdw714vpQ7XAHx+2iRzQy0EFcRvBEewtFZW0lsd8eN0TVRLPTJWT7fNInGydO/v+bfi0fCn27vVwuMaMTdS4+On+ufOOD0oin7vWJcg1suaj+9xzKWCtoqG8/AhhCqqVNA7a0/wI9ujPoYzNWUiRQY2MtxFqAkJ65FgqLf1DBCR4J7D2rhY5OBstL6ZnMlkj6e+cZadxzNzeOoTcztqodc4MMg4envG4aZ4pbXcXhFMH4vCl6x9qkFaONXu86yLYlq4W1+1wQgPIiTOqNL4UTsJrJVs6bIA=="/>
-				<Property Name="SoundBankGenerateHeaderFile" Type="bool" Value="True"/>
 				<Property Name="SoundBankGenerateMaxAttenuationInfo" Type="bool" Value="True"/>
 				<Property Name="SoundBankHeaderFilePath" Type="string" Value="C:\EsbensProjekt\Assets\StreamingAssets\Audio\GeneratedSoundBanks"/>
 				<Property Name="SoundBankPaths" Type="string">
