@@ -105,7 +105,7 @@ public class PuzzleManager : MonoBehaviour {
 
 	public void AddSphere()
 	{
-		GameObject go = Instantiate(Resources.Load<GameObject>("Center of Rotation"));
+		GameObject go = Instantiate(Resources.Load<GameObject>("Center of Rotation(Clone)"));
 		go.transform.position = transform.position;
 		go.transform.rotation = Quaternion.identity;
 		go.transform.SetParent(transform);

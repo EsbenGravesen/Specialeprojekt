@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class SphereManager : MonoBehaviour {
     public Vector2 CycleTempo;
@@ -24,7 +25,7 @@ public class SphereManager : MonoBehaviour {
         public ColorType ZoneColor;
         public Vector2 position;
     }
-    public List<point> Zones = new List<point>();
+    public List<point> Zones;
     public float tempo {
         set {
             _tempo = value;
@@ -70,6 +71,8 @@ public class SphereManager : MonoBehaviour {
 
     public void AddZone()
     {
+        if (Zones == null)
+            Zones = new List<point>();
         GameObject go = Instantiate(Resources.Load<GameObject>("Zone"));
 		go.transform.SetParent(transform);
 		go.transform.position = transform.position + transform.up * (transform.parent.GetComponent<PuzzleManager>().RotationDiameter / 2f);

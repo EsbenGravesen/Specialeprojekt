@@ -6,9 +6,11 @@ public class ZoneManager : MonoBehaviour {
     Material mat;
     bool inPlay = false;
     const float _2pi = 2.0f * Mathf.PI;
-    Color[] zoneCols = new Color[3];
+    Color[] zoneCols;
 	// Use this for initialization
     void Start () {
+        if (zoneCols == null)
+            zoneCols = new Color[3];
         zoneCols[0] = new Color(0, 1, 0, .6f);
         zoneCols[1] = new Color(1, 1, 0, .6f);
         zoneCols[2] = new Color(1, 0, 0, .6f);
@@ -32,9 +34,11 @@ public class ZoneManager : MonoBehaviour {
             transform.localScale = Vector3.one * transform.parent.parent.GetComponent<PuzzleManager>().ZoneDiameter / 2.0f;
         }
     }
+
     void OnDestroy()
     {
-        transform.parent.GetComponent<SphereManager>().Zones.RemoveAt(transform.GetSiblingIndex() - 1);
+        try { transform.parent.GetComponent<SphereManager>().Zones.RemoveAt(transform.GetSiblingIndex() - 1); }
+        catch { }
     }
     public void initialize()
     {
