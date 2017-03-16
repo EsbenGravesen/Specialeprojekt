@@ -7,14 +7,16 @@ public class Stationary : MonoBehaviour {
 	public Color color;
 	public Color activationColor;
 	public int type;
-	private bool active;
+	private bool active, locked = false;
 	private Renderer render;
 	private SphereManager sc;
+    private PuzzleManager pm;
     Color[] zoneCols = new Color[3];
 
 
     // Use this for initialization
     void Start () {
+        pm = FindObjectOfType<PuzzleManager>();
         zoneCols[0] = new Color(0, 0.3f, 0, .6f);
         zoneCols[1] = new Color(0.3f, 0.3f, 0, .6f);
         zoneCols[2] = new Color(0.3f, 0, 0, .6f);
@@ -39,7 +41,8 @@ public class Stationary : MonoBehaviour {
     }
     // Update is called once per frame
     void Update () {
-        AkSoundEngine.SetRTPCValue("DistZoneSphere", Vector3.Distance(transform.parent.GetChild(0).position, transform.position), gameObject);
+        float dist = locked ? 0 : Vector3.Distance(transform.parent.GetChild(0).position, transform.position);
+        AkSoundEngine.SetRTPCValue("DistZoneSphere", dist, gameObject);
         Debug.Log("RTPC: DistZoneSphere: " + Vector3.Distance(transform.parent.GetChild(0).position, transform.position) + " " + gameObject);
        
 
@@ -67,12 +70,15 @@ public class Stationary : MonoBehaviour {
 	public bool Activate(){
 		if(sc.IsLocked()){
 			transform.parent.parent.GetComponent<PuzzleManager> ().UnLink (transform.parent.gameObject);
+            locked = false;
 			return true;
 		}
 		if(!active){
+            locked = true;
 			return false;
 		}
 		transform.parent.parent.GetComponent<PuzzleManager> ().Activated (transform.parent.GetSiblingIndex(), transform.GetSiblingIndex ());
+        locked = true;
 		return true;
 	}
 
