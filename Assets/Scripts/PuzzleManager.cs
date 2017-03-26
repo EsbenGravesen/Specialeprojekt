@@ -71,7 +71,7 @@ public class PuzzleManager : MonoBehaviour {
 			transform.GetChild (ringIndex).GetChild (0).GetComponent<OrbitManager> ().Visible (false);
 			transform.GetChild (ringIndex).GetComponent<SphereManager> ().SetLocked (orbIndex);
 			newLink.Add (transform.GetChild (ringIndex).gameObject);
-
+            
 			lines.Add(LineDrawer (newLink));
 			linked.Add (newLink);
 		}
@@ -165,7 +165,9 @@ public class PuzzleManager : MonoBehaviour {
 	public List<GameObject> LineDrawer(List<GameObject> pos)
 	{
 		List<GameObject> ListOfGO = new List<GameObject>();
-		int linesNUM = 0;
+        
+        //Color lineColor = pos[0].GetComponentInChildren<ParticleSystem>().startColor;
+        int linesNUM = 0;
 		for (int i = 0; i < pos.Count; i++)
 		{
 			linesNUM += i;
@@ -180,7 +182,10 @@ public class PuzzleManager : MonoBehaviour {
 				lineObj[xLine] = Instantiate(LinePrefab);
 				lineObj[xLine].GetComponent<LineRenderer>().SetPosition(0,pos[i].GetComponent<SphereManager>().GetLocked().transform.position);
 				lineObj[xLine].GetComponent<LineRenderer>().SetPosition(1, pos[k].GetComponent<SphereManager>().GetLocked().transform.position);
-				ListOfGO.Add(lineObj[xLine]);
+                //lineObj[xLine].GetComponent<LineRenderer>().startColor = lineColor;
+                //lineObj[xLine].GetComponent<LineRenderer>().endColor = lineColor;
+                //print(lineColor);
+                ListOfGO.Add(lineObj[xLine]);
 				xLine++;
 			}
 		}
