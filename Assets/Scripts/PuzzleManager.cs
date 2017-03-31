@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,7 +9,7 @@ public class PuzzleManager : MonoBehaviour {
 	private List<List<GameObject>> lines;
 
 	public GameObject LinePrefab;
-
+    GameManager gm;
 	public float baseTempo;
 	public float RotationDiameter;
 	public float SphereDiameter;
@@ -19,10 +20,11 @@ public class PuzzleManager : MonoBehaviour {
     [SerializeField]
     [Range(1, 8)]
     int _CycleSwitch = 1;
-    
+    public bool puzzleCompleted = false;
     private Transform Player;
     // Use this for initialization
     void Start () {
+        gm = FindObjectOfType<GameManager>();
 		linked = new List<List<GameObject>> ();
 		lines = new List<List<GameObject>> ();
         Player = GameObject.Find("SpaceShuttle").transform;
@@ -38,6 +40,8 @@ public class PuzzleManager : MonoBehaviour {
     }
     void Update()
     {
+        if (puzzleCompleted)
+            return;
         if(Vector3.Distance(Player.position, transform.position) > AreaDiameter / 2.0f)
         {
             Player.GetComponent<TankControl>().redAlert(transform);
@@ -46,12 +50,15 @@ public class PuzzleManager : MonoBehaviour {
 
     private void OnEnable()
     {
-        
+        if (puzzleCompleted)
+            return;
     }
 
     public void Activated(int ringIndex, int orbIndex)
 	{
-		bool OtherActive = false;
+        if (puzzleCompleted)
+            return;
+        bool OtherActive = false;
 		List<GameObject> newLink = new List<GameObject> ();
 		for(int i = 0; i < transform.childCount; i++)
         {
@@ -82,7 +89,9 @@ public class PuzzleManager : MonoBehaviour {
 	}
 
 	public void UnLink(GameObject ring){
-		int index = 0;
+        if (puzzleCompleted)
+            return;
+        int index = 0;
 		bool found = false;
 		for(int i = 0; i < linked.Count; i++){
 			for(int j = 0; j < linked[i].Count; j++){
@@ -168,7 +177,9 @@ public class PuzzleManager : MonoBehaviour {
 
 	public List<GameObject> LineDrawer(List<GameObject> pos)
 	{
-		List<GameObject> ListOfGO = new List<GameObject>();
+
+
+        List<GameObject> ListOfGO = new List<GameObject>();
         
         Color lineColor = pos[0].GetComponentInChildren<ParticleSystem>().startColor;
         int linesNUM = 0;
@@ -195,4 +206,75 @@ public class PuzzleManager : MonoBehaviour {
 		}
 		return ListOfGO;
 	}
+
+    public void ActivateHeleLortet()
+    {
+    }
+    public void DeactivateHeleLortet()
+    {
+        for(int x = 0; x<lines.Count; ++x)
+        {
+            for(int y = 0; y<lines[x].Count; ++y)
+            {
+                StartCoroutine(fadeLines(lines[x][y].GetComponent<LineRenderer>()));
+            }
+        }
+        for(int x = 0; x<transform.childCount; ++x)
+        {
+            for(int y = 1; y<transform.GetChild(x).childCount; ++y) //skip sphere
+            {
+                StartCoroutine(fadeParticleSystems(transform.GetChild(x).GetChild(y).GetComponent<ParticleSystem>()));
+            }
+        }
+    }
+
+    private IEnumerator fadeLines(LineRenderer line)
+    {
+        Color start, end;
+        start = line.startColor;
+        end = start * gm.disabledGreyscale;
+        end.a = 1;
+
+        float t = 0;
+        while (t < 2)
+        {
+            t += Time.deltaTime;
+            line.startColor = Color.Lerp(start, Color.white, t / 2f);
+            line.endColor = Color.Lerp(start, Color.white, t / 2f);
+            yield return null;
+        }
+        t = 0;
+        while (t < 4)
+        {
+            t += Time.deltaTime;
+            line.startColor = Color.Lerp(Color.white, end, t / 4f);
+            line.endColor = Color.Lerp(Color.white, end, t / 4f);
+            yield return null;
+        }
+        yield break;
+    }
+
+    private IEnumerator fadeParticleSystems(ParticleSystem ps)
+    {
+        ps.gameObject.layer = LayerMask.NameToLayer("Default");
+        Color start, end;
+        start = ps.startColor;
+        end = start * gm.disabledGreyscale;
+        end.a = 1;
+        float t = 0;
+        while (t < 2)
+        {
+            t += Time.deltaTime;
+            ps.startColor = Color.Lerp(start, Color.white, t / 2f);
+            yield return null;
+        }
+        t = 0;
+        while (t < 4)
+        {
+            t += Time.deltaTime;
+            ps.startColor = Color.Lerp(Color.white, end, t / 4f);
+            yield return null;
+        }
+        yield break;
+    }
 }
