@@ -75,6 +75,7 @@ public class PuzzleManager : MonoBehaviour {
 						transform.GetChild (i).GetChild (0).GetComponent<OrbitManager> ().Visible (false);
 						transform.GetChild (i).GetComponent<SphereManager> ().SetLocked (j);
                         AkSoundEngine.SetSwitch("ZoneState", "Linked", transform.GetChild(i).GetChild(j).gameObject);
+                        Debug.Log("Set Switch: " + "ZoneState: Linked " + transform.GetChild(i).GetChild(j).gameObject);
                        
 
                         transform.GetChild(i).GetChild(j).GetComponent<Stationary>().amILinked = true;
@@ -89,6 +90,7 @@ public class PuzzleManager : MonoBehaviour {
 			newLink.Add (transform.GetChild (ringIndex).gameObject);
             transform.GetChild(ringIndex).GetChild(orbIndex).GetComponent<Stationary>().amILinked = true;
             AkSoundEngine.SetSwitch("ZoneState", "Linked", transform.GetChild(ringIndex).GetChild(orbIndex).gameObject);
+            Debug.Log("Set Switch: " + "ZoneState: Linked " + transform.GetChild(ringIndex).GetChild(orbIndex).gameObject);
             lines.Add(LineDrawer (newLink));
 			linked.Add (newLink);
 		}
