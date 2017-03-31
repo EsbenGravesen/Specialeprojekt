@@ -8,7 +8,7 @@ public class Stationary : MonoBehaviour {
 	public Color activationColor;
 	public int type;
     private float distanceToActive = 2f; 
-	public bool active, locked = false;
+	private bool active, locked = false;
 	private Renderer render;
 	private SphereManager sc;
    
