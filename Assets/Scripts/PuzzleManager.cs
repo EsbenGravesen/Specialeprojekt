@@ -181,7 +181,7 @@ public class PuzzleManager : MonoBehaviour {
 
         List<GameObject> ListOfGO = new List<GameObject>();
         
-        Color lineColor = pos[0].GetComponentInChildren<ParticleSystem>().startColor;
+        Color lineColor = pos[0].transform.GetChild(1).GetComponent<ParticleSystem>().startColor;
         int linesNUM = 0;
 		for (int i = 0; i < pos.Count; i++)
 		{
