@@ -53,12 +53,16 @@ public class PuzzleManager : MonoBehaviour {
 	{
 		bool OtherActive = false;
 		List<GameObject> newLink = new List<GameObject> ();
-		for(int i = 0; i < transform.childCount; i++){
-			if (i != ringIndex && !transform.GetChild(i).GetComponent<SphereManager>().IsLocked()){
-				for(int j = 1; j < transform.GetChild(i).childCount; j++){
+		for(int i = 0; i < transform.childCount; i++)
+        {
+			if (i != ringIndex && !transform.GetChild(i).GetComponent<SphereManager>().IsLocked())
+            {
+				for(int j = 1; j < transform.GetChild(i).childCount; j++)
+                {
 					if(transform.GetChild(i).GetChild(j).GetComponent<Stationary>().IsActive() && 
 						transform.GetChild(ringIndex).GetChild(orbIndex).GetComponent<Stationary>().GetOrbType() == 
-						transform.GetChild(i).GetChild(j).GetComponent<Stationary>().GetOrbType()){
+						transform.GetChild(i).GetChild(j).GetComponent<Stationary>().GetOrbType())
+                    {
 						OtherActive = true;
 						transform.GetChild (i).GetChild (0).GetComponent<OrbitManager> ().Visible (false);
 						transform.GetChild (i).GetComponent<SphereManager> ().SetLocked (j);
@@ -166,7 +170,7 @@ public class PuzzleManager : MonoBehaviour {
 	{
 		List<GameObject> ListOfGO = new List<GameObject>();
         
-        //Color lineColor = pos[0].GetComponentInChildren<ParticleSystem>().startColor;
+        Color lineColor = pos[0].GetComponentInChildren<ParticleSystem>().startColor;
         int linesNUM = 0;
 		for (int i = 0; i < pos.Count; i++)
 		{
@@ -182,9 +186,9 @@ public class PuzzleManager : MonoBehaviour {
 				lineObj[xLine] = Instantiate(LinePrefab);
 				lineObj[xLine].GetComponent<LineRenderer>().SetPosition(0,pos[i].GetComponent<SphereManager>().GetLocked().transform.position);
 				lineObj[xLine].GetComponent<LineRenderer>().SetPosition(1, pos[k].GetComponent<SphereManager>().GetLocked().transform.position);
-                //lineObj[xLine].GetComponent<LineRenderer>().startColor = lineColor;
-                //lineObj[xLine].GetComponent<LineRenderer>().endColor = lineColor;
-                //print(lineColor);
+                lineObj[xLine].GetComponent<LineRenderer>().startColor = lineColor;
+                lineObj[xLine].GetComponent<LineRenderer>().endColor = lineColor;
+                print(lineColor);
                 ListOfGO.Add(lineObj[xLine]);
 				xLine++;
 			}
