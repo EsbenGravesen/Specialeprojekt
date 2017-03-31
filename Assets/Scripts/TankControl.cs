@@ -12,6 +12,7 @@ public class TankControl : MonoBehaviour {
     public GameObject LeftMotorDown;
     public GameObject RightMotorDown;
     float pEmission;
+    float Drift = 3f;
     float pDir;
     public bool alarmed = false;
     Rigidbody rig;
@@ -29,12 +30,14 @@ public class TankControl : MonoBehaviour {
         //	rig.velocity += transform.forward * Time.deltaTime * speed;
         //if(Input.GetKey(KeyCode.LeftControl))
         //	rig.velocity -= transform.forward * Time.deltaTime * speed;
-
-
+        if (Input.GetButton("Drift"))
+            Drift = 3f;
+        else
+            Drift = 1f;
         rig.velocity -= transform.forward * Input.GetAxis("Gas") * Time.deltaTime * speed;
         //transform.position += transform.forward * Input.GetAxis("Gas") * Time.deltaTime * speed;
-		transform.Rotate(-Vector3.up * -Input.GetAxis("Horizontal") * Time.deltaTime * rotateSpeed);
-        transform.Rotate(-Vector3.left * -Input.GetAxis("Vertical") * Time.deltaTime * rotateSpeed);
+		transform.Rotate(-Vector3.up * -Input.GetAxis("Horizontal") * Time.deltaTime * rotateSpeed * Drift);
+        transform.Rotate(-Vector3.left * -Input.GetAxis("Vertical") * Time.deltaTime * rotateSpeed * Drift);
 
 
         pEmission = 100 * Mathf.Max(Mathf.Abs(Input.GetAxis("Gas")), Mathf.Abs(Input.GetAxis("Horizontal")));
