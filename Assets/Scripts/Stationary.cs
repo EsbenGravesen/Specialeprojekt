@@ -7,7 +7,7 @@ public class Stationary : MonoBehaviour {
 	public Color color;
 	public Color activationColor;
 	public int type;
-    private float distanceToActive = 2f;
+    private float distanceToActive = 10f;
 	public bool active, locked = false;
 	private Renderer render;
 	private SphereManager sc;
@@ -85,7 +85,7 @@ public class Stationary : MonoBehaviour {
 			return false;
 		}
 		transform.parent.parent.GetComponent<PuzzleManager> ().Activated (transform.parent.GetSiblingIndex(), transform.GetSiblingIndex ());
-       // locked = true;
+        locked = true;
 		return true;
 	}
 

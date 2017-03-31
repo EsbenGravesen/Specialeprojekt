@@ -89,11 +89,12 @@ public class PuzzleManager : MonoBehaviour {
 				if(linked[i][j] == ring){
 					index = i;
 					found = true;
-					goto searching;
+                    break;
 				}
 			}
+            if (found)
+                break;
 		}
-		searching:
 		if(found){
 			for(int i = 0; i < linked[index].Count; i++){
 				linked [index][i].GetComponent<SphereManager>().SetLocked(0);
@@ -169,8 +170,8 @@ public class PuzzleManager : MonoBehaviour {
 	public List<GameObject> LineDrawer(List<GameObject> pos)
 	{
 		List<GameObject> ListOfGO = new List<GameObject>();
-        
-        Color lineColor = pos[0].GetComponentInChildren<ParticleSystem>().startColor;
+
+        Color lineColor = pos[0].transform.GetChild(1). GetComponent<ParticleSystem>().startColor;
         int linesNUM = 0;
 		for (int i = 0; i < pos.Count; i++)
 		{

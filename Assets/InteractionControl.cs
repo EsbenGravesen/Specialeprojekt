@@ -23,7 +23,7 @@ public class InteractionControl : MonoBehaviour {
     SpriteRenderer[] mySprites;
 	// Use this for initialization
 	void Start () {
-        hitLayer = 1 << LayerMask.NameToLayer("Hittable");
+        hitLayer = 1 << LayerMask.NameToLayer("Hitable");
         mySprites = new SpriteRenderer[2];
         mySprites[0] = transform.GetChild(0).GetComponent<SpriteRenderer>();
         mySprites[1] = transform.GetChild(1).GetComponent<SpriteRenderer>();
@@ -52,7 +52,7 @@ public class InteractionControl : MonoBehaviour {
             cd = shootCooldown;
             Debug.Log("SHOOT");
             RaycastHit hitted;
-            if (Physics.Raycast(transform.position, transform.forward, out hitted, hitLayer, shootDistance))
+            if (Physics.Raycast(transform.position, transform.forward,out hitted, shootDistance, hitLayer))
             {
                 if (hitted.transform.gameObject.GetComponent<Stationary>() != null)
                 {
@@ -61,7 +61,7 @@ public class InteractionControl : MonoBehaviour {
             }
             StartCoroutine(doShootPulse());
         }
-        if(Physics.Raycast(transform.position, transform.forward,out hitter, hitLayer, shootDistance) && cd<=0)
+        if (Physics.Raycast(transform.position, transform.forward, shootDistance, hitLayer) && cd<=0)
         {
             setColor(InRangeColor);
         }
