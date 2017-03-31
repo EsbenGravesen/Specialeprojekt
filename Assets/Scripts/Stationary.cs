@@ -44,7 +44,7 @@ public class Stationary : MonoBehaviour {
     void Update () {
         float dist = locked ? 0 : Vector3.Distance(transform.parent.GetChild(0).position, transform.position);
         AkSoundEngine.SetRTPCValue("DistZoneSphere", dist, gameObject);
-        Debug.Log("RTPC: DistZoneSphere: " + dist + " ID: " + gameObject.GetInstanceID());
+        //Debug.Log("RTPC: DistZoneSphere: " + dist + " ID: " + gameObject.GetInstanceID());
        
 
         if (!sc.IsLocked()){

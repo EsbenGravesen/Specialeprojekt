@@ -212,6 +212,7 @@ public class PuzzleManager : MonoBehaviour {
     }
     public void DeactivateHeleLortet()
     {
+        puzzleCompleted = true;
         for(int x = 0; x<lines.Count; ++x)
         {
             for(int y = 0; y<lines[x].Count; ++y)
