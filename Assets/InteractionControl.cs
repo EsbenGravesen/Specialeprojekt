@@ -52,7 +52,8 @@ public class InteractionControl : MonoBehaviour {
             cd = shootCooldown;
             Debug.Log("SHOOT");
             RaycastHit hitted;
-            if (Physics.Raycast(transform.position, transform.forward,out hitted, shootDistance, hitLayer))
+        
+            if (Physics.Raycast(transform.position, transform.forward, out hitted, shootDistance, hitLayer))
             {
                 if (hitted.transform.gameObject.GetComponent<Stationary>() != null)
                 {
@@ -61,10 +62,10 @@ public class InteractionControl : MonoBehaviour {
             }
             StartCoroutine(doShootPulse());
         }
-        if (Physics.Raycast(transform.position, transform.forward, shootDistance, hitLayer) && cd<=0)
+        if(Physics.Raycast(transform.position, transform.forward,out hitter, shootDistance, hitLayer) && cd<=0)
         {
             setColor(InRangeColor);
-        }
+        } 
         else
         {
             setColor(DefaultColor);
