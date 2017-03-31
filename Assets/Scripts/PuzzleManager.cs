@@ -9,7 +9,7 @@ public class PuzzleManager : MonoBehaviour {
 	private List<List<GameObject>> lines;
 
 	public GameObject LinePrefab;
-    GameManager gm;
+    private GameManager gm;
 	public float baseTempo;
 	public float RotationDiameter;
 	public float SphereDiameter;
@@ -20,7 +20,7 @@ public class PuzzleManager : MonoBehaviour {
     [SerializeField]
     [Range(1, 8)]
     int _CycleSwitch = 1;
-    public bool puzzleCompleted = false;
+    private bool puzzleCompleted = false;
     private Transform Player;
     // Use this for initialization
     void Start () {
@@ -60,6 +60,7 @@ public class PuzzleManager : MonoBehaviour {
             return;
         bool OtherActive = false;
 		List<GameObject> newLink = new List<GameObject> ();
+        int linkCount = 0;
 		for(int i = 0; i < transform.childCount; i++)
         {
 			if (i != ringIndex && !transform.GetChild(i).GetComponent<SphereManager>().IsLocked())
@@ -73,6 +74,10 @@ public class PuzzleManager : MonoBehaviour {
 						OtherActive = true;
 						transform.GetChild (i).GetChild (0).GetComponent<OrbitManager> ().Visible (false);
 						transform.GetChild (i).GetComponent<SphereManager> ().SetLocked (j);
+                        AkSoundEngine.SetSwitch("ZoneState", "Linked", transform.GetChild(i).GetChild(j).gameObject);
+                       
+
+                        transform.GetChild(i).GetChild(j).GetComponent<Stationary>().amILinked = true;
 						newLink.Add (transform.GetChild (i).gameObject);
 					}
 				}
@@ -82,10 +87,24 @@ public class PuzzleManager : MonoBehaviour {
 			transform.GetChild (ringIndex).GetChild (0).GetComponent<OrbitManager> ().Visible (false);
 			transform.GetChild (ringIndex).GetComponent<SphereManager> ().SetLocked (orbIndex);
 			newLink.Add (transform.GetChild (ringIndex).gameObject);
-            
-			lines.Add(LineDrawer (newLink));
+            transform.GetChild(ringIndex).GetChild(orbIndex).GetComponent<Stationary>().amILinked = true;
+            AkSoundEngine.SetSwitch("ZoneState", "Linked", transform.GetChild(ringIndex).GetChild(orbIndex).gameObject);
+            lines.Add(LineDrawer (newLink));
 			linked.Add (newLink);
 		}
+        for(int x = 0; x<transform.childCount; ++x)
+        {
+            for (int i = 1; i < transform.GetChild(x).childCount; i++)
+            {
+                if (transform.GetChild(x).GetChild(i).GetComponent<Stationary>().amILinked)
+                {
+                    linkCount++;
+                    break;
+                }
+            }
+        }
+        if (linkCount == transform.childCount)
+            gm.ActivateNextPuzzle();
 	}
 
 	public void UnLink(GameObject ring){
@@ -107,6 +126,11 @@ public class PuzzleManager : MonoBehaviour {
 			for(int i = 0; i < linked[index].Count; i++){
 				linked [index][i].GetComponent<SphereManager>().SetLocked(0);
 				linked [index] [i].transform.GetChild (0).gameObject.GetComponent<OrbitManager> ().Visible (true);
+                for(int x = 1; x<linked[index][i].transform.childCount; ++x)
+                {
+                    linked[index][i].transform.GetChild(x).GetComponent<Stationary>().amILinked = false;
+                    AkSoundEngine.SetSwitch("ZoneState", "Unlinked", linked[index][i].transform.GetChild(x).gameObject);
+                }
 			}
 			for(int i = 0; i < lines[index].Count; i++){
 				Destroy (lines [index] [i]);
@@ -177,8 +201,6 @@ public class PuzzleManager : MonoBehaviour {
 
 	public List<GameObject> LineDrawer(List<GameObject> pos)
 	{
-
-
         List<GameObject> ListOfGO = new List<GameObject>();
         
         Color lineColor = pos[0].transform.GetChild(1).GetComponent<ParticleSystem>().startColor;
@@ -187,7 +209,6 @@ public class PuzzleManager : MonoBehaviour {
 		{
 			linesNUM += i;
 		}
-		print("positions: " + pos.Count + " Lines: " + linesNUM);
 		GameObject[] lineObj = new GameObject[linesNUM];
 		int xLine = 0;
 		for (int i = 0; i < pos.Count; i++)
@@ -199,7 +220,6 @@ public class PuzzleManager : MonoBehaviour {
 				lineObj[xLine].GetComponent<LineRenderer>().SetPosition(1, pos[k].GetComponent<SphereManager>().GetLocked().transform.position);
                 lineObj[xLine].GetComponent<LineRenderer>().startColor = lineColor;
                 lineObj[xLine].GetComponent<LineRenderer>().endColor = lineColor;
-                print(lineColor);
                 ListOfGO.Add(lineObj[xLine]);
 				xLine++;
 			}

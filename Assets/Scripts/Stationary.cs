@@ -11,12 +11,14 @@ public class Stationary : MonoBehaviour {
 	private bool active, locked = false;
 	private Renderer render;
 	private SphereManager sc;
+    public bool amILinked = false;
    
     Color[] zoneCols = new Color[3];
 
 
     // Use this for initialization
     void Start () {
+        amILinked = false;
         zoneCols[0] = new Color(0, 0.3f, 0, .6f);
         zoneCols[1] = new Color(0.3f, 0.3f, 0, .6f);
         zoneCols[2] = new Color(0.3f, 0, 0, .6f);
@@ -42,7 +44,7 @@ public class Stationary : MonoBehaviour {
     }
     // Update is called once per frame
     void Update () {
-        float dist = locked ? 0 : Vector3.Distance(transform.parent.GetChild(0).position, transform.position);
+        float dist = amILinked ? 0 : Vector3.Distance(transform.parent.GetChild(0).position, transform.position);
         AkSoundEngine.SetRTPCValue("DistZoneSphere", dist, gameObject);
         //Debug.Log("RTPC: DistZoneSphere: " + dist + " ID: " + gameObject.GetInstanceID());
        
