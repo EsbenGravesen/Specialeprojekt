@@ -23,14 +23,22 @@ public class PuzzleManager : MonoBehaviour {
     private bool puzzleCompleted = false;
     private Transform Player;
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
         gm = FindObjectOfType<GameManager>();
-		linked = new List<List<GameObject>> ();
-		lines = new List<List<GameObject>> ();
+        linked = new List<List<GameObject>>();
+        lines = new List<List<GameObject>>();
         Player = GameObject.Find("SpaceShuttle").transform;
+        StartCoroutine(WaitForAFrame());
+    }
+
+    private IEnumerator WaitForAFrame() {
+        yield return 0;
         AkSoundEngine.SetState("PuzzleCount", gameObject.name);
         Debug.Log("State: PuzzleCount: " + gameObject.name);
     }
+        
+    
 
     public string CycleSwitch {
         get
@@ -46,12 +54,14 @@ public class PuzzleManager : MonoBehaviour {
         {
             Player.GetComponent<TankControl>().redAlert(transform);
         }
+        
     }
 
     private void OnEnable()
     {
         if (puzzleCompleted)
             return;
+        
     }
 
     public void Activated(int ringIndex, int orbIndex)
