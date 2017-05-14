@@ -79,7 +79,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<SourcePlugin Name="Wwise Synth One" ID="{0C63ECDA-5A40-4AED-A508-58DF69E94E53}" ShortID="488424658" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
+												<SourcePlugin Name="C4" ID="{0C63ECDA-5A40-4AED-A508-58DF69E94E53}" ShortID="488424658" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
 													<PropertyList>
 														<Property Name="BaseFrequency" Type="Real32" Value="261.6"/>
 														<Property Name="OutputLevel" Type="Real32">
@@ -117,7 +117,7 @@
 												</SourcePlugin>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="Wwise Synth One" ID="{0C63ECDA-5A40-4AED-A508-58DF69E94E53}" Platform="Linked"/>
+												<ActiveSource Name="C4" ID="{0C63ECDA-5A40-4AED-A508-58DF69E94E53}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 										<SwitchContainer Name="Zone1" ID="{AB2A5A78-F482-4567-AA15-28F3568A60D0}" ShortID="113493534">
@@ -190,45 +190,15 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<SourcePlugin Name="Wwise Synth One" ID="{2614C98F-1CD3-4E70-993A-0C22DC97A4D2}" ShortID="1027702575" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
+														<SourcePlugin Name="G4" ID="{2614C98F-1CD3-4E70-993A-0C22DC97A4D2}" ShortID="1027702575" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
 															<PropertyList>
 																<Property Name="BaseFrequency" Type="Real32" Value="392"/>
-																<Property Name="OutputLevel" Type="Real32">
-																	<RTPCList>
-																		<RTPC Name="" ID="{F6DF8C1D-F69B-417D-8547-2218D49B3E7E}" ShortID="832775066">
-																			<ReferenceList>
-																				<Reference Name="ControlInput">
-																					<Custom>
-																						<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{ABB234DC-470A-4868-8498-8947D0698918}" ShortID="529443610"/>
-																					</Custom>
-																				</Reference>
-																			</ReferenceList>
-																			<Curve Name="" ID="{167B7332-7495-46A2-BB1B-F9D531508AA0}">
-																				<PropertyList>
-																					<Property Name="Flags" Type="int32" Value="3"/>
-																				</PropertyList>
-																				<PointList>
-																					<Point>
-																						<XPos>0</XPos>
-																						<YPos>-96</YPos>
-																						<Flags>21</Flags>
-																					</Point>
-																					<Point>
-																						<XPos>1</XPos>
-																						<YPos>0</YPos>
-																						<Flags>53</Flags>
-																					</Point>
-																				</PointList>
-																			</Curve>
-																		</RTPC>
-																	</RTPCList>
-																</Property>
 															</PropertyList>
 															<Language>SFX</Language>
 														</SourcePlugin>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="Wwise Synth One" ID="{2614C98F-1CD3-4E70-993A-0C22DC97A4D2}" Platform="Linked"/>
+														<ActiveSource Name="G4" ID="{2614C98F-1CD3-4E70-993A-0C22DC97A4D2}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="Linked" ID="{295B1474-AA87-4404-B6B1-966D2B0F4988}" ShortID="304779018" Type="SoundFX">
@@ -288,7 +258,7 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<SourcePlugin Name="Wwise Synth One" ID="{D3CF8B50-0A2E-4885-96C8-571021DC7E87}" ShortID="271407484" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
+														<SourcePlugin Name="G5" ID="{D3CF8B50-0A2E-4885-96C8-571021DC7E87}" ShortID="271407484" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
 															<PropertyList>
 																<Property Name="BaseFrequency" Type="Real32" Value="784"/>
 																<Property Name="OutputLevel" Type="Real32">
@@ -326,7 +296,7 @@
 														</SourcePlugin>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="Wwise Synth One" ID="{D3CF8B50-0A2E-4885-96C8-571021DC7E87}" Platform="Linked"/>
+														<ActiveSource Name="G5" ID="{D3CF8B50-0A2E-4885-96C8-571021DC7E87}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
@@ -421,7 +391,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<SourcePlugin Name="Wwise Synth One" ID="{6438AAE9-AB65-4320-9FFE-F0F982E02C94}" ShortID="463320735" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
+												<SourcePlugin Name="C4" ID="{6438AAE9-AB65-4320-9FFE-F0F982E02C94}" ShortID="463320735" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
 													<PropertyList>
 														<Property Name="BaseFrequency" Type="Real32" Value="261.6"/>
 														<Property Name="OutputLevel" Type="Real32">
@@ -459,7 +429,7 @@
 												</SourcePlugin>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="Wwise Synth One" ID="{6438AAE9-AB65-4320-9FFE-F0F982E02C94}" Platform="Linked"/>
+												<ActiveSource Name="C4" ID="{6438AAE9-AB65-4320-9FFE-F0F982E02C94}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 										<SwitchContainer Name="Zone1" ID="{18EA7F02-3B64-4657-836A-D28088365954}" ShortID="223984897">
@@ -532,7 +502,7 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<SourcePlugin Name="Wwise Synth One" ID="{2D8588D3-15E4-4214-A4F9-6D61F66AFEE1}" ShortID="745626721" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
+														<SourcePlugin Name="G4" ID="{2D8588D3-15E4-4214-A4F9-6D61F66AFEE1}" ShortID="745626721" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
 															<PropertyList>
 																<Property Name="BaseFrequency" Type="Real32" Value="392"/>
 																<Property Name="OutputLevel" Type="Real32">
@@ -570,7 +540,7 @@
 														</SourcePlugin>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="Wwise Synth One" ID="{2D8588D3-15E4-4214-A4F9-6D61F66AFEE1}" Platform="Linked"/>
+														<ActiveSource Name="G4" ID="{2D8588D3-15E4-4214-A4F9-6D61F66AFEE1}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="Linked" ID="{4A1B5605-BC05-4FD3-A18B-02380B4869CD}" ShortID="952809148" Type="SoundFX">
@@ -630,7 +600,7 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<SourcePlugin Name="Wwise Synth One" ID="{56F095F0-076F-42C4-9971-1FFD85690BBA}" ShortID="933007523" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
+														<SourcePlugin Name="G5" ID="{56F095F0-076F-42C4-9971-1FFD85690BBA}" ShortID="933007523" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
 															<PropertyList>
 																<Property Name="BaseFrequency" Type="Real32" Value="784"/>
 																<Property Name="OutputLevel" Type="Real32">
@@ -668,7 +638,7 @@
 														</SourcePlugin>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="Wwise Synth One" ID="{56F095F0-076F-42C4-9971-1FFD85690BBA}" Platform="Linked"/>
+														<ActiveSource Name="G5" ID="{56F095F0-076F-42C4-9971-1FFD85690BBA}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
@@ -804,7 +774,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<SourcePlugin Name="Wwise Synth One" ID="{8179E072-A0BF-407D-B6BE-DFCB4D67A443}" ShortID="631046260" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
+												<SourcePlugin Name="D4" ID="{8179E072-A0BF-407D-B6BE-DFCB4D67A443}" ShortID="631046260" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
 													<PropertyList>
 														<Property Name="BaseFrequency" Type="Real32" Value="293.7"/>
 														<Property Name="OutputLevel" Type="Real32">
@@ -842,7 +812,7 @@
 												</SourcePlugin>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="Wwise Synth One" ID="{8179E072-A0BF-407D-B6BE-DFCB4D67A443}" Platform="Linked"/>
+												<ActiveSource Name="D4" ID="{8179E072-A0BF-407D-B6BE-DFCB4D67A443}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 										<SwitchContainer Name="Zone1" ID="{F6E55AAF-D267-4106-A555-AD8BD26E6DDA}" ShortID="465793563">
@@ -915,7 +885,7 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<SourcePlugin Name="Wwise Synth One" ID="{3BAFFA3A-8778-42EF-8A26-CE9DF204ACA5}" ShortID="1031738660" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
+														<SourcePlugin Name="F#5" ID="{3BAFFA3A-8778-42EF-8A26-CE9DF204ACA5}" ShortID="1031738660" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
 															<PropertyList>
 																<Property Name="BaseFrequency" Type="Real32" Value="740"/>
 																<Property Name="OutputLevel" Type="Real32">
@@ -953,7 +923,7 @@
 														</SourcePlugin>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="Wwise Synth One" ID="{3BAFFA3A-8778-42EF-8A26-CE9DF204ACA5}" Platform="Linked"/>
+														<ActiveSource Name="F#5" ID="{3BAFFA3A-8778-42EF-8A26-CE9DF204ACA5}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="Linked" ID="{81460672-4873-4291-868A-36C430590D83}" ShortID="338651437" Type="SoundFX">
@@ -1013,7 +983,7 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<SourcePlugin Name="Wwise Synth One" ID="{BE3C6191-A25F-4DF6-BA95-D07E40F5F148}" ShortID="342318795" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
+														<SourcePlugin Name="F#6" ID="{BE3C6191-A25F-4DF6-BA95-D07E40F5F148}" ShortID="342318795" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
 															<PropertyList>
 																<Property Name="BaseFrequency" Type="Real32" Value="1480"/>
 																<Property Name="OutputLevel" Type="Real32">
@@ -1051,7 +1021,7 @@
 														</SourcePlugin>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="Wwise Synth One" ID="{BE3C6191-A25F-4DF6-BA95-D07E40F5F148}" Platform="Linked"/>
+														<ActiveSource Name="F#6" ID="{BE3C6191-A25F-4DF6-BA95-D07E40F5F148}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
@@ -1146,7 +1116,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<SourcePlugin Name="Wwise Synth One" ID="{41453834-68AD-402F-8A0E-7CF1DCAAE31A}" ShortID="341505321" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
+												<SourcePlugin Name="D4" ID="{41453834-68AD-402F-8A0E-7CF1DCAAE31A}" ShortID="341505321" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
 													<PropertyList>
 														<Property Name="BaseFrequency" Type="Real32" Value="293.7"/>
 														<Property Name="OutputLevel" Type="Real32">
@@ -1184,7 +1154,7 @@
 												</SourcePlugin>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="Wwise Synth One" ID="{41453834-68AD-402F-8A0E-7CF1DCAAE31A}" Platform="Linked"/>
+												<ActiveSource Name="D4" ID="{41453834-68AD-402F-8A0E-7CF1DCAAE31A}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 										<SwitchContainer Name="Zone1" ID="{93D93300-CF60-4FEE-8285-BC179FC57922}" ShortID="846979791">
@@ -1257,7 +1227,7 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<SourcePlugin Name="Wwise Synth One" ID="{36BF1707-2045-4470-8C4D-36AC8C7192FD}" ShortID="973613878" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
+														<SourcePlugin Name="F#5" ID="{36BF1707-2045-4470-8C4D-36AC8C7192FD}" ShortID="973613878" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
 															<PropertyList>
 																<Property Name="BaseFrequency" Type="Real32" Value="740"/>
 																<Property Name="OutputLevel" Type="Real32">
@@ -1295,7 +1265,7 @@
 														</SourcePlugin>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="Wwise Synth One" ID="{36BF1707-2045-4470-8C4D-36AC8C7192FD}" Platform="Linked"/>
+														<ActiveSource Name="F#5" ID="{36BF1707-2045-4470-8C4D-36AC8C7192FD}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="Linked" ID="{0BF26013-F671-431F-B947-103282B6012F}" ShortID="286702187" Type="SoundFX">
@@ -1355,7 +1325,7 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<SourcePlugin Name="Wwise Synth One" ID="{42CD2740-4F57-440B-880A-480398EB4FB8}" ShortID="991409411" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
+														<SourcePlugin Name="F#6" ID="{42CD2740-4F57-440B-880A-480398EB4FB8}" ShortID="991409411" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
 															<PropertyList>
 																<Property Name="BaseFrequency" Type="Real32" Value="1480"/>
 																<Property Name="OutputLevel" Type="Real32">
@@ -1393,7 +1363,7 @@
 														</SourcePlugin>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="Wwise Synth One" ID="{42CD2740-4F57-440B-880A-480398EB4FB8}" Platform="Linked"/>
+														<ActiveSource Name="F#6" ID="{42CD2740-4F57-440B-880A-480398EB4FB8}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
@@ -1488,7 +1458,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<SourcePlugin Name="Wwise Synth One" ID="{1726EDC8-185D-4027-B57F-9E2E1D6D1A6C}" ShortID="457585800" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
+												<SourcePlugin Name="D4" ID="{1726EDC8-185D-4027-B57F-9E2E1D6D1A6C}" ShortID="457585800" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
 													<PropertyList>
 														<Property Name="BaseFrequency" Type="Real32" Value="293.7"/>
 														<Property Name="OutputLevel" Type="Real32">
@@ -1526,7 +1496,7 @@
 												</SourcePlugin>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="Wwise Synth One" ID="{1726EDC8-185D-4027-B57F-9E2E1D6D1A6C}" Platform="Linked"/>
+												<ActiveSource Name="D4" ID="{1726EDC8-185D-4027-B57F-9E2E1D6D1A6C}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 										<SwitchContainer Name="Zone1" ID="{6F204E1D-203D-4BC0-9B77-39A628745368}" ShortID="301487782">
@@ -1599,7 +1569,7 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<SourcePlugin Name="Wwise Synth One" ID="{A043AB23-0F13-4AE8-8FEB-37C942F4E9A2}" ShortID="1015933048" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
+														<SourcePlugin Name="F#4" ID="{A043AB23-0F13-4AE8-8FEB-37C942F4E9A2}" ShortID="1015933048" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
 															<PropertyList>
 																<Property Name="BaseFrequency" Type="Real32" Value="370"/>
 																<Property Name="OutputLevel" Type="Real32">
@@ -1637,7 +1607,7 @@
 														</SourcePlugin>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="Wwise Synth One" ID="{A043AB23-0F13-4AE8-8FEB-37C942F4E9A2}" Platform="Linked"/>
+														<ActiveSource Name="F#4" ID="{A043AB23-0F13-4AE8-8FEB-37C942F4E9A2}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="Linked" ID="{CBB20137-9991-4B26-A4E3-054BF84A95B7}" ShortID="107350479" Type="SoundFX">
@@ -1697,7 +1667,7 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<SourcePlugin Name="Wwise Synth One" ID="{12178625-DFD9-4C89-AC8C-4A51B88690EE}" ShortID="523263058" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
+														<SourcePlugin Name="F#5" ID="{12178625-DFD9-4C89-AC8C-4A51B88690EE}" ShortID="523263058" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
 															<PropertyList>
 																<Property Name="BaseFrequency" Type="Real32" Value="740"/>
 																<Property Name="OutputLevel" Type="Real32">
@@ -1735,7 +1705,7 @@
 														</SourcePlugin>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="Wwise Synth One" ID="{12178625-DFD9-4C89-AC8C-4A51B88690EE}" Platform="Linked"/>
+														<ActiveSource Name="F#5" ID="{12178625-DFD9-4C89-AC8C-4A51B88690EE}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
@@ -1880,7 +1850,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<SourcePlugin Name="Wwise Synth One" ID="{527BFDDC-FF63-46AE-B360-A1736FC8BEF7}" ShortID="393857594" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
+												<SourcePlugin Name="B3" ID="{527BFDDC-FF63-46AE-B360-A1736FC8BEF7}" ShortID="393857594" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
 													<PropertyList>
 														<Property Name="BaseFrequency" Type="Real32" Value="246.9"/>
 														<Property Name="OutputLevel" Type="Real32">
@@ -1918,7 +1888,7 @@
 												</SourcePlugin>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="Wwise Synth One" ID="{527BFDDC-FF63-46AE-B360-A1736FC8BEF7}" Platform="Linked"/>
+												<ActiveSource Name="B3" ID="{527BFDDC-FF63-46AE-B360-A1736FC8BEF7}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 										<SwitchContainer Name="Zone1" ID="{58CE6A2D-AB37-4004-A9FA-9CF4E74011CE}" ShortID="19519088">
@@ -1991,7 +1961,7 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<SourcePlugin Name="Wwise Synth One" ID="{1D55948A-2861-42E5-855D-E132A3C2C553}" ShortID="1031111764" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
+														<SourcePlugin Name="A4" ID="{1D55948A-2861-42E5-855D-E132A3C2C553}" ShortID="1031111764" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
 															<PropertyList>
 																<Property Name="BaseFrequency" Type="Real32" Value="440"/>
 																<Property Name="OutputLevel" Type="Real32">
@@ -2029,7 +1999,7 @@
 														</SourcePlugin>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="Wwise Synth One" ID="{1D55948A-2861-42E5-855D-E132A3C2C553}" Platform="Linked"/>
+														<ActiveSource Name="A4" ID="{1D55948A-2861-42E5-855D-E132A3C2C553}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="Linked" ID="{6B304671-624F-4A58-992B-04265E8E2F7D}" ShortID="956083364" Type="SoundFX">
@@ -2089,7 +2059,7 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<SourcePlugin Name="Wwise Synth One" ID="{D1E76BA4-05A8-4125-8589-392A3E711C20}" ShortID="336864406" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
+														<SourcePlugin Name="A5" ID="{D1E76BA4-05A8-4125-8589-392A3E711C20}" ShortID="336864406" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
 															<PropertyList>
 																<Property Name="BaseFrequency" Type="Real32" Value="880"/>
 																<Property Name="OutputLevel" Type="Real32">
@@ -2127,7 +2097,7 @@
 														</SourcePlugin>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="Wwise Synth One" ID="{D1E76BA4-05A8-4125-8589-392A3E711C20}" Platform="Linked"/>
+														<ActiveSource Name="A5" ID="{D1E76BA4-05A8-4125-8589-392A3E711C20}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
@@ -2222,7 +2192,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<SourcePlugin Name="Wwise Synth One" ID="{C0026859-B382-49B2-8680-F76C4CBA0B22}" ShortID="1006598689" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
+												<SourcePlugin Name="B3" ID="{C0026859-B382-49B2-8680-F76C4CBA0B22}" ShortID="1006598689" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
 													<PropertyList>
 														<Property Name="BaseFrequency" Type="Real32" Value="246.9"/>
 														<Property Name="OutputLevel" Type="Real32">
@@ -2260,7 +2230,7 @@
 												</SourcePlugin>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="Wwise Synth One" ID="{C0026859-B382-49B2-8680-F76C4CBA0B22}" Platform="Linked"/>
+												<ActiveSource Name="B3" ID="{C0026859-B382-49B2-8680-F76C4CBA0B22}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 										<SwitchContainer Name="Zone1" ID="{F298F5D0-EC96-467C-A7C0-5C4B2A09C0FA}" ShortID="46548662">
@@ -2333,7 +2303,7 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<SourcePlugin Name="Wwise Synth One" ID="{C39AEECE-E766-4ADD-B034-17655993CC8B}" ShortID="176191258" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
+														<SourcePlugin Name="A4" ID="{C39AEECE-E766-4ADD-B034-17655993CC8B}" ShortID="176191258" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
 															<PropertyList>
 																<Property Name="BaseFrequency" Type="Real32" Value="440"/>
 																<Property Name="OutputLevel" Type="Real32">
@@ -2371,7 +2341,7 @@
 														</SourcePlugin>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="Wwise Synth One" ID="{C39AEECE-E766-4ADD-B034-17655993CC8B}" Platform="Linked"/>
+														<ActiveSource Name="A4" ID="{C39AEECE-E766-4ADD-B034-17655993CC8B}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="Linked" ID="{2809C626-062C-4A41-A046-3A0CD8CA02B1}" ShortID="158451347" Type="SoundFX">
@@ -2431,7 +2401,7 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<SourcePlugin Name="Wwise Synth One" ID="{2DE504ED-93D2-41DB-BC2F-1460D7054E3F}" ShortID="307026732" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
+														<SourcePlugin Name="A5" ID="{2DE504ED-93D2-41DB-BC2F-1460D7054E3F}" ShortID="307026732" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
 															<PropertyList>
 																<Property Name="BaseFrequency" Type="Real32" Value="880"/>
 																<Property Name="OutputLevel" Type="Real32">
@@ -2469,7 +2439,7 @@
 														</SourcePlugin>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="Wwise Synth One" ID="{2DE504ED-93D2-41DB-BC2F-1460D7054E3F}" Platform="Linked"/>
+														<ActiveSource Name="A5" ID="{2DE504ED-93D2-41DB-BC2F-1460D7054E3F}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
@@ -2564,7 +2534,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<SourcePlugin Name="Wwise Synth One" ID="{3FB6AF81-7C16-4C5B-8984-26938CF88D77}" ShortID="26644415" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
+												<SourcePlugin Name="B3" ID="{3FB6AF81-7C16-4C5B-8984-26938CF88D77}" ShortID="26644415" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
 													<PropertyList>
 														<Property Name="BaseFrequency" Type="Real32" Value="246.9"/>
 														<Property Name="OutputLevel" Type="Real32">
@@ -2602,7 +2572,7 @@
 												</SourcePlugin>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="Wwise Synth One" ID="{3FB6AF81-7C16-4C5B-8984-26938CF88D77}" Platform="Linked"/>
+												<ActiveSource Name="B3" ID="{3FB6AF81-7C16-4C5B-8984-26938CF88D77}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 										<SwitchContainer Name="Zone1" ID="{4B0DC1B5-D9DA-4417-9B13-93521D620C0F}" ShortID="953684010">
@@ -2675,7 +2645,7 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<SourcePlugin Name="Wwise Synth One" ID="{44702016-F6AF-4EBA-A366-8843008A2BCC}" ShortID="635399260" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
+														<SourcePlugin Name="D5" ID="{44702016-F6AF-4EBA-A366-8843008A2BCC}" ShortID="635399260" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
 															<PropertyList>
 																<Property Name="BaseFrequency" Type="Real32" Value="587.3"/>
 																<Property Name="OutputLevel" Type="Real32">
@@ -2713,7 +2683,7 @@
 														</SourcePlugin>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="Wwise Synth One" ID="{44702016-F6AF-4EBA-A366-8843008A2BCC}" Platform="Linked"/>
+														<ActiveSource Name="D5" ID="{44702016-F6AF-4EBA-A366-8843008A2BCC}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="Linked" ID="{07EE3742-DBCC-4E2E-8B1F-240360F54FDA}" ShortID="558946548" Type="SoundFX">
@@ -2773,7 +2743,7 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<SourcePlugin Name="Wwise Synth One" ID="{9F97F85B-25B3-41CE-8206-6F5ECA6861B3}" ShortID="558360815" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
+														<SourcePlugin Name="D6" ID="{9F97F85B-25B3-41CE-8206-6F5ECA6861B3}" ShortID="558360815" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
 															<PropertyList>
 																<Property Name="BaseFrequency" Type="Real32" Value="1174.7"/>
 																<Property Name="OutputLevel" Type="Real32">
@@ -2811,7 +2781,7 @@
 														</SourcePlugin>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="Wwise Synth One" ID="{9F97F85B-25B3-41CE-8206-6F5ECA6861B3}" Platform="Linked"/>
+														<ActiveSource Name="D6" ID="{9F97F85B-25B3-41CE-8206-6F5ECA6861B3}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
@@ -2906,7 +2876,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<SourcePlugin Name="Wwise Synth One" ID="{8B10511D-E99B-4300-89CD-C131B7266652}" ShortID="961099587" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
+												<SourcePlugin Name="B3" ID="{8B10511D-E99B-4300-89CD-C131B7266652}" ShortID="961099587" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
 													<PropertyList>
 														<Property Name="BaseFrequency" Type="Real32" Value="246.9"/>
 														<Property Name="OutputLevel" Type="Real32">
@@ -2944,7 +2914,7 @@
 												</SourcePlugin>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="Wwise Synth One" ID="{8B10511D-E99B-4300-89CD-C131B7266652}" Platform="Linked"/>
+												<ActiveSource Name="B3" ID="{8B10511D-E99B-4300-89CD-C131B7266652}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 										<SwitchContainer Name="Zone1" ID="{F5738AF6-ED89-495F-A872-F6EFB104FDC3}" ShortID="367959606">
@@ -3017,7 +2987,7 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<SourcePlugin Name="Wwise Synth One" ID="{870612C6-4636-4A60-A1C9-2FCDD5417E29}" ShortID="503042959" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
+														<SourcePlugin Name="D5" ID="{870612C6-4636-4A60-A1C9-2FCDD5417E29}" ShortID="503042959" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
 															<PropertyList>
 																<Property Name="BaseFrequency" Type="Real32" Value="587.3"/>
 																<Property Name="OutputLevel" Type="Real32">
@@ -3055,7 +3025,7 @@
 														</SourcePlugin>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="Wwise Synth One" ID="{870612C6-4636-4A60-A1C9-2FCDD5417E29}" Platform="Linked"/>
+														<ActiveSource Name="D5" ID="{870612C6-4636-4A60-A1C9-2FCDD5417E29}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="Linked" ID="{A3EB802B-AF70-491B-B4F2-C2209AF514E7}" ShortID="176821371" Type="SoundFX">
@@ -3115,7 +3085,7 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<SourcePlugin Name="Wwise Synth One" ID="{B304D019-F5C6-42FC-A984-1D280463F44F}" ShortID="139339727" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
+														<SourcePlugin Name="D6" ID="{B304D019-F5C6-42FC-A984-1D280463F44F}" ShortID="139339727" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
 															<PropertyList>
 																<Property Name="BaseFrequency" Type="Real32" Value="1174.7"/>
 																<Property Name="OutputLevel" Type="Real32">
@@ -3153,7 +3123,7 @@
 														</SourcePlugin>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="Wwise Synth One" ID="{B304D019-F5C6-42FC-A984-1D280463F44F}" Platform="Linked"/>
+														<ActiveSource Name="D6" ID="{B304D019-F5C6-42FC-A984-1D280463F44F}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>

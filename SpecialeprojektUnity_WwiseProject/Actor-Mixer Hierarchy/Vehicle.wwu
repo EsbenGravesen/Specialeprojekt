@@ -21,15 +21,20 @@
 						<Sound Name="Acceleration" ID="{9AFAF0A8-7C7E-4376-8FE7-59C8B555478A}" ShortID="532108008" Type="SoundFX">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>33</Value>
+									</ValueList>
+								</Property>
 								<Property Name="Pitch" Type="int32">
 									<RTPCList>
-										<RTPC Name="" ID="{4FEBC2EB-6F1D-41F0-AA00-AD5791A7D844}" ShortID="383989087">
+										<RTPC Name="" ID="{FF39A677-DD10-493A-94C0-566285AE4BE6}" ShortID="556956899">
 											<ReferenceList>
 												<Reference Name="ControlInput">
 													<ObjectRef Name="PlayerAcc" ID="{B7F8491B-187E-42A5-A63D-F5BD2690FFB8}" WorkUnitID="{40907770-B0F2-4733-B406-6FC08CC457AD}"/>
 												</Reference>
 											</ReferenceList>
-											<Curve Name="" ID="{6D3B3001-C5FA-4E0F-B12A-459B57D85400}">
+											<Curve Name="" ID="{674F8C1C-3F00-4B95-938D-EB19DADDE9AE}">
 												<PropertyList>
 													<Property Name="Flags" Type="int32" Value="65537"/>
 												</PropertyList>
@@ -38,11 +43,10 @@
 														<XPos>0</XPos>
 														<YPos>0</YPos>
 														<Flags>5</Flags>
-														<SegmentShape>Log2</SegmentShape>
 													</Point>
 													<Point>
 														<XPos>1</XPos>
-														<YPos>700</YPos>
+														<YPos>330</YPos>
 														<Flags>37</Flags>
 													</Point>
 												</PointList>
@@ -52,7 +56,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-31</Value>
+										<Value>-24</Value>
 									</ValueList>
 									<RTPCList>
 										<RTPC Name="" ID="{6BC6736A-2DCD-4923-8CB9-837F35A436A7}" ShortID="405912418">
@@ -68,8 +72,15 @@
 												<PointList>
 													<Point>
 														<XPos>0</XPos>
-														<YPos>-200</YPos>
+														<YPos>-12</YPos>
 														<Flags>5</Flags>
+														<SegmentShape>Log3</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>0.02</XPos>
+														<YPos>-3</YPos>
+														<Flags>0</Flags>
+														<SegmentShape>Log1</SegmentShape>
 													</Point>
 													<Point>
 														<XPos>1</XPos>
@@ -91,32 +102,72 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<SourcePlugin Name="Wwise Synth One" ID="{E4F5C764-4BD8-4339-AAF3-F43DA346229B}" ShortID="4036321" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
+								<SourcePlugin Name="Acceleration Synth" ID="{4C3A9E2F-25C8-45B0-8C17-C84593BFF771}" ShortID="464711149" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
 									<PropertyList>
-										<Property Name="BaseFrequency" Type="Real32" Value="55"/>
-										<Property Name="OutputLevel" Type="Real32">
+										<Property Name="BaseFrequency" Type="Real32" Value="392"/>
+										<Property Name="FmAmount" Type="Real32" Value="18.9"/>
+										<Property Name="NoiseLevel" Type="Real32" Value="-11"/>
+										<Property Name="NoiseShape" Type="int32" Value="2"/>
+										<Property Name="OperationMode" Type="int32" Value="1"/>
+										<Property Name="Osc1Pwm" Type="Real32" Value="42"/>
+										<Property Name="Osc1Waveform" Type="int32" Value="1"/>
+										<Property Name="Osc2Pwm" Type="Real32" Value="37">
 											<RTPCList>
-												<RTPC Name="" ID="{A97EDCD7-4BF9-427A-BF8E-AF700A2C4619}" ShortID="510723367">
+												<RTPC Name="" ID="{B861B67A-7D70-4920-8BF4-37CF93EF559C}" ShortID="612171496">
 													<ReferenceList>
 														<Reference Name="ControlInput">
 															<Custom>
-																<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{2AFBA591-9FE1-46DC-869D-0C209858D300}" ShortID="416278086"/>
+																<ModulatorLfo Name="Modulator LFO (Custom)" ID="{4FA86C64-0A12-43E2-844A-564F95D0E106}" ShortID="1060933036">
+																	<PropertyList>
+																		<Property Name="LfoFrequency" Type="Real64" Value="42">
+																			<RTPCList>
+																				<RTPC Name="" ID="{BEB0726D-3747-48DD-B614-03160723B8EF}" ShortID="192332722">
+																					<ReferenceList>
+																						<Reference Name="ControlInput">
+																							<ObjectRef Name="PlayerAcc" ID="{B7F8491B-187E-42A5-A63D-F5BD2690FFB8}" WorkUnitID="{40907770-B0F2-4733-B406-6FC08CC457AD}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<Curve Name="" ID="{43A7F394-4DD4-445B-AB68-70155237F171}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="5"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>33</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>1</XPos>
+																								<YPos>42</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</RTPC>
+																			</RTPCList>
+																		</Property>
+																		<Property Name="LfoPWM" Type="Real64" Value="27.9"/>
+																		<Property Name="LfoSmoothing" Type="Real64" Value="5"/>
+																		<Property Name="LfoWaveform" Type="int32" Value="2"/>
+																	</PropertyList>
+																</ModulatorLfo>
 															</Custom>
 														</Reference>
 													</ReferenceList>
-													<Curve Name="" ID="{A66EB8E5-EF31-41E8-A541-0CADB5E3C47F}">
+													<Curve Name="" ID="{26AB8A8D-4613-4AD8-83BD-5A5C20B14CFB}">
 														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="3"/>
+															<Property Name="Flags" Type="int32" Value="1"/>
 														</PropertyList>
 														<PointList>
 															<Point>
 																<XPos>0</XPos>
-																<YPos>-96</YPos>
+																<YPos>0</YPos>
 																<Flags>21</Flags>
 															</Point>
 															<Point>
 																<XPos>1</XPos>
-																<YPos>0</YPos>
+																<YPos>77.64128</YPos>
 																<Flags>53</Flags>
 															</Point>
 														</PointList>
@@ -124,12 +175,14 @@
 												</RTPC>
 											</RTPCList>
 										</Property>
+										<Property Name="Osc2Transpose" Type="int32" Value="-1743"/>
+										<Property Name="Osc2Waveform" Type="int32" Value="1"/>
 									</PropertyList>
 									<Language>SFX</Language>
 								</SourcePlugin>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="Wwise Synth One" ID="{E4F5C764-4BD8-4339-AAF3-F43DA346229B}" Platform="Linked"/>
+								<ActiveSource Name="Acceleration Synth" ID="{4C3A9E2F-25C8-45B0-8C17-C84593BFF771}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>

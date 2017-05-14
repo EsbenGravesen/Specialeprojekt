@@ -45,6 +45,9 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	821026704	DistZoneSphere			\Default Work Unit\DistZoneSphere	
 	4068002537	PlayerAcc			\Default Work Unit\PlayerAcc	
 
+Modulator LFO	ID	Name			Wwise Object Path	Notes
+	1060933036	Modulator LFO (Custom)				
+
 Modulator Envelope	ID	Name			Wwise Object Path	Notes
 	1666506	Modulator Envelope (Custom)				
 	5021504	Modulator Envelope (Custom)				
@@ -136,7 +139,6 @@ Modulator Envelope	ID	Name			Wwise Object Path	Notes
 	414641068	Modulator Envelope (Custom)				
 	415190957	Modulator Envelope (Custom)				
 	416090209	Modulator Envelope (Custom)				
-	416278086	Modulator Envelope (Custom)				
 	424546298	Modulator Envelope (Custom)				
 	426170222	Modulator Envelope (Custom)				
 	430448727	Modulator Envelope (Custom)				
@@ -162,7 +164,6 @@ Modulator Envelope	ID	Name			Wwise Object Path	Notes
 	522232030	Modulator Envelope (Custom)				
 	523747199	Modulator Envelope (Custom)				
 	523927059	Modulator Envelope (Custom)				
-	529443610	Modulator Envelope (Custom)				
 	531336118	Modulator Envelope (Custom)				
 	531500754	Modulator Envelope (Custom)				
 	534649766	Modulator Envelope (Custom)				
@@ -310,11 +311,10 @@ Modulator Envelope	ID	Name			Wwise Object Path	Notes
 	1072462338	Modulator Envelope (Custom)				
 
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
-	4036321	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Vehicle\Vehicle\Acceleration\Wwise Synth One	
 	18681464	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle10\Cycle4\Zone3\Unlinked\Wwise Synth One	
 	19203925	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle10\Cycle2\Sphere\Wwise Synth One	
 	19650156	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle10\Cycle7\Zone3\Unlinked\Wwise Synth One	
-	26644415	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle3\Cycle3\Sphere\Wwise Synth One	
+	26644415	B3	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle3\Cycle3\Sphere\B3	
 	27088752	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle8\Cycle6\Zone3\Unlinked\Wwise Synth One	
 	30533345	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle10\Cycle1\Zone3\Unlinked\Wwise Synth One	
 	35988127	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle9\Cycle6\Zone1\Linked\Wwise Synth One	
@@ -336,7 +336,7 @@ Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	128014614	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle4\Cycle2\Zone1\Linked\Wwise Synth One	
 	135514671	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle9\Cycle4\Sphere\Wwise Synth One	
 	138359008	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle9\Cycle4\Zone1\Unlinked\Wwise Synth One	
-	139339727	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle3\Cycle4\Zone1\Linked\Wwise Synth One	
+	139339727	D6	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle3\Cycle4\Zone1\Linked\D6	
 	144038741	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle8\Cycle2\Zone2\Unlinked\Wwise Synth One	
 	144385204	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle7\Cycle6\Zone2\Unlinked\Wwise Synth One	
 	147742042	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle7\Cycle1\Zone2\Unlinked\Wwise Synth One	
@@ -345,7 +345,7 @@ Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	166529366	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle8\Cycle3\Zone2\Linked\Wwise Synth One	
 	170400400	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle7\Cycle4\Zone1\Linked\Wwise Synth One	
 	175579072	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle8\Cycle1\Zone2\Linked\Wwise Synth One	
-	176191258	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle3\Cycle2\Zone1\Unlinked\Wwise Synth One	
+	176191258	A4	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle3\Cycle2\Zone1\Unlinked\A4	
 	177043566	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle9\Cycle5\Zone1\Linked\Wwise Synth One	
 	179698287	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle7\Cycle3\Sphere\Wwise Synth One	
 	191239458	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle4\Cycle1\Zone1\Unlinked\Wwise Synth One	
@@ -375,7 +375,7 @@ Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	262378846	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle5\Cycle5\Zone1\Linked\Wwise Synth One	
 	270061732	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle7\Cycle1\Zone2\Linked\Wwise Synth One	
 	270756891	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle7\Cycle4\Zone3\Unlinked\Wwise Synth One	
-	271407484	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle1\Cycle1\Zone1\Linked\Wwise Synth One	
+	271407484	G5	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle1\Cycle1\Zone1\Linked\G5	
 	283759358	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle10\Cycle2\Zone1\Linked\Wwise Synth One	
 	288089486	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle5\Cycle1\Sphere\Wwise Synth One	
 	290404287	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle8\Cycle5\Zone2\Unlinked\Wwise Synth One	
@@ -383,7 +383,7 @@ Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	294865709	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle7\Cycle6\Zone1\Linked\Wwise Synth One	
 	300481888	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle10\Cycle3\Zone1\Linked\Wwise Synth One	
 	307015663	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle10\Cycle6\Zone1\Linked\Wwise Synth One	
-	307026732	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle3\Cycle2\Zone1\Linked\Wwise Synth One	
+	307026732	A5	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle3\Cycle2\Zone1\Linked\A5	
 	312679048	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle9\Cycle3\Zone2\Unlinked\Wwise Synth One	
 	316693242	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle9\Cycle5\Zone3\Unlinked\Wwise Synth One	
 	317988084	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle7\Cycle3\Zone3\Unlinked\Wwise Synth One	
@@ -391,10 +391,10 @@ Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	325011602	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle8\Cycle5\Zone2\Linked\Wwise Synth One	
 	333462783	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle8\Cycle2\Zone2\Linked\Wwise Synth One	
 	335620085	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle6\Cycle2\Zone1\Unlinked\Wwise Synth One	
-	336864406	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle3\Cycle1\Zone1\Linked\Wwise Synth One	
+	336864406	A5	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle3\Cycle1\Zone1\Linked\A5	
 	338775438	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle4\Cycle3\Zone1\Linked\Wwise Synth One	
-	341505321	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle2\Cycle1\Sphere\Wwise Synth One	
-	342318795	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle2\Cycle2\Zone1\Linked\Wwise Synth One	
+	341505321	D4	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle2\Cycle1\Sphere\D4	
+	342318795	F#6	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle2\Cycle2\Zone1\Linked\F#6	
 	345039726	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle5\Cycle2\Zone1\Linked\Wwise Synth One	
 	348051460	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle8\Cycle3\Zone2\Unlinked\Wwise Synth One	
 	350324267	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle10\Cycle3\Zone1\Unlinked\Wwise Synth One	
@@ -408,7 +408,7 @@ Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	373929027	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle10\Cycle3\Zone3\Unlinked\Wwise Synth One	
 	379762889	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle10\Cycle1\Zone2\Linked\Wwise Synth One	
 	389001391	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle8\Cycle4\Zone2\Linked\Wwise Synth One	
-	393857594	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle3\Cycle1\Sphere\Wwise Synth One	
+	393857594	B3	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle3\Cycle1\Sphere\B3	
 	396945344	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle7\Cycle3\Zone2\Linked\Wwise Synth One	
 	398157893	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle7\Cycle6\Zone2\Linked\Wwise Synth One	
 	399869359	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle8\Cycle5\Zone1\Linked\Wwise Synth One	
@@ -422,27 +422,28 @@ Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	427720691	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle8\Cycle4\Zone3\Unlinked\Wwise Synth One	
 	453350688	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle8\Cycle1\Zone1\Linked\Wwise Synth One	
 	453657642	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle7\Cycle5\Zone1\Unlinked\Wwise Synth One	
-	457585800	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle2\Cycle3\Sphere\Wwise Synth One	
+	457585800	D4	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle2\Cycle3\Sphere\D4	
 	458959154	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle5\Cycle3\Sphere\Wwise Synth One	
 	460065514	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle8\Cycle2\Zone3\Unlinked\Wwise Synth One	
-	463320735	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle1\Cycle2\Sphere\Wwise Synth One	
+	463320735	C4	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle1\Cycle2\Sphere\C4	
+	464711149	Acceleration Synth	Wwise Synth One		\Actor-Mixer Hierarchy\Vehicle\Vehicle\Acceleration\Acceleration Synth	
 	465387382	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle8\Cycle6\Zone1\Linked\Wwise Synth One	
 	470157248	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle10\Cycle6\Zone2\Linked\Wwise Synth One	
 	471154947	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle7\Cycle6\Sphere\Wwise Synth One	
 	481965295	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle6\Cycle1\Zone2\Unlinked\Wwise Synth One	
 	483563779	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle9\Cycle7\Zone3\Unlinked\Wwise Synth One	
 	487804905	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle10\Cycle2\Zone3\Unlinked\Wwise Synth One	
-	488424658	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle1\Cycle1\Sphere\Wwise Synth One	
+	488424658	C4	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle1\Cycle1\Sphere\C4	
 	489444015	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle6\Cycle5\Sphere\Wwise Synth One	
 	490526646	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle10\Cycle7\Zone2\Linked\Wwise Synth One	
 	491061661	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle6\Cycle4\Zone1\Unlinked\Wwise Synth One	
 	492908895	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle9\Cycle6\Zone2\Unlinked\Wwise Synth One	
 	493873332	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle5\Cycle2\Sphere\Wwise Synth One	
 	498401235	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle10\Cycle7\Zone1\Unlinked\Wwise Synth One	
-	503042959	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle3\Cycle4\Zone1\Unlinked\Wwise Synth One	
+	503042959	D5	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle3\Cycle4\Zone1\Unlinked\D5	
 	515360867	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle9\Cycle1\Sphere\Wwise Synth One	
 	522364094	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle9\Cycle4\Zone3\Linked\Wwise Synth One	
-	523263058	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle2\Cycle3\Zone1\Linked\Wwise Synth One	
+	523263058	F#5	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle2\Cycle3\Zone1\Linked\F#5	
 	524844383	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle7\Cycle1\Zone3\Unlinked\Wwise Synth One	
 	525188664	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle7\Cycle4\Zone3\Linked\Wwise Synth One	
 	531860740	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle10\Cycle5\Zone2\Linked\Wwise Synth One	
@@ -453,7 +454,7 @@ Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	551995595	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle5\Cycle3\Zone1\Linked\Wwise Synth One	
 	552543401	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle7\Cycle2\Zone2\Linked\Wwise Synth One	
 	554703774	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle4\Cycle4\Sphere\Wwise Synth One	
-	558360815	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle3\Cycle3\Zone1\Linked\Wwise Synth One	
+	558360815	D6	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle3\Cycle3\Zone1\Linked\D6	
 	559417862	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle9\Cycle2\Zone1\Unlinked\Wwise Synth One	
 	559537763	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle9\Cycle3\Zone1\Unlinked\Wwise Synth One	
 	573096150	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle10\Cycle7\Zone1\Linked\Wwise Synth One	
@@ -466,10 +467,10 @@ Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	614380750	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle9\Cycle1\Zone2\Unlinked\Wwise Synth One	
 	618193346	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle9\Cycle6\Sphere\Wwise Synth One	
 	624193466	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle8\Cycle5\Zone3\Unlinked\Wwise Synth One	
-	631046260	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle2\Cycle2\Sphere\Wwise Synth One	
+	631046260	D4	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle2\Cycle2\Sphere\D4	
 	634221760	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle10\Cycle4\Zone1\Linked\Wwise Synth One	
 	635359298	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle10\Cycle2\Zone2\Unlinked\Wwise Synth One	
-	635399260	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle3\Cycle3\Zone1\Unlinked\Wwise Synth One	
+	635399260	D5	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle3\Cycle3\Zone1\Unlinked\D5	
 	636500320	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle9\Cycle1\Zone1\Unlinked\Wwise Synth One	
 	642616691	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle7\Cycle2\Zone2\Unlinked\Wwise Synth One	
 	650702633	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle5\Cycle1\Zone1\Linked\Wwise Synth One	
@@ -494,7 +495,7 @@ Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	725266893	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle9\Cycle5\Zone1\Unlinked\Wwise Synth One	
 	728335743	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle8\Cycle4\Zone2\Unlinked\Wwise Synth One	
 	734254781	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle10\Cycle3\Sphere\Wwise Synth One	
-	745626721	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle1\Cycle2\Zone1\Unlinked\Wwise Synth One	
+	745626721	G4	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle1\Cycle2\Zone1\Unlinked\G4	
 	758436857	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle9\Cycle3\Zone2\Linked\Wwise Synth One	
 	761089126	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle5\Cycle2\Zone1\Unlinked\Wwise Synth One	
 	762860570	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle5\Cycle5\Zone1\Unlinked\Wwise Synth One	
@@ -528,35 +529,35 @@ Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	916848517	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle10\Cycle3\Zone2\Unlinked\Wwise Synth One	
 	922172375	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle10\Cycle3\Zone2\Linked\Wwise Synth One	
 	925628144	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle9\Cycle7\Sphere\Wwise Synth One	
-	933007523	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle1\Cycle2\Zone1\Linked\Wwise Synth One	
+	933007523	G5	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle1\Cycle2\Zone1\Linked\G5	
 	933623529	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle9\Cycle1\Zone2\Linked\Wwise Synth One	
 	951131061	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle5\Cycle6\Zone1\Unlinked\Wwise Synth One	
 	956676052	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle5\Cycle6\Sphere\Wwise Synth One	
 	957387056	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle5\Cycle4\Zone1\Unlinked\Wwise Synth One	
 	960173828	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle7\Cycle4\Zone2\Unlinked\Wwise Synth One	
-	961099587	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle3\Cycle4\Sphere\Wwise Synth One	
+	961099587	B3	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle3\Cycle4\Sphere\B3	
 	962341037	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle4\Cycle5\Zone1\Unlinked\Wwise Synth One	
-	973613878	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle2\Cycle1\Zone1\Unlinked\Wwise Synth One	
+	973613878	F#5	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle2\Cycle1\Zone1\Unlinked\F#5	
 	975037230	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle8\Cycle5\Sphere\Wwise Synth One	
 	977857074	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle9\Cycle6\Zone1\Unlinked\Wwise Synth One	
 	982072004	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle4\Cycle3\Zone1\Unlinked\Wwise Synth One	
 	990664250	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle8\Cycle4\Zone1\Unlinked\Wwise Synth One	
 	991126187	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle6\Cycle3\Zone2\Linked\Wwise Synth One	
-	991409411	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle2\Cycle1\Zone1\Linked\Wwise Synth One	
+	991409411	F#6	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle2\Cycle1\Zone1\Linked\F#6	
 	996064615	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle7\Cycle1\Zone3\Linked\Wwise Synth One	
-	1006598689	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle3\Cycle2\Sphere\Wwise Synth One	
+	1006598689	B3	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle3\Cycle2\Sphere\B3	
 	1007797398	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle6\Cycle1\Zone1\Linked\Wwise Synth One	
 	1012296723	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle9\Cycle2\Zone2\Linked\Wwise Synth One	
 	1014131631	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle4\Cycle1\Sphere\Wwise Synth One	
 	1014618924	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle6\Cycle1\Zone2\Linked\Wwise Synth One	
-	1015933048	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle2\Cycle3\Zone1\Unlinked\Wwise Synth One	
+	1015933048	F#4	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle2\Cycle3\Zone1\Unlinked\F#4	
 	1021305440	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle5\Cycle1\Zone1\Unlinked\Wwise Synth One	
 	1022478040	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle8\Cycle3\Sphere\Wwise Synth One	
 	1026134520	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle4\Cycle2\Zone1\Unlinked\Wwise Synth One	
-	1027702575	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle1\Cycle1\Zone1\Unlinked\Wwise Synth One	
+	1027702575	G4	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle1\Cycle1\Zone1\Unlinked\G4	
 	1029229009	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle9\Cycle3\Zone1\Linked\Wwise Synth One	
-	1031111764	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle3\Cycle1\Zone1\Unlinked\Wwise Synth One	
-	1031738660	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle2\Cycle2\Zone1\Unlinked\Wwise Synth One	
+	1031111764	A4	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle3\Cycle1\Zone1\Unlinked\A4	
+	1031738660	F#5	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle2\Cycle2\Zone1\Unlinked\F#5	
 	1033413002	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle10\Cycle1\Zone2\Unlinked\Wwise Synth One	
 	1034765768	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle8\Cycle1\Sphere\Wwise Synth One	
 	1038171983	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzles\Puzzle10\Cycle5\Zone1\Unlinked\Wwise Synth One	
