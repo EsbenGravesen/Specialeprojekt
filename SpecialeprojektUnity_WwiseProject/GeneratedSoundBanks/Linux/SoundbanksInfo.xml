@@ -23,7 +23,27 @@
 			<IncludedEvents>
 				<Event Id="3487251266" Name="Acceleration_Play" ObjectPath="\Events\Default Work Unit\Acceleration_Play"/>
 				<Event Id="4088790428" Name="Acceleration_Stop" ObjectPath="\Events\Default Work Unit\Acceleration_Stop" MaxAttenuation="0.000000"/>
-				<Event Id="4129441541" Name="Puzzles_Play" ObjectPath="\Events\Default Work Unit\Puzzles_Play" MaxAttenuation="100.000000"/>
+				<Event Id="3384042507" Name="Puzzle10_Play" ObjectPath="\Events\Default Work Unit\Puzzle10_Play" MaxAttenuation="100.000000"/>
+				<Event Id="2206705825" Name="Puzzle10_Stop" ObjectPath="\Events\Default Work Unit\Puzzle10_Stop" MaxAttenuation="0.000000"/>
+				<Event Id="1908115431" Name="Puzzle1_Play" ObjectPath="\Events\Default Work Unit\Puzzle1_Play" MaxAttenuation="100.000000"/>
+				<Event Id="601780533" Name="Puzzle1_Stop" ObjectPath="\Events\Default Work Unit\Puzzle1_Stop" MaxAttenuation="0.000000"/>
+				<Event Id="2636005590" Name="Puzzle2_Play" ObjectPath="\Events\Default Work Unit\Puzzle2_Play" MaxAttenuation="100.000000"/>
+				<Event Id="3408016488" Name="Puzzle2_Stop" ObjectPath="\Events\Default Work Unit\Puzzle2_Stop" MaxAttenuation="0.000000"/>
+				<Event Id="1418533317" Name="Puzzle3_Play" ObjectPath="\Events\Default Work Unit\Puzzle3_Play" MaxAttenuation="100.000000"/>
+				<Event Id="2843186243" Name="Puzzle3_Stop" ObjectPath="\Events\Default Work Unit\Puzzle3_Stop" MaxAttenuation="0.000000"/>
+				<Event Id="2230846708" Name="Puzzle4_Play" ObjectPath="\Events\Default Work Unit\Puzzle4_Play" MaxAttenuation="100.000000"/>
+				<Event Id="3934749134" Name="Puzzle4_Stop" ObjectPath="\Events\Default Work Unit\Puzzle4_Stop" MaxAttenuation="0.000000"/>
+				<Event Id="211991627" Name="Puzzle5_Play" ObjectPath="\Events\Default Work Unit\Puzzle5_Play" MaxAttenuation="100.000000"/>
+				<Event Id="3371198945" Name="Puzzle5_Stop" ObjectPath="\Events\Default Work Unit\Puzzle5_Stop" MaxAttenuation="0.000000"/>
+				<Event Id="658362394" Name="Puzzle6_Play" ObjectPath="\Events\Default Work Unit\Puzzle6_Play" MaxAttenuation="100.000000"/>
+				<Event Id="2098918180" Name="Puzzle6_Stop" ObjectPath="\Events\Default Work Unit\Puzzle6_Stop" MaxAttenuation="0.000000"/>
+				<Event Id="3730634729" Name="Puzzle7_Play" ObjectPath="\Events\Default Work Unit\Puzzle7_Play" MaxAttenuation="100.000000"/>
+				<Event Id="958187279" Name="Puzzle7_Stop" ObjectPath="\Events\Default Work Unit\Puzzle7_Stop" MaxAttenuation="0.000000"/>
+				<Event Id="75677864" Name="Puzzle8_Play" ObjectPath="\Events\Default Work Unit\Puzzle8_Play" MaxAttenuation="100.000000"/>
+				<Event Id="2453348122" Name="Puzzle8_Stop" ObjectPath="\Events\Default Work Unit\Puzzle8_Stop" MaxAttenuation="0.000000"/>
+				<Event Id="3844792367" Name="Puzzle9_Play" ObjectPath="\Events\Default Work Unit\Puzzle9_Play" MaxAttenuation="100.000000"/>
+				<Event Id="2309032493" Name="Puzzle9_Stop" ObjectPath="\Events\Default Work Unit\Puzzle9_Stop" MaxAttenuation="0.000000"/>
+				<Event Id="4129441541" Name="Puzzles_Play" ObjectPath="\Events\Default Work Unit\Puzzles_Play"/>
 				<Event Id="1217550467" Name="Puzzles_Stop" ObjectPath="\Events\Default Work Unit\Puzzles_Stop" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 		</SoundBank>

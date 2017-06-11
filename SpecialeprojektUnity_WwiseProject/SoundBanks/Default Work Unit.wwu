@@ -6,9 +6,29 @@
 				<SoundBank Name="Main" ID="{C3F12B70-D24E-45FA-85D4-28BBB01223CF}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Acceleration_Stop" ID="{29F9743A-D095-4247-9038-6DC3AA5E1C65}" WorkUnitID="{7179CA73-8046-43E3-AAB7-E076A02B0894}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Puzzle3_Stop" ID="{513DA9FE-0730-430C-AFD5-7B923356D2A4}" WorkUnitID="{7179CA73-8046-43E3-AAB7-E076A02B0894}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Puzzle7_Play" ID="{10A3ACF4-2E1F-4320-B278-23531AEF8B5A}" WorkUnitID="{7179CA73-8046-43E3-AAB7-E076A02B0894}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Puzzle2_Play" ID="{7DB3451A-582F-434B-9DC3-0ED12453E2F4}" WorkUnitID="{7179CA73-8046-43E3-AAB7-E076A02B0894}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Puzzle7_Stop" ID="{DF0A865F-551D-4389-8D76-6647578E3BB5}" WorkUnitID="{7179CA73-8046-43E3-AAB7-E076A02B0894}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Puzzle10_Play" ID="{4F4B477F-C3A5-4567-AB5D-F57327F7B932}" WorkUnitID="{7179CA73-8046-43E3-AAB7-E076A02B0894}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Acceleration_Play" ID="{952141DA-13CA-46F5-A966-FA6A46D19FA6}" WorkUnitID="{7179CA73-8046-43E3-AAB7-E076A02B0894}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Puzzle6_Stop" ID="{AF974359-143F-4720-B28D-EB497D93CAE5}" WorkUnitID="{7179CA73-8046-43E3-AAB7-E076A02B0894}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Puzzle1_Play" ID="{C3B3C8DB-E283-4815-8E60-59E7F6C24CE7}" WorkUnitID="{7179CA73-8046-43E3-AAB7-E076A02B0894}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Puzzle4_Play" ID="{6CB207AB-7309-4864-908E-69BE660FC425}" WorkUnitID="{7179CA73-8046-43E3-AAB7-E076A02B0894}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Puzzle10_Stop" ID="{58323E60-8223-4980-B8AE-9DBB7E235A8A}" WorkUnitID="{7179CA73-8046-43E3-AAB7-E076A02B0894}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Puzzle2_Stop" ID="{906E3265-CAC1-49FC-A42E-4C9CC7BC26E6}" WorkUnitID="{7179CA73-8046-43E3-AAB7-E076A02B0894}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Puzzle3_Play" ID="{BF3027DE-EC60-4A12-93ED-B55D33239134}" WorkUnitID="{7179CA73-8046-43E3-AAB7-E076A02B0894}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Puzzle9_Play" ID="{053C0226-CFC9-4A9D-B4D4-F09E5D6BCAC3}" WorkUnitID="{7179CA73-8046-43E3-AAB7-E076A02B0894}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Puzzle4_Stop" ID="{E16A0839-AB08-4AB3-95CF-38E405CEC3B6}" WorkUnitID="{7179CA73-8046-43E3-AAB7-E076A02B0894}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Puzzle1_Stop" ID="{663DB573-BAFE-4B66-8663-CC16C5DC83CD}" WorkUnitID="{7179CA73-8046-43E3-AAB7-E076A02B0894}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Puzzle5_Stop" ID="{EDFEF330-C61E-4BBB-B06A-1A48277276E8}" WorkUnitID="{7179CA73-8046-43E3-AAB7-E076A02B0894}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Puzzle5_Play" ID="{3C4139BF-67D7-4BD9-B914-4D3D0A50F8F8}" WorkUnitID="{7179CA73-8046-43E3-AAB7-E076A02B0894}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Puzzle9_Stop" ID="{AED05504-F842-4C07-8A1D-A2DD9BE2CAA5}" WorkUnitID="{7179CA73-8046-43E3-AAB7-E076A02B0894}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Puzzles_Stop" ID="{D47F5BAB-9FE8-4CBA-9736-F7D427B82D97}" WorkUnitID="{7179CA73-8046-43E3-AAB7-E076A02B0894}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Puzzle6_Play" ID="{9CDE4CEE-6822-4E2B-8C4D-B627B5D93D52}" WorkUnitID="{7179CA73-8046-43E3-AAB7-E076A02B0894}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Puzzle8_Stop" ID="{92A6DFE2-2942-4E57-BD34-B0D1D503998D}" WorkUnitID="{7179CA73-8046-43E3-AAB7-E076A02B0894}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Puzzles_Play" ID="{96A1E5F8-6057-4EE5-8F27-56D1BBFBF89E}" WorkUnitID="{7179CA73-8046-43E3-AAB7-E076A02B0894}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Puzzle8_Play" ID="{90BFC82D-39A6-4F28-8B2F-11C0C678C15F}" WorkUnitID="{7179CA73-8046-43E3-AAB7-E076A02B0894}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

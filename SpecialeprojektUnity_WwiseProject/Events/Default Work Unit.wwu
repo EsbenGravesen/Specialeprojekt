@@ -59,6 +59,286 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Puzzle1_Play" ID="{C3B3C8DB-E283-4815-8E60-59E7F6C24CE7}">
+					<ChildrenList>
+						<Action Name="Play" ID="{53F815E6-1834-4635-B04C-F2FBB0C2737D}" ShortID="541022878" Type="Play" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{6E250466-727A-4BE9-A417-64D04CDD7A8B}" Global="false">
+									<ObjectRef Name="Puzzle1" ID="{995F377C-8F03-4424-A524-BABD80A4C7DA}" WorkUnitID="{C10361E7-A85C-4DE2-8207-3D702146BEA8}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Puzzle1_Stop" ID="{663DB573-BAFE-4B66-8663-CC16C5DC83CD}">
+					<ChildrenList>
+						<Action Name="Stop" ID="{CEB63B21-70F3-4D54-A665-1AF65637318B}" ShortID="65593774" Type="Stop" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{3C5BC7BE-8A9D-4B2B-B028-DE2E3050D893}" Global="false">
+									<ObjectRef Name="Puzzle1" ID="{995F377C-8F03-4424-A524-BABD80A4C7DA}" WorkUnitID="{C10361E7-A85C-4DE2-8207-3D702146BEA8}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Puzzle2_Play" ID="{7DB3451A-582F-434B-9DC3-0ED12453E2F4}">
+					<ChildrenList>
+						<Action Name="Play" ID="{520ED1F1-611C-417B-A893-7399E26FAB28}" ShortID="922418992" Type="Play" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{0DB5DF8B-9C68-441C-96E9-61CB437ECBA0}" Global="false">
+									<ObjectRef Name="Puzzle2" ID="{74184E65-F5AC-467C-9174-FC6F018ED0AF}" WorkUnitID="{C10361E7-A85C-4DE2-8207-3D702146BEA8}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Puzzle2_Stop" ID="{906E3265-CAC1-49FC-A42E-4C9CC7BC26E6}">
+					<ChildrenList>
+						<Action Name="Stop" ID="{373E9340-BFFD-4766-A9B2-5F72946085E1}" ShortID="99478886" Type="Stop" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{33DC7F19-7692-4B5F-ACFC-F73D54AFDE7C}" Global="false">
+									<ObjectRef Name="Puzzle2" ID="{74184E65-F5AC-467C-9174-FC6F018ED0AF}" WorkUnitID="{C10361E7-A85C-4DE2-8207-3D702146BEA8}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Puzzle3_Play" ID="{BF3027DE-EC60-4A12-93ED-B55D33239134}">
+					<ChildrenList>
+						<Action Name="Play" ID="{D1154FEF-0A51-4ECD-9917-D916536F9018}" ShortID="224439680" Type="Play" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{BAF33AB1-E0D8-4A64-AB32-01F75727EFA8}" Global="false">
+									<ObjectRef Name="Puzzle3" ID="{CC74674D-AC7F-42C5-978D-36A03AC5F0EA}" WorkUnitID="{C10361E7-A85C-4DE2-8207-3D702146BEA8}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Puzzle3_Stop" ID="{513DA9FE-0730-430C-AFD5-7B923356D2A4}">
+					<ChildrenList>
+						<Action Name="Stop" ID="{C76228FF-9B32-451B-9C0A-8FB197E2A67B}" ShortID="1023221365" Type="Stop" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{7FB6046C-1333-45D4-B567-FDEC84BBD181}" Global="false">
+									<ObjectRef Name="Puzzle3" ID="{CC74674D-AC7F-42C5-978D-36A03AC5F0EA}" WorkUnitID="{C10361E7-A85C-4DE2-8207-3D702146BEA8}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Puzzle4_Play" ID="{6CB207AB-7309-4864-908E-69BE660FC425}">
+					<ChildrenList>
+						<Action Name="Play" ID="{698E5A19-8A4D-4BA2-B1A3-3F0416062A45}" ShortID="416631008" Type="Play" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{3FAD93FD-DB48-4A4C-A099-F25DEE1146A0}" Global="false">
+									<ObjectRef Name="Puzzle4" ID="{296F253E-F476-4524-BD18-D968DF90D4C7}" WorkUnitID="{C10361E7-A85C-4DE2-8207-3D702146BEA8}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Puzzle4_Stop" ID="{E16A0839-AB08-4AB3-95CF-38E405CEC3B6}">
+					<ChildrenList>
+						<Action Name="Stop" ID="{81F4CCB4-C407-4531-91CC-0622795E8536}" ShortID="526777958" Type="Stop" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{19855A54-F8CC-46C5-BDE0-3D127EF636D6}" Global="false">
+									<ObjectRef Name="Puzzle4" ID="{296F253E-F476-4524-BD18-D968DF90D4C7}" WorkUnitID="{C10361E7-A85C-4DE2-8207-3D702146BEA8}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Puzzle5_Play" ID="{3C4139BF-67D7-4BD9-B914-4D3D0A50F8F8}">
+					<ChildrenList>
+						<Action Name="Play" ID="{DF45D3C9-9F50-4C29-B96A-720E0D21876C}" ShortID="316705605" Type="Play" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{6E614C29-CA71-43A7-A4A8-00F8BA7D3C0F}" Global="false">
+									<ObjectRef Name="Puzzle5" ID="{31EE1DB4-3176-4B21-8643-2E70CFE82417}" WorkUnitID="{C10361E7-A85C-4DE2-8207-3D702146BEA8}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Puzzle5_Stop" ID="{EDFEF330-C61E-4BBB-B06A-1A48277276E8}">
+					<ChildrenList>
+						<Action Name="Stop" ID="{4B8A2959-5728-4763-B87C-20D2EC55BE5C}" ShortID="779764833" Type="Stop" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{547DB881-6657-4446-8649-30AFBDB77495}" Global="false">
+									<ObjectRef Name="Puzzle5" ID="{31EE1DB4-3176-4B21-8643-2E70CFE82417}" WorkUnitID="{C10361E7-A85C-4DE2-8207-3D702146BEA8}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Puzzle6_Play" ID="{9CDE4CEE-6822-4E2B-8C4D-B627B5D93D52}">
+					<ChildrenList>
+						<Action Name="Play" ID="{C48BF2CB-D0A0-412B-BB6E-2741F24A6C34}" ShortID="156520408" Type="Play" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{0086DB1D-2CEA-4935-9C0B-A57EA9ABEE89}" Global="false">
+									<ObjectRef Name="Puzzle6" ID="{CD4FC1C5-CD3B-4514-88EA-A5DD4E8B813F}" WorkUnitID="{C10361E7-A85C-4DE2-8207-3D702146BEA8}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Puzzle6_Stop" ID="{AF974359-143F-4720-B28D-EB497D93CAE5}">
+					<ChildrenList>
+						<Action Name="Stop" ID="{FAA5C45D-1940-4673-BE90-E6F40550628C}" ShortID="859011237" Type="Stop" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{5B59723F-F18F-46BD-8333-EE2A380D0DFB}" Global="false">
+									<ObjectRef Name="Puzzle6" ID="{CD4FC1C5-CD3B-4514-88EA-A5DD4E8B813F}" WorkUnitID="{C10361E7-A85C-4DE2-8207-3D702146BEA8}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Puzzle7_Play" ID="{10A3ACF4-2E1F-4320-B278-23531AEF8B5A}">
+					<ChildrenList>
+						<Action Name="Play" ID="{CF1BD4C9-1739-4235-BEE4-E649FB7C5916}" ShortID="604824990" Type="Play" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{126C6253-F681-4EC7-A4F8-2BB09837CDD8}" Global="false">
+									<ObjectRef Name="Puzzle7" ID="{048A823F-82A4-438D-9828-6A574FD05095}" WorkUnitID="{C10361E7-A85C-4DE2-8207-3D702146BEA8}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Puzzle7_Stop" ID="{DF0A865F-551D-4389-8D76-6647578E3BB5}">
+					<ChildrenList>
+						<Action Name="Stop" ID="{B9371529-8FC2-41D4-B64B-9CE506E3AC8D}" ShortID="816574340" Type="Stop" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{C05F2431-9309-40BD-8C68-56BB29F52E9E}" Global="false">
+									<ObjectRef Name="Puzzle7" ID="{048A823F-82A4-438D-9828-6A574FD05095}" WorkUnitID="{C10361E7-A85C-4DE2-8207-3D702146BEA8}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Puzzle8_Play" ID="{90BFC82D-39A6-4F28-8B2F-11C0C678C15F}">
+					<ChildrenList>
+						<Action Name="Play" ID="{2F6A1FF5-A7C4-4F37-822B-28857E57E603}" ShortID="129664895" Type="Play" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{790BC478-9640-42AD-8854-94D2FAC9E19F}" Global="false">
+									<ObjectRef Name="Puzzle8" ID="{0591A204-61C9-4DEF-BB84-3802D032F7FC}" WorkUnitID="{C10361E7-A85C-4DE2-8207-3D702146BEA8}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Puzzle8_Stop" ID="{92A6DFE2-2942-4E57-BD34-B0D1D503998D}">
+					<ChildrenList>
+						<Action Name="Stop" ID="{3D3B445E-05FA-4AE8-9769-6138E4BDEC7A}" ShortID="855382296" Type="Stop" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{D42DFEF6-B9F3-4462-A1F1-892A2B094878}" Global="false">
+									<ObjectRef Name="Puzzle8" ID="{0591A204-61C9-4DEF-BB84-3802D032F7FC}" WorkUnitID="{C10361E7-A85C-4DE2-8207-3D702146BEA8}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Puzzle9_Play" ID="{053C0226-CFC9-4A9D-B4D4-F09E5D6BCAC3}">
+					<ChildrenList>
+						<Action Name="Play" ID="{118F366A-17F5-4910-B8F3-C84301D996E3}" ShortID="78511409" Type="Play" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{C96D090F-5725-47A6-9216-72BB7DDE14B9}" Global="false">
+									<ObjectRef Name="Puzzle9" ID="{217A86F3-9B7D-4003-90C7-AA901D490E51}" WorkUnitID="{C10361E7-A85C-4DE2-8207-3D702146BEA8}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Puzzle9_Stop" ID="{AED05504-F842-4C07-8A1D-A2DD9BE2CAA5}">
+					<ChildrenList>
+						<Action Name="Stop" ID="{DBD8C5F6-BDE8-453B-A75A-C46EBEF74F9C}" ShortID="531538896" Type="Stop" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{2E4E2780-96C8-4307-9910-27CB5A0CE93F}" Global="false">
+									<ObjectRef Name="Puzzle9" ID="{217A86F3-9B7D-4003-90C7-AA901D490E51}" WorkUnitID="{C10361E7-A85C-4DE2-8207-3D702146BEA8}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Puzzle10_Play" ID="{4F4B477F-C3A5-4567-AB5D-F57327F7B932}">
+					<ChildrenList>
+						<Action Name="Play" ID="{281F2C3B-0604-4C48-A0BD-A43655818C21}" ShortID="687127628" Type="Play" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{1F381AB5-261F-4D2C-AE06-2D92722887C7}" Global="false">
+									<ObjectRef Name="Puzzle10" ID="{A947D7AD-84B0-4304-A937-326C3FC8FF01}" WorkUnitID="{C10361E7-A85C-4DE2-8207-3D702146BEA8}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Puzzle10_Stop" ID="{58323E60-8223-4980-B8AE-9DBB7E235A8A}">
+					<ChildrenList>
+						<Action Name="Stop" ID="{3980910C-3BA4-4A7F-9589-0FD16433C593}" ShortID="837706663" Type="Stop" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{1727F2AE-9531-44EE-8A56-6896C7561558}" Global="false">
+									<ObjectRef Name="Puzzle10" ID="{A947D7AD-84B0-4304-A937-326C3FC8FF01}" WorkUnitID="{C10361E7-A85C-4DE2-8207-3D702146BEA8}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
