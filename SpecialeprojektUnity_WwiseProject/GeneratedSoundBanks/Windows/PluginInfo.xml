@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PluginInfo Project="SpecialeprojektUnity_WwiseProject" Platform="Windows" BasePlatform="Windows">
 	<Plugins>
+		<Plugin Name="Wwise Delay" ID="6946819" DLL="AkDelay"/>
+		<Plugin Name="Wwise RoomVerb" ID="7733251" DLL="AkRoomVerb"/>
+		<Plugin Name="Wwise Guitar Distortion" ID="8257539" DLL="AkGuitarDistortion"/>
+		<Plugin Name="Wwise Tremolo" ID="8585219" DLL="AkTremolo"/>
 		<Plugin Name="Wwise Synth One" ID="9699330" DLL="SynthOne"/>
 		<Plugin Name="Auro Headphone" ID="72093811" DLL="Auro"/>
-		<Plugin Name="Auro Panner" ID="72159350" DLL="Auro"/>
 	</Plugins>
 </PluginInfo>

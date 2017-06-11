@@ -18,25 +18,47 @@
 									<Custom>
 										<Effect Name="Auro Headphone (Custom)" ID="{0133660E-9A40-4ADE-A75C-FCD8BF0F3B49}" ShortID="505757189" PluginName="Auro Headphone" CompanyID="263" PluginID="1100" PluginType="3">
 											<PropertyList>
-												<Property Name="ER_Delay" Type="Real32" Value="2.5"/>
+												<Property Name="Bypass_offset" Type="Real32" Value="6.2"/>
+												<Property Name="ER_Delay" Type="Real32" Value="4"/>
+												<Property Name="Reverb" Type="bool" Value="False"/>
 												<Property Name="Reverb_alpha" Type="Real32" Value="0.3"/>
 												<Property Name="Reverb_tr60" Type="Real32" Value="1.25"/>
-												<Property Name="Wall_back" Type="Real32" Value="6.5"/>
-												<Property Name="Wall_bottom" Type="Real32" Value="6.75"/>
-												<Property Name="Wall_front" Type="Real32" Value="9.25"/>
-												<Property Name="Wall_left" Type="Real32" Value="7.25"/>
-												<Property Name="Wall_right" Type="Real32" Value="7.25"/>
-												<Property Name="Wall_top" Type="Real32" Value="8.5"/>
+												<Property Name="Wall_back" Type="Real32" Value="7.34375"/>
+												<Property Name="Wall_bottom" Type="Real32" Value="6.890625"/>
+												<Property Name="Wall_front" Type="Real32" Value="5.59375"/>
+												<Property Name="Wall_left" Type="Real32" Value="6.40625"/>
+												<Property Name="Wall_right" Type="Real32" Value="6.40625"/>
+												<Property Name="Wall_top" Type="Real32" Value="8.359375"/>
 											</PropertyList>
 										</Effect>
 									</Custom>
 								</Reference>
-								<Reference Name="Mixer">
-									<Custom>
-										<Effect Name="Auro Panner (Custom)" ID="{BFE7255F-88C0-4CE9-9B11-916934F14281}" ShortID="129196486" PluginName="Auro Panner" CompanyID="263" PluginID="1101" PluginType="6"/>
-									</Custom>
-								</Reference>
 							</ReferenceList>
+							<ChildrenList>
+								<AuxBus Name="Reverb" ID="{C3C36907-06D7-48DD-BBF6-9A001B302386}">
+									<ReferenceList>
+										<Reference Name="Effect0">
+											<Custom>
+												<Effect Name="Wwise RoomVerb (Custom)" ID="{644D47E9-9B39-4801-9565-418ECE9A9AA5}" ShortID="622487552" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+													<PropertyList>
+														<Property Name="DecayTime" Type="Real32" Value="1.6"/>
+														<Property Name="Density" Type="Real32" Value="97"/>
+														<Property Name="Diffusion" Type="Real32" Value="83"/>
+														<Property Name="ERPattern" Type="int32" Value="9"/>
+														<Property Name="HFDamping" Type="Real32" Value="1.25"/>
+														<Property Name="PreDelay" Type="Real32" Value="13"/>
+														<Property Name="Quality" Type="int32" Value="14"/>
+														<Property Name="ReverbLevel" Type="Real32" Value="-11"/>
+														<Property Name="RoomShape" Type="Real32" Value="58"/>
+														<Property Name="RoomSize" Type="Real32" Value="39"/>
+														<Property Name="StereoWidth" Type="Real32" Value="128"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+								</AuxBus>
+							</ChildrenList>
 						</Bus>
 					</ChildrenList>
 				</Bus>
