@@ -25,8 +25,10 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	348963605	Reverb			\Default Work Unit\Master Audio Bus\3D\Reverb	
+	357718954	Delay			\Default Work Unit\Master Audio Bus\3D\Delay	
 
 Effect plug-ins	ID	Name	Type				Notes
+	39897458	Wwise Delay (Custom)	Wwise Delay			
 	505757189	Auro Headphone (Custom)	Auro Headphone			
 	622487552	Wwise RoomVerb (Custom)	Wwise RoomVerb			
 

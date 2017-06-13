@@ -620,10 +620,12 @@
 								<Effect Name="Low_Pass_20KHz" ID="{830124FB-B9D5-4AE8-846E-E94A74652666}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
 									<PropertyList>
 										<Property Name="FilterTypeBand1" Type="int32" Value="1"/>
+										<Property Name="FilterTypeBand2" Type="int32" Value="5"/>
 										<Property Name="FilterTypeBand3" Type="int32" Value="0"/>
-										<Property Name="FrequencyBand3" Type="Real32" Value="20000"/>
+										<Property Name="FrequencyBand2" Type="Real32" Value="591"/>
+										<Property Name="FrequencyBand3" Type="Real32" Value="3225"/>
+										<Property Name="GainBand2" Type="Real32" Value="-4"/>
 										<Property Name="OnOffBand1" Type="bool" Value="False"/>
-										<Property Name="OnOffBand2" Type="bool" Value="False"/>
 									</PropertyList>
 								</Effect>
 							</ChildrenList>
@@ -1587,10 +1589,15 @@
 							<ChildrenList>
 								<Effect Name="Chorus_Like" ID="{EEE0CC86-8CA5-4DBC-A6B7-568FCB26F290}" PluginName="Wwise Flanger" CompanyID="0" PluginID="125" PluginType="3">
 									<PropertyList>
-										<Property Name="DelayTime" Type="Real32" Value="10"/>
-										<Property Name="ModDepth" Type="Real32" Value="60"/>
-										<Property Name="ModFrequency" Type="Real32" Value="0.85"/>
+										<Property Name="DelayTime" Type="Real32" Value="13.9"/>
+										<Property Name="DryLevel" Type="Real32" Value="0.74"/>
+										<Property Name="FeedForwardLevel" Type="Real32" Value="0.5"/>
+										<Property Name="ModDepth" Type="Real32" Value="12.6"/>
+										<Property Name="ModFrequency" Type="Real32" Value="1.78"/>
 										<Property Name="ModPWM" Type="Real32" Value="0"/>
+										<Property Name="ModSmoothing" Type="Real32" Value="13"/>
+										<Property Name="ModWaveform" Type="int32" Value="1"/>
+										<Property Name="WetDryMix" Type="Real32" Value="43"/>
 									</PropertyList>
 								</Effect>
 							</ChildrenList>

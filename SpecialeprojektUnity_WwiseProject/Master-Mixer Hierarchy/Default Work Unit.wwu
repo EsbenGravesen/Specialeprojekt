@@ -58,6 +58,20 @@
 										</Reference>
 									</ReferenceList>
 								</AuxBus>
+								<AuxBus Name="Delay" ID="{2C1DF7BF-D034-410D-827A-B5005C5F7F0E}">
+									<ReferenceList>
+										<Reference Name="Effect0">
+											<Custom>
+												<Effect Name="Wwise Delay (Custom)" ID="{64BEA6F2-0C03-4F3F-B467-5A91FCEBF8AA}" ShortID="39897458" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+													<PropertyList>
+														<Property Name="DelayTime" Type="Real32" Value="0.14"/>
+														<Property Name="Feedback" Type="Real32" Value="37.5"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+								</AuxBus>
 							</ChildrenList>
 						</Bus>
 					</ChildrenList>
