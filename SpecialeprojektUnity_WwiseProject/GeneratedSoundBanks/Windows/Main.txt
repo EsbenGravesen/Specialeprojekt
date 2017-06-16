@@ -67,10 +67,15 @@ Custom State	ID	Name	State Group	Owner		Notes
 	206861515	Puzzle6	PuzzleCount	\Actor-Mixer Hierarchy\Puzzles\Puzzle2		
 	356052052	Puzzle5	PuzzleCount	\Actor-Mixer Hierarchy\Puzzles\Puzzle2		
 	417142714	Puzzle2	PuzzleCount	\Actor-Mixer Hierarchy\Puzzles\Puzzle1		
+	418784804	Puzzle5	PuzzleCount	\Actor-Mixer Hierarchy\Puzzles\Puzzle4		
+	459616073	Puzzle4	PuzzleCount	\Actor-Mixer Hierarchy\Puzzles\Puzzle2		
 	475597003	Puzzle3	PuzzleCount	\Actor-Mixer Hierarchy\Puzzles\Puzzle1		
+	552955838	Puzzle6	PuzzleCount	\Actor-Mixer Hierarchy\Puzzles\Puzzle4		
 	714690688	Puzzle6	PuzzleCount	\Actor-Mixer Hierarchy\Puzzles\Puzzle1		
+	762335911	Puzzle4	PuzzleCount	\Actor-Mixer Hierarchy\Puzzles\Puzzle3		
 	778415042	Puzzle5	PuzzleCount	\Actor-Mixer Hierarchy\Puzzles\Puzzle3		
 	900169497	Puzzle3	PuzzleCount	\Actor-Mixer Hierarchy\Puzzles\Puzzle2		
+	974056397	Puzzle4	PuzzleCount	\Actor-Mixer Hierarchy\Puzzles\Puzzle1		
 	1037170412	Puzzle6	PuzzleCount	\Actor-Mixer Hierarchy\Puzzles\Puzzle5		
 
 Game Parameter	ID	Name			Wwise Object Path	Notes

@@ -1276,6 +1276,14 @@
 								</State>
 							</CustomState>
 							<CustomState>
+								<StateRef Name="Puzzle4" ID="{EE3EFE8D-D2A9-4E0A-90C9-69136D0CFD94}"/>
+								<State Name="Custom State" ID="{05931201-1837-4065-858B-720BB8D00F9A}" ShortID="974056397">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-96"/>
+									</PropertyList>
+								</State>
+							</CustomState>
+							<CustomState>
 								<StateRef Name="Puzzle6" ID="{FC9D0423-2832-4F8E-932D-8F1CC34539FD}"/>
 								<State Name="Custom State" ID="{5302018B-9AEB-4C3A-9AAC-64469D1E5467}" ShortID="714690688">
 									<PropertyList>
@@ -2975,6 +2983,14 @@
 							<CustomState>
 								<StateRef Name="Puzzle3" ID="{E466AA1A-753A-49AF-8B34-CFB2CF4543F2}"/>
 								<State Name="Custom State" ID="{63AAA346-0325-41AA-B58B-4D41E48E057F}" ShortID="900169497">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-96"/>
+									</PropertyList>
+								</State>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Puzzle4" ID="{EE3EFE8D-D2A9-4E0A-90C9-69136D0CFD94}"/>
+								<State Name="Custom State" ID="{D7B59A0B-F8D3-4AB9-9160-FA3F7B8EE60D}" ShortID="459616073">
 									<PropertyList>
 										<Property Name="Volume" Type="Real64" Value="-96"/>
 									</PropertyList>
@@ -5229,6 +5245,14 @@
 								</State>
 							</CustomState>
 							<CustomState>
+								<StateRef Name="Puzzle4" ID="{EE3EFE8D-D2A9-4E0A-90C9-69136D0CFD94}"/>
+								<State Name="Custom State" ID="{B1281D20-D78A-48F3-8289-DE702A01FAE5}" ShortID="762335911">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-96"/>
+									</PropertyList>
+								</State>
+							</CustomState>
+							<CustomState>
 								<StateRef Name="Puzzle6" ID="{FC9D0423-2832-4F8E-932D-8F1CC34539FD}"/>
 								<State Name="Custom State" ID="{3D58328E-75CC-4FDA-A44E-FDDF4FA2FD10}" ShortID="24991974">
 									<PropertyList>
@@ -7017,6 +7041,31 @@
 							</GroupingInfo>
 						</SwitchContainer>
 					</ChildrenList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="PuzzleCount" ID="{D57D1325-1E1C-4661-8058-E24351543341}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="Puzzle5" ID="{4E8D5128-DB28-4342-9831-7F54AB41FFAF}"/>
+								<State Name="Custom State" ID="{EC6E6215-5451-4C2B-AC9F-2E6B69D9E83B}" ShortID="418784804">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-96"/>
+									</PropertyList>
+								</State>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Puzzle6" ID="{FC9D0423-2832-4F8E-932D-8F1CC34539FD}"/>
+								<State Name="Custom State" ID="{FC08ACDD-F1B6-46B3-B3C9-005AE8F9E72D}" ShortID="552955838">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-96"/>
+									</PropertyList>
+								</State>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
 					<GroupingInfo>
 						<GroupRef Name="Cycles" ID="{A1C28620-76E5-41F1-99E7-64550C95C23B}"/>
 						<DefaultSwitchRef Name="Cycle1" ID="{A9AC33F2-AE0B-4240-9B72-7E31F705C9F5}"/>
@@ -9297,6 +9346,13 @@
 							</GroupingInfo>
 						</SwitchContainer>
 					</ChildrenList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="PuzzleCount" ID="{D57D1325-1E1C-4661-8058-E24351543341}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+					</StateInfo>
 					<GroupingInfo>
 						<GroupRef Name="Cycles" ID="{A1C28620-76E5-41F1-99E7-64550C95C23B}"/>
 						<DefaultSwitchRef Name="Cycle1" ID="{A9AC33F2-AE0B-4240-9B72-7E31F705C9F5}"/>
