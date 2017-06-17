@@ -30,12 +30,12 @@
 		<Banks>
 			<Language ID="0">
 				<File Name="Init" Hash="853214357" Timestamp="131418425581852622"/>
-				<File Name="Main" Hash="2564581186" Timestamp="131420871616315973"/>
+				<File Name="Main" Hash="437327372" Timestamp="131421763338848063"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="1208483373" Timestamp="131420871616670978"/>
+				<File Name="" Hash="1208483373" Timestamp="131421763339193108"/>
 			</Language>
 		</XMLInfo>
 	</Platform>

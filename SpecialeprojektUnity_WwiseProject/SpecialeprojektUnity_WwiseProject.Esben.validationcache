@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValidationCache Version="1" SchemaVersion="75">
 	<ValidationCacheItem File="C:\Users\Esben\Documents\Specialeprojekt\SpecialeprojektUnity_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="2732096494" DateHigh="30576347"/>
-	<ValidationCacheItem File="C:\Users\Esben\Documents\Specialeprojekt\SpecialeprojektUnity_WwiseProject\Actor-Mixer Hierarchy\Puzzles.wwu" DateLow="1213120269" DateHigh="30598246"/>
+	<ValidationCacheItem File="C:\Users\Esben\Documents\Specialeprojekt\SpecialeprojektUnity_WwiseProject\Actor-Mixer Hierarchy\Puzzles.wwu" DateLow="1200708337" DateHigh="30598822"/>
 	<ValidationCacheItem File="C:\Users\Esben\Documents\Specialeprojekt\SpecialeprojektUnity_WwiseProject\Actor-Mixer Hierarchy\Vehicle.wwu" DateLow="797041369" DateHigh="30597711"/>
 	<ValidationCacheItem File="C:\Users\Esben\Documents\Specialeprojekt\SpecialeprojektUnity_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="3962331677" DateHigh="30579341"/>
 	<ValidationCacheItem File="C:\Users\Esben\Documents\Specialeprojekt\SpecialeprojektUnity_WwiseProject\Audio Devices\Default Work Unit.wwu" DateLow="2732206500" DateHigh="30576347"/>
@@ -22,7 +22,7 @@
 	<ValidationCacheItem File="C:\Users\Esben\Documents\Specialeprojekt\SpecialeprojektUnity_WwiseProject\Queries\Factory Queries.wwu" DateLow="2733616582" DateHigh="30576347"/>
 	<ValidationCacheItem File="C:\Users\Esben\Documents\Specialeprojekt\SpecialeprojektUnity_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="798196514" DateHigh="30597711"/>
 	<ValidationCacheItem File="C:\Users\Esben\Documents\Specialeprojekt\SpecialeprojektUnity_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="2733706674" DateHigh="30576347"/>
-	<ValidationCacheItem File="C:\Users\Esben\Documents\Specialeprojekt\SpecialeprojektUnity_WwiseProject\SpecialeprojektUnity_WwiseProject.Esben.wsettings" DateLow="1213755353" DateHigh="30598246"/>
+	<ValidationCacheItem File="C:\Users\Esben\Documents\Specialeprojekt\SpecialeprojektUnity_WwiseProject\SpecialeprojektUnity_WwiseProject.Esben.wsettings" DateLow="1201193397" DateHigh="30598822"/>
 	<ValidationCacheItem File="C:\Users\Esben\Documents\Specialeprojekt\SpecialeprojektUnity_WwiseProject\SpecialeprojektUnity_WwiseProject.wproj" DateLow="1973623952" DateHigh="30578919"/>
 	<ValidationCacheItem File="C:\Users\Esben\Documents\Specialeprojekt\SpecialeprojektUnity_WwiseProject\States\Default Work Unit.wwu" DateLow="899012472" DateHigh="30576516"/>
 	<ValidationCacheItem File="C:\Users\Esben\Documents\Specialeprojekt\SpecialeprojektUnity_WwiseProject\Switches\Default Work Unit.wwu" DateLow="1973733966" DateHigh="30578919"/>
