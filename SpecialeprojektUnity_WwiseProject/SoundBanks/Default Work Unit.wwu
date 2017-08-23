@@ -24,10 +24,8 @@
 						<ObjectRef Name="Puzzle5_Stop" ID="{EDFEF330-C61E-4BBB-B06A-1A48277276E8}" WorkUnitID="{7179CA73-8046-43E3-AAB7-E076A02B0894}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Puzzle5_Play" ID="{3C4139BF-67D7-4BD9-B914-4D3D0A50F8F8}" WorkUnitID="{7179CA73-8046-43E3-AAB7-E076A02B0894}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Puzzle9_Stop" ID="{AED05504-F842-4C07-8A1D-A2DD9BE2CAA5}" WorkUnitID="{7179CA73-8046-43E3-AAB7-E076A02B0894}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Puzzles_Stop" ID="{D47F5BAB-9FE8-4CBA-9736-F7D427B82D97}" WorkUnitID="{7179CA73-8046-43E3-AAB7-E076A02B0894}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Puzzle6_Play" ID="{9CDE4CEE-6822-4E2B-8C4D-B627B5D93D52}" WorkUnitID="{7179CA73-8046-43E3-AAB7-E076A02B0894}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Puzzle8_Stop" ID="{92A6DFE2-2942-4E57-BD34-B0D1D503998D}" WorkUnitID="{7179CA73-8046-43E3-AAB7-E076A02B0894}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Puzzles_Play" ID="{96A1E5F8-6057-4EE5-8F27-56D1BBFBF89E}" WorkUnitID="{7179CA73-8046-43E3-AAB7-E076A02B0894}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Puzzle8_Play" ID="{90BFC82D-39A6-4F28-8B2F-11C0C678C15F}" WorkUnitID="{7179CA73-8046-43E3-AAB7-E076A02B0894}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>

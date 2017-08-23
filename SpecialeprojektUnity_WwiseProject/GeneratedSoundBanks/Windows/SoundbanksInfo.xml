@@ -43,8 +43,6 @@
 				<Event Id="2453348122" Name="Puzzle8_Stop" ObjectPath="\Events\Default Work Unit\Puzzle8_Stop" MaxAttenuation="0.000000"/>
 				<Event Id="3844792367" Name="Puzzle9_Play" ObjectPath="\Events\Default Work Unit\Puzzle9_Play" MaxAttenuation="100.000000"/>
 				<Event Id="2309032493" Name="Puzzle9_Stop" ObjectPath="\Events\Default Work Unit\Puzzle9_Stop" MaxAttenuation="0.000000"/>
-				<Event Id="4129441541" Name="Puzzles_Play" ObjectPath="\Events\Default Work Unit\Puzzles_Play"/>
-				<Event Id="1217550467" Name="Puzzles_Stop" ObjectPath="\Events\Default Work Unit\Puzzles_Stop" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 		</SoundBank>
 	</SoundBanks>

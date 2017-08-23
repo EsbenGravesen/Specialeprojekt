@@ -4,7 +4,6 @@ Event	ID	Name			Wwise Object Path	Notes
 	601780533	Puzzle1_Stop			\Default Work Unit\Puzzle1_Stop	
 	658362394	Puzzle6_Play			\Default Work Unit\Puzzle6_Play	
 	958187279	Puzzle7_Stop			\Default Work Unit\Puzzle7_Stop	
-	1217550467	Puzzles_Stop			\Default Work Unit\Puzzles_Stop	
 	1418533317	Puzzle3_Play			\Default Work Unit\Puzzle3_Play	
 	1908115431	Puzzle1_Play			\Default Work Unit\Puzzle1_Play	
 	2098918180	Puzzle6_Stop			\Default Work Unit\Puzzle6_Stop	
@@ -22,7 +21,6 @@ Event	ID	Name			Wwise Object Path	Notes
 	3844792367	Puzzle9_Play			\Default Work Unit\Puzzle9_Play	
 	3934749134	Puzzle4_Stop			\Default Work Unit\Puzzle4_Stop	
 	4088790428	Acceleration_Stop			\Default Work Unit\Acceleration_Stop	
-	4129441541	Puzzles_Play			\Default Work Unit\Puzzles_Play	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
 	99331738	ZoneState			\Default Work Unit\ZoneState	
@@ -63,19 +61,35 @@ State	ID	Name	State Group			Notes
 
 Custom State	ID	Name	State Group	Owner		Notes
 	24991974	Puzzle6	PuzzleCount	\Actor-Mixer Hierarchy\Puzzles\Puzzle3		
+	55084335	Puzzle7	PuzzleCount	\Actor-Mixer Hierarchy\Puzzles\Puzzle6\Cycle3		
+	106727741	Puzzle7	PuzzleCount	\Actor-Mixer Hierarchy\Puzzles\Puzzle4\Cycle1\Sphere		
+	117713803	Puzzle7	PuzzleCount	\Actor-Mixer Hierarchy\Puzzles\Puzzle2		
 	197662855	Puzzle5	PuzzleCount	\Actor-Mixer Hierarchy\Puzzles\Puzzle1		
 	206861515	Puzzle6	PuzzleCount	\Actor-Mixer Hierarchy\Puzzles\Puzzle2		
 	356052052	Puzzle5	PuzzleCount	\Actor-Mixer Hierarchy\Puzzles\Puzzle2		
+	386981157	Puzzle7	PuzzleCount	\Actor-Mixer Hierarchy\Puzzles\Puzzle6\Cycle2\Sphere		
+	403040352	Puzzle7	PuzzleCount	\Actor-Mixer Hierarchy\Puzzles\Puzzle5\Cycle1\Zone1		
 	417142714	Puzzle2	PuzzleCount	\Actor-Mixer Hierarchy\Puzzles\Puzzle1		
 	418784804	Puzzle5	PuzzleCount	\Actor-Mixer Hierarchy\Puzzles\Puzzle4		
+	430203483	Puzzle7	PuzzleCount	\Actor-Mixer Hierarchy\Puzzles\Puzzle4\Cycle4\Sphere		
+	455417542	Puzzle7	PuzzleCount	\Actor-Mixer Hierarchy\Puzzles\Puzzle6\Cycle4		
 	459616073	Puzzle4	PuzzleCount	\Actor-Mixer Hierarchy\Puzzles\Puzzle2		
 	475597003	Puzzle3	PuzzleCount	\Actor-Mixer Hierarchy\Puzzles\Puzzle1		
+	544513334	Puzzle7	PuzzleCount	\Actor-Mixer Hierarchy\Puzzles\Puzzle5\Cycle4\Zone1		
 	552955838	Puzzle6	PuzzleCount	\Actor-Mixer Hierarchy\Puzzles\Puzzle4		
+	558295316	Puzzle7	PuzzleCount	\Actor-Mixer Hierarchy\Puzzles\Puzzle4\Cycle3\Sphere		
+	572621445	Puzzle7	PuzzleCount	\Actor-Mixer Hierarchy\Puzzles\Puzzle6\Cycle1\Zone2		
+	574684575	Puzzle7	PuzzleCount	\Actor-Mixer Hierarchy\Puzzles\Puzzle4\Cycle2\Sphere		
+	624066280	Puzzle7	PuzzleCount	\Actor-Mixer Hierarchy\Puzzles\Puzzle5\Cycle2\Zone1		
 	714690688	Puzzle6	PuzzleCount	\Actor-Mixer Hierarchy\Puzzles\Puzzle1		
+	728637750	Puzzle7	PuzzleCount	\Actor-Mixer Hierarchy\Puzzles\Puzzle6\Cycle5		
 	762335911	Puzzle4	PuzzleCount	\Actor-Mixer Hierarchy\Puzzles\Puzzle3		
 	778415042	Puzzle5	PuzzleCount	\Actor-Mixer Hierarchy\Puzzles\Puzzle3		
+	786834464	Puzzle7	PuzzleCount	\Actor-Mixer Hierarchy\Puzzles\Puzzle4\Cycle5\Sphere		
+	832645727	Puzzle7	PuzzleCount	\Actor-Mixer Hierarchy\Puzzles\Puzzle6\Cycle1\Sphere		
 	900169497	Puzzle3	PuzzleCount	\Actor-Mixer Hierarchy\Puzzles\Puzzle2		
 	974056397	Puzzle4	PuzzleCount	\Actor-Mixer Hierarchy\Puzzles\Puzzle1		
+	1019817804	Puzzle7	PuzzleCount	\Actor-Mixer Hierarchy\Puzzles\Puzzle5\Cycle3\Zone1		
 	1037170412	Puzzle6	PuzzleCount	\Actor-Mixer Hierarchy\Puzzles\Puzzle5		
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
@@ -91,15 +105,17 @@ Modulator LFO	ID	Name			Wwise Object Path	Notes
 	14179199	Modulator LFO (Custom)				
 	15969669	Modulator LFO (Custom)				
 	17928453	Modulator LFO (Custom)				
-	23026511	Modulator LFO (Custom)				
 	36175840	Modulator LFO (Custom)				
+	39648650	Modulator LFO (Custom)				
 	43052077	Modulator LFO (Custom)				
 	45748414	Modulator LFO (Custom)				
+	46731725	Modulator LFO (Custom)				
 	47076840	Modulator LFO (Custom)				
 	49204064	Modulator LFO (Custom)				
 	60169799	Modulator LFO (Custom)				
 	65224358	Modulator LFO (Custom)				
 	66212955	Modulator LFO (Custom)				
+	67146115	Modulator LFO (Custom)				
 	79520242	Modulator LFO (Custom)				
 	80448740	Modulator LFO (Custom)				
 	81091207	Modulator LFO (Custom)				
@@ -110,17 +126,23 @@ Modulator LFO	ID	Name			Wwise Object Path	Notes
 	95449555	Modulator LFO (Custom)				
 	103279854	Modulator LFO (Custom)				
 	106237210	Modulator LFO (Custom)				
+	109838007	Modulator LFO (Custom)				
+	118617901	Modulator LFO (Custom)				
 	122846887	Modulator LFO (Custom)				
 	123529838	Modulator LFO (Custom)				
 	124197120	Modulator LFO (Custom)				
+	126939579	Modulator LFO (Custom)				
 	128835929	Modulator LFO (Custom)				
 	144193613	Modulator LFO (Custom)				
 	147220650	Modulator LFO (Custom)				
 	154749660	Modulator LFO (Custom)				
 	157066229	Modulator LFO (Custom)				
+	161918238	Modulator LFO (Custom)				
 	166663606	Modulator LFO (Custom)				
 	168623183	Modulator LFO (Custom)				
+	182937219	Modulator LFO (Custom)				
 	184209525	Modulator LFO (Custom)				
+	185380034	Modulator LFO (Custom)				
 	187272480	Modulator LFO (Custom)				
 	214865596	Modulator LFO (Custom)				
 	215565848	Modulator LFO (Custom)				
@@ -136,16 +158,17 @@ Modulator LFO	ID	Name			Wwise Object Path	Notes
 	265121410	Modulator LFO (Custom)				
 	267036416	Modulator LFO (Custom)				
 	272220056	Modulator LFO (Custom)				
+	272901439	Modulator LFO (Custom)				
 	275291465	Modulator LFO (Custom)				
 	278394142	Modulator LFO (Custom)				
 	278627993	Modulator LFO (Custom)				
 	283774186	Modulator LFO (Custom)				
+	306273275	Modulator LFO (Custom)				
 	319607010	Modulator LFO (Custom)				
 	325311439	Modulator LFO (Custom)				
 	329822610	Modulator LFO (Custom)				
 	334002557	Modulator LFO (Custom)				
 	346934073	Modulator LFO (Custom)				
-	347316846	Modulator LFO (Custom)				
 	353155133	Modulator LFO (Custom)				
 	356188608	Modulator LFO (Custom)				
 	366094667	Modulator LFO (Custom)				
@@ -164,9 +187,11 @@ Modulator LFO	ID	Name			Wwise Object Path	Notes
 	430002167	Modulator LFO (Custom)				
 	435887458	Modulator LFO (Custom)				
 	436107330	Modulator LFO (Custom)				
+	437249140	Modulator LFO (Custom)				
 	438961612	Modulator LFO (Custom)				
 	443115809	Modulator LFO (Custom)				
 	451299797	Modulator LFO (Custom)				
+	456623768	Modulator LFO (Custom)				
 	458004258	Modulator LFO (Custom)				
 	459297291	Modulator LFO (Custom)				
 	466295843	Modulator LFO (Custom)				
@@ -179,14 +204,17 @@ Modulator LFO	ID	Name			Wwise Object Path	Notes
 	490716779	Modulator LFO (Custom)				
 	500852937	Modulator LFO (Custom)				
 	502954336	Modulator LFO (Custom)				
+	503090655	Modulator LFO (Custom)				
 	506412439	Modulator LFO (Custom)				
 	508517265	Modulator LFO (Custom)				
 	509130839	Modulator LFO (Custom)				
 	513850921	Modulator LFO (Custom)				
+	516479761	Modulator LFO (Custom)				
 	527465459	Modulator LFO (Custom)				
 	527986641	Modulator LFO (Custom)				
 	539374343	Modulator LFO (Custom)				
 	539850252	Modulator LFO (Custom)				
+	554156421	Modulator LFO (Custom)				
 	559685649	Modulator LFO (Custom)				
 	566165308	Modulator LFO (Custom)				
 	566177328	Modulator LFO (Custom)				
@@ -216,7 +244,6 @@ Modulator LFO	ID	Name			Wwise Object Path	Notes
 	721339618	Modulator LFO (Custom)				
 	729467870	Modulator LFO (Custom)				
 	731431743	Modulator LFO (Custom)				
-	739501010	Modulator LFO (Custom)				
 	753598612	Modulator LFO (Custom)				
 	753655422	Modulator LFO (Custom)				
 	762333965	Modulator LFO (Custom)				
@@ -231,7 +258,6 @@ Modulator LFO	ID	Name			Wwise Object Path	Notes
 	825179095	Modulator LFO (Custom)				
 	830203725	Modulator LFO (Custom)				
 	831500254	Modulator LFO (Custom)				
-	839050818	Modulator LFO (Custom)				
 	842553418	Modulator LFO (Custom)				
 	843610236	Modulator LFO (Custom)				
 	843662153	Modulator LFO (Custom)				
@@ -239,6 +265,7 @@ Modulator LFO	ID	Name			Wwise Object Path	Notes
 	849422091	Modulator LFO (Custom)				
 	861541646	Modulator LFO (Custom)				
 	863530224	Modulator LFO (Custom)				
+	865150244	Modulator LFO (Custom)				
 	867704533	Modulator LFO (Custom)				
 	889283568	Modulator LFO (Custom)				
 	892875410	Modulator LFO (Custom)				
@@ -258,6 +285,7 @@ Modulator LFO	ID	Name			Wwise Object Path	Notes
 	948366190	Modulator LFO (Custom)				
 	960832988	Modulator LFO (Custom)				
 	961229263	Modulator LFO (Custom)				
+	964990867	Modulator LFO (Custom)				
 	968039318	Modulator LFO (Custom)				
 	986166075	Modulator LFO (Custom)				
 	991578168	Modulator LFO (Custom)				
@@ -267,6 +295,7 @@ Modulator LFO	ID	Name			Wwise Object Path	Notes
 	1013567609	Modulator LFO (Custom)				
 	1031003804	Modulator LFO (Custom)				
 	1040521210	Modulator LFO (Custom)				
+	1041265585	Modulator LFO (Custom)				
 	1042603309	Modulator LFO (Custom)				
 	1047317726	Modulator LFO (Custom)				
 	1060449181	Modulator LFO (Custom)				
@@ -326,7 +355,6 @@ Modulator Envelope	ID	Name			Wwise Object Path	Notes
 	250234134	Modulator Envelope (Custom)				
 	250289124	Modulator Envelope (Custom)				
 	251471194	Modulator Envelope (Custom)				
-	260852216	Modulator Envelope (Custom)				
 	264299028	Modulator Envelope (Custom)				
 	276361615	Modulator Envelope (Custom)				
 	277726029	Modulator Envelope (Custom)				
@@ -338,7 +366,6 @@ Modulator Envelope	ID	Name			Wwise Object Path	Notes
 	352597618	Modulator Envelope (Custom)				
 	374495798	Modulator Envelope (Custom)				
 	390001153	Modulator Envelope (Custom)				
-	392899123	Modulator Envelope (Custom)				
 	401828372	Modulator Envelope (Custom)				
 	414641068	Modulator Envelope (Custom)				
 	416090209	Modulator Envelope (Custom)				
@@ -419,7 +446,6 @@ Modulator Envelope	ID	Name			Wwise Object Path	Notes
 	829309945	Modulator Envelope (Custom)				
 	834593788	Modulator Envelope (Custom)				
 	840218420	Modulator Envelope (Custom)				
-	855605560	Modulator Envelope (Custom)				
 	859888576	Modulator Envelope (Custom)				
 	873555674	Modulator Envelope (Custom)				
 	882796538	Modulator Envelope (Custom)				
@@ -499,6 +525,7 @@ Effect plug-ins	ID	Name	Type				Notes
 	300201223	Wwise Guitar Distortion (Custom)	Wwise Guitar Distortion			
 	326436702	Wwise Guitar Distortion (Custom)	Wwise Guitar Distortion			
 	355697454	Wwise Delay (Custom)	Wwise Delay			
+	361713668	Wwise Delay (Custom)	Wwise Delay			
 	364600845	Wwise Delay (Custom)	Wwise Delay			
 	368495801	Wwise Tremolo (Custom)	Wwise Tremolo			
 	373458310	Wwise Delay (Custom)	Wwise Delay			
@@ -531,11 +558,13 @@ Effect plug-ins	ID	Name	Type				Notes
 	651782190	Wwise Tremolo (Custom)	Wwise Tremolo			
 	654989822	Wwise Guitar Distortion (Custom)	Wwise Guitar Distortion			
 	690281411	Wwise Delay (Custom)	Wwise Delay			
+	699672686	Wwise Tremolo (Custom)	Wwise Tremolo			
 	704491809	Wwise Delay (Custom)	Wwise Delay			
 	709250542	Wwise Parametric EQ (Custom)	Wwise Parametric EQ			
 	739832891	Wwise Guitar Distortion (Custom)	Wwise Guitar Distortion			
 	756968067	Wwise Guitar Distortion (Custom)	Wwise Guitar Distortion			
 	757226980	Wwise Tremolo (Custom)	Wwise Tremolo			
+	762705856	Wwise Guitar Distortion (Custom)	Wwise Guitar Distortion			
 	770952918	Wwise Parametric EQ (Custom)	Wwise Parametric EQ			
 	774568939	Wwise Tremolo (Custom)	Wwise Tremolo			
 	777759988	Wwise Tremolo (Custom)	Wwise Tremolo			
@@ -587,6 +616,7 @@ Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	52485191	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzle9\Cycle2\Zone3\Linked\Wwise Synth One	
 	53903635	Ab3	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzle6\Cycle3\Zone1\Linked\Ab3	
 	60152694	E3	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzle5\Cycle2\Sphere\E3	
+	63696597	F#4	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzle7\Cycle1\Zone1\Unlinked\F#4	
 	65452237	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzle10\Cycle6\Sphere\Wwise Synth One	
 	70975814	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzle7\Cycle5\Zone1\Linked\Wwise Synth One	
 	79438384	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzle8\Cycle4\Zone1\Linked\Wwise Synth One	
@@ -627,7 +657,6 @@ Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	207386715	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzle10\Cycle5\Zone3\Linked\Wwise Synth One	
 	208761637	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzle7\Cycle4\Sphere\Wwise Synth One	
 	209563831	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzle9\Cycle7\Zone1\Linked\Wwise Synth One	
-	209772906	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzle7\Cycle1\Sphere\Wwise Synth One	
 	216432422	D4	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzle5\Cycle4\Zone1\Linked\D4	
 	218104540	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzle7\Cycle5\Zone2\Unlinked\Wwise Synth One	
 	232487082	A3	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzle3\Cycle4\Sphere\A3	
@@ -637,6 +666,7 @@ Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	248773458	E3	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzle5\Cycle1\Sphere\E3	
 	250364493	D4	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzle5\Cycle3\Zone1\Linked\D4	
 	251903082	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzle7\Cycle4\Zone1\Unlinked\Wwise Synth One	
+	254061674	E3	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzle7\Cycle1\Sphere\E3	
 	254084592	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzle10\Cycle4\Zone2\Unlinked\Wwise Synth One	
 	254093256	E4	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzle4\Cycle1\Zone1\Linked\E4	
 	262026383	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzle10\Cycle1\Zone1\Linked\Wwise Synth One	
@@ -644,7 +674,6 @@ Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	270061732	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzle7\Cycle1\Zone2\Linked\Wwise Synth One	
 	270756891	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzle7\Cycle4\Zone3\Unlinked\Wwise Synth One	
 	283759358	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzle10\Cycle2\Zone1\Linked\Wwise Synth One	
-	286404836	E4	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzle1\Cycle1\Zone1\Linked\E4	
 	290404287	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzle8\Cycle5\Zone2\Unlinked\Wwise Synth One	
 	290413972	D4	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzle5\Cycle3\Zone1\Unlinked\D4	
 	291645662	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzle9\Cycle7\Zone2\Linked\Wwise Synth One	
@@ -660,6 +689,7 @@ Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	325011602	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzle8\Cycle5\Zone2\Linked\Wwise Synth One	
 	333462783	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzle8\Cycle2\Zone2\Linked\Wwise Synth One	
 	348051460	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzle8\Cycle3\Zone2\Unlinked\Wwise Synth One	
+	348752008	E4	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzle1\Cycle1\Zone1\Unlinked\E4	
 	350324267	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzle10\Cycle3\Zone1\Unlinked\Wwise Synth One	
 	360622026	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzle8\Cycle3\Zone1\Unlinked\Wwise Synth One	
 	364027771	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzle7\Cycle6\Zone3\Linked\Wwise Synth One	
@@ -677,7 +707,6 @@ Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	408609733	E3	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzle5\Cycle3\Sphere\E3	
 	409352356	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzle9\Cycle2\Zone2\Unlinked\Wwise Synth One	
 	409763983	D4	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzle2\Cycle3\Zone1\Linked\D4	
-	412095872	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzle7\Cycle1\Zone1\Unlinked\Wwise Synth One	
 	416256472	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzle10\Cycle4\Zone2\Linked\Wwise Synth One	
 	420463699	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzle10\Cycle7\Zone2\Unlinked\Wwise Synth One	
 	426123131	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzle10\Cycle1\Zone1\Unlinked\Wwise Synth One	
@@ -720,7 +749,6 @@ Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	559537763	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzle9\Cycle3\Zone1\Unlinked\Wwise Synth One	
 	564542565	E4	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzle3\Cycle3\Zone1\Linked\E4	
 	573096150	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzle10\Cycle7\Zone1\Linked\Wwise Synth One	
-	575221251	E4	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzle1\Cycle1\Zone1\Unlinked\E4	
 	579615914	B3	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzle3\Cycle1\Zone1\Linked\B3	
 	580897465	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzle9\Cycle5\Zone2\Linked\Wwise Synth One	
 	583197636	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzle9\Cycle6\Zone3\Unlinked\Wwise Synth One	
@@ -740,7 +768,6 @@ Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	652845590	G3	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzle5\Cycle1\Zone1\Unlinked\G3	
 	653488912	B3	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzle3\Cycle2\Zone1\Unlinked\B3	
 	658004662	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzle9\Cycle7\Zone2\Unlinked\Wwise Synth One	
-	673707528	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzle7\Cycle1\Zone1\Linked\Wwise Synth One	
 	676225858	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzle9\Cycle7\Zone1\Unlinked\Wwise Synth One	
 	676908542	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzle10\Cycle2\Zone3\Linked\Wwise Synth One	
 	680724606	E4	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzle4\Cycle1\Zone1\Unlinked\E4	
@@ -823,6 +850,8 @@ Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	1046134071	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzle10\Cycle5\Zone3\Unlinked\Wwise Synth One	
 	1048508655	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzle8\Cycle3\Zone3\Unlinked\Wwise Synth One	
 	1048706263	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzle8\Cycle5\Zone3\Linked\Wwise Synth One	
+	1051006845	F#4	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzle7\Cycle1\Zone1\Linked\F#4	
+	1051803269	E4	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzle1\Cycle1\Zone1\Linked\E4	
 	1053019107	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzle7\Cycle5\Zone3\Unlinked\Wwise Synth One	
 	1056294474	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzle8\Cycle2\Zone3\Linked\Wwise Synth One	
 	1058057447	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Puzzles\Puzzle7\Cycle3\Zone3\Linked\Wwise Synth One	
